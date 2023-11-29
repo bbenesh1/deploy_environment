@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<table>
+    <thead>
+        <tr>
+            <th>Inventory ID</th>
+            <th>Inventory Name</th>
+            <th>Created</th>
+            <th>Total Hosts</th>
+            <th>Last Job Run</th>
+            <th>Organization</th>
+            <th>To be deleted</th>
+        </tr>
+    </thead>
+    <tbody>
+{% if static_inv_ids is defined and static_inventories is defined %}
+{% for inv_id in  static_inv_ids %}
+        <tr>
+            <td>{{inv_id | default('N/A')}}</td>
+            <td>{{static_inventories[inv_id].inv_name | default('N/A')}}</td>
+            <td>{{static_inventories[inv_id].created_date | default('N/A')}}</td>
+            <td>{{static_inventories[inv_id].total_hosts | default('N/A')}}</td>
+            <td>{{static_inventories[inv_id].last_job_run | default('N/A')}}</td>
+            <td>{{static_inventories[inv_id].organization | default('N/A')}}</td>
+            <td>{{static_inventories[inv_id].to_be_deleted | default('N/A')}}</td>
+        </tr>
+{% endfor %}
+{% endif %}
+    </tbody>
+</table>
+
+</body>
+</html>

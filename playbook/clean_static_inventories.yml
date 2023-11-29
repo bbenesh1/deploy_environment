@@ -1,0 +1,82 @@
+---
+- name: Delete Not Used Static Inventories
+  hosts: localhost
+  gather_facts: false
+  collections:
+    - ansible.controller
+  tasks:
+
+  - name: Gather minimum fact
+    setup:
+      gather_subset:
+        - min
+
+  - name: Load Static Inventories
+    set_fact:
+      static_inv_ids: "{{ lookup('ansible.controller.controller_api', 'inventories', query_params={ 'has_inventory_sources': false, 'kind': '' }, return_all=true) | map(attribute='id') }}"
+    
+  # - name: Debug
+  #   debug:
+  #     msg: "{{ (ansible_date_time.date | to_datetime(format='%Y-%m-%d') - '0' | to_datetime(format='%Y-%m-%d')) | int / 30.4375 }} }}"
+    
+  - name: Load Job Templates
+    set_fact:
+      static_inventories: "{{ static_inventories | default({}) | combine({item: make_key_value}) }}"
+    vars:
+      job_templates: "{{ lookup('ansible.controller.controller_api', 'inventories/{{ item }}/job_templates', return_all=true) }}"
+      inv_info: "{{ lookup('ansible.controller.controller_api', 'inventories/{{ item }}') }}"
+      last_job_runs: >-
+        {% if job_templates.last_job_run is defined %}{{- job_templates.last_job_run -}}
+        {% elif job_templates | length > 0 %}{{- job_templates | map(attribute='last_job_run') | map('regex_replace', '^None$','0Z') | sort | last -}}
+        {% else %}0Z
+        {% endif %}
+      last_job_run_for_calculate: >-
+        {% if last_job_runs == '0Z' %}{{ inv_info.created }}
+        {% else %}{{ last_job_runs }}
+        {% endif %}
+      # months_diff: "{{ (ansible_date_time.date | to_datetime(format='%Y-%m-%d') - last_job_run_for_calculate | to_datetime(format='%Y-%m-%d')) | int / 30.4375 }}"
+      make_key_value:
+        inv_name: "{{ inv_info.name }}"
+        created_date: "{{ inv_info.created}}"
+        total_hosts: "{{ inv_info.total_hosts }}"
+        last_job_run: "{{ last_job_runs }}"
+        organization: "{{ inv_info.organization }}"
+        calc_run: "{{ last_job_run_for_calculate }}"
+        # to_be_deleted: >-
+        #   {% if months_diff > 6 %}Yes
+        #   {% else %}No
+        #   {% endif %}        
+    loop: "{{ static_inv_ids }}"
+
+  # - name: Debug
+  #   debug:
+  #     msg: "{{ static_inventories[item] }}"
+  #   loop: "{{ static_inv_ids }}"
+
+
+  ## Send Email Report
+  - name: Set report title
+    set_fact:
+      report_title: "Static Inventories Statistic Report"
+      # report_date: "{{ now().strftime()('%A %d/%m/%Y @ %H:%M')}}"
+
+  - name: Generate HTML report
+    set_fact:
+      html_output: "{{ lookup('template', 'templates/report_static_inventories.html.j2') }}"
+
+  
+  - name: Debug
+    ansible.builtin.debug:
+      msg: | 
+        "{{ report_title }} \\n {{ html_output }}"
+
+  # - name: Sending an e-mail report
+  #   community.general.mail:
+  #     host: "{{ rio_smtp_server }}"
+  #     port: 25
+  #     to: "{{ var_email_recipients | split(',')|list }}"
+  #     subject: "{{ report_title }}"
+  #     subtype: html
+  #     body: "{{ html_output }}"
+  #     sender: "{{ var_notification_sender }}"
+  #   when: rio_smtp_server is defined
