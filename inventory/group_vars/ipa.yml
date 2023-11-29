@@ -1,0 +1,18 @@
+---
+ipa_subscription_id: 3a7e2ceb-ffa7-45bd-8a96-9d3153c20a14
+ipa_subscription_repos:
+  - rhel-9-for-x86_64-appstream-rpms
+  - rhel-9-for-x86_64-baseos-rpms
+
+ipa_server_packages:
+  - ipa-server
+  - ipa-server-dns
+  - firewalld 
+  - python3-pip
+
+ipa_firewall_services:
+  - freeipa-ldaps
+  - freeipa-ldap
+  - dns
+
+ipa_hostname: ipa.bbenesh.org

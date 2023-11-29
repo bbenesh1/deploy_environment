@@ -1,0 +1,10 @@
+---
+
+# can be configured by tuned profile sap-hana, entry "governor=performance"
+#   in included tuned profile throughput-performance
+- name: Configure 2292690-5
+  ansible.builtin.debug:
+    msg: "SAP note 2292690 Step 5: Configure CPU Governor for performance (x86_64 platform only)"
+
+- name: Import ../../RedHat/generic/configure-cpu-governor-for-performance.yml
+  ansible.builtin.import_tasks: ../../RedHat/generic/configure-cpu-governor-for-performance.yml

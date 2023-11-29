@@ -1,0 +1,8 @@
+download_url: https://galaxy.ansible.com/api/v3/plugin/ansible/content/published/collections/artifacts/community-sap_operations-0.9.0.tar.gz
+format_version: 1.0.0
+name: sap_operations
+namespace: community
+server: https://galaxy.ansible.com/api/
+signatures: []
+version: 0.9.0
+version_url: /api/v3/plugin/ansible/content/published/collections/index/community/sap_operations/versions/0.9.0/

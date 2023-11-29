@@ -1,0 +1,75 @@
+---
+ - name: Initial Pacemaker Cluster install
+   hosts: "nfscluster"
+   tasks:
+
+      - name: "Initial Pacemaker Cluster install | Install desired packages"
+        ansible.builtin.yum:
+          name: "{{ nfs_hana_packages }}"
+          state: present
+
+      - name: "Initial Pacemaker Cluster install | Enable the services"
+        ansible.builtin.service:
+          name: pcsd
+          state: started
+          enabled: true
+      
+      - name: "Initial Pacemaker Cluster install | Enable firewall services"
+        ansible.posix.firewalld:
+          service: high-availability
+          state: enabled
+          permanent: true
+          immediate: true
+      
+      - name: "Initial Pacemaker Cluster install | Set Hacluster Password"
+        ansible.builtin.user:
+          name: hacluster
+          password: "{{ nfs_cluster_admin_password | password_hash('sha512') }}"
+          state: present
+
+
+ - name: Deploy Pacemaker Cluster
+   hosts: "nfscluster[0]"
+   tags:
+     - second
+   tasks:
+
+      - name: "Deploy Pacemaker Cluster | Stat corosync"
+        ansible.builtin.stat:
+          path: "/etc/corosync/corosync.conf"
+        register: corosync_results
+
+      - name: "Deploy Pacemaker Cluster | Login to Cluster Nodes"
+        command: 
+          cmd: "pcs host auth -u hacluster -p {{ nfs_cluster_admin_password }} {{ nfs_hana_cluster_names | join(' ') }}"
+
+      - name: "Deploy Pacemaker Cluster | Setup Cluster nodes"
+        command: 
+           cmd: "pcs cluster setup cluster1 {{ nfs_hana_cluster_names | join(' ') }}"
+        when: corosync_results.stat.exists == false
+
+      - name: "Deploy Pacemaker Cluster |  Register Cluster status"
+        shell: "pcs cluster pcsd-status | cut -d ':' -f 1 | tr -d ' '"
+        register: cluster_status
+
+      - name: "Deploy Pacemaker Cluster |  Set Cluster status fact"
+        set_fact: 
+          available_cluster: "{{ cluster_status.stdout_lines }}"
+
+      - name: "Deploy Pacemaker Cluster | Setup Cluster nodes"
+        command:
+           cmd: "pcs cluster node add {{ item }}"
+        loop: "{{ nfs_hana_cluster_names | difference('available_cluster') }}"
+        when: item not in available_cluster
+
+      - name: "Deploy Pacemaker Cluster | Enable Cluster nodes"
+        command:
+          cmd: pcs cluster enable --all 
+
+      - name: "Deploy Pacemaker Cluster | Start Cluster nodes"
+        command:
+          cmd: pcs cluster start --all
+
+      # - name: "Deploy Pacemaker Cluster | Confirm Stonith fence Structure"
+      #   include_tasks: "tasks/stonith_fence.yml"
+      #   loop: "{{ stonith_fence_configs }}"

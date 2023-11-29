@@ -1,0 +1,6165 @@
+{
+ "files": [
+  {
+   "name": ".",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": ".github",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": ".github/workflows",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": ".github/workflows/ansible-lint-sap_general_preconfigure.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "970c87b14ac36e5e21736942a7047dec5d7f1c8750310d6323f8f7596efab6bc",
+   "format": 1
+  },
+  {
+   "name": ".github/workflows/ansible-lint-sap_ha_install_hana_hsr.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "32e837f59397112aa84c36d9bb9a0f4cda62962259f37409d10ffac7425c915e",
+   "format": 1
+  },
+  {
+   "name": ".github/workflows/ansible-lint-sap_ha_pacemaker_cluster.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4832e221ac91e564a1e389ed9c7aa4b79300b11c4d209e9b6d26d80daa2415f1",
+   "format": 1
+  },
+  {
+   "name": ".github/workflows/ansible-lint-sap_hana_install.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "25b6921c7e3229a625ca928c739ca261d99d595e37889a6ae321e3c7aca9812d",
+   "format": 1
+  },
+  {
+   "name": ".github/workflows/ansible-lint-sap_hana_preconfigure.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7c1683d39bbadb92c6e5d7f1a68c7436d666e55d94871c083b8878d392f50292",
+   "format": 1
+  },
+  {
+   "name": ".github/workflows/ansible-lint-sap_hypervisor_node_preconfigure.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1f1870a37100b801ad7536056703e993d49a2601525fc119c0e2580a0dc9a4d9",
+   "format": 1
+  },
+  {
+   "name": ".github/workflows/ansible-lint-sap_netweaver_preconfigure.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d63e26e030a9b606b7851ebd6b1c60866de5cf7dac5e65bcfa5db2acf6c09d92",
+   "format": 1
+  },
+  {
+   "name": ".github/workflows/ansible-lint-sap_storage_setup.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e0e8ce657487e160452668dd7049b54fec521c9bde681d9c2bdfe89b5ad5775a",
+   "format": 1
+  },
+  {
+   "name": ".github/workflows/ansible-lint-sap_swpm.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7f2479d65314a1ef44a53708853a093747ba9df04be3c5889c9fb19367881350",
+   "format": 1
+  },
+  {
+   "name": ".github/workflows/ansible-lint-sap_vm_preconfigure.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "48d3c94d865647654dd8db97aeb2ae6217c4ba7483b94078621d9063dc29434f",
+   "format": 1
+  },
+  {
+   "name": ".github/workflows/ansible-lint.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "410196b677b6a0d5dcc04b0fb9f042cab9478ff47a8d2269f5a3a15b5351a6ac",
+   "format": 1
+  },
+  {
+   "name": ".github/workflows/ansible-test-sanity.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ca2ac68b877583039a0e7e66f57ab1b7eb8e67ec80feca7541ad2c8e1d4d28cd",
+   "format": 1
+  },
+  {
+   "name": ".github/workflows/yamllint-sap_hypervisor_node_preconfigure.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "56b4fa1f4eb4eaf0ecbf9ce8ed177f10324b698ffb774a5e473eadf0346a592e",
+   "format": 1
+  },
+  {
+   "name": ".github/workflows/yamllint-sap_vm_preconfigure.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3af23beeb54e3a5124e91be8104a37bc6211de3956d57e87eac10f025fa980f9",
+   "format": 1
+  },
+  {
+   "name": "changelogs",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "changelogs/.plugin-cache.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "35c2adeee9a538978913450cc247aa5fd069943a1c5134ae4aa9b746edaf640d",
+   "format": 1
+  },
+  {
+   "name": "changelogs/changelog.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d40fe433db8a95f1999fbedb41f9bc6e08f75e7a432a779c9b4d250d73d6ff6a",
+   "format": 1
+  },
+  {
+   "name": "changelogs/config.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f5f9170c774f3b7914f28e8b88b836ac3aa4d59c3681f78b34f3001702373d75",
+   "format": 1
+  },
+  {
+   "name": "docs",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "docs/developer_notes",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "docs/developer_notes/sap_swmp_dev.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "129b83e98859778b88b91ba99dfba9edd9dcc03105db506f8a07c75b38733e8c",
+   "format": 1
+  },
+  {
+   "name": "docs/getting_started",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "docs/getting_started/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ec18956db8935082a2c8240a4353db845c81996fc1b9e1a1d538d20573a1fe0d",
+   "format": 1
+  },
+  {
+   "name": "docs/getting_started/secure-your-passwords.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ae950c0ed5e8d1e8f7018b0bb4f60f98341198d3405055bf78de77d899a50a62",
+   "format": 1
+  },
+  {
+   "name": "docs/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "docs/CONTRIBUTORS.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3a5538bb636d5d244481a8ddd54034e4346ee916247b99112dc447dc8fc61a7c",
+   "format": 1
+  },
+  {
+   "name": "meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "meta/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "meta/runtime.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "df18179bb2f5447a56ac92261a911649b96821c0b2c08eea62d5cc6b0195203f",
+   "format": 1
+  },
+  {
+   "name": "playbooks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "playbooks/vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "playbooks/vars/sample-sap-swpm-inifile-reuse-mode-sample.inifile.params",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2b57021eea1cb1258ccef9a8ab2040e5fdf384f01b013b2969292ec00441dc6e",
+   "format": 1
+  },
+  {
+   "name": "playbooks/vars/sample-variables-sap-hana-install.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ad7d561d83799a093bb6063bf7a8add2723ab58861904ebdb5dc797440bd80bd",
+   "format": 1
+  },
+  {
+   "name": "playbooks/vars/sample-variables-sap-storage-lvm-stripes.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "be85a1da65b84e9be6a425daa9600053c91df51e4ed9a70c6a847483a67954aa",
+   "format": 1
+  },
+  {
+   "name": "playbooks/vars/sample-variables-sap-storage-lvm.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6d243eae8c21cd106a4a631f21ee0380e8785f5afa7292300594898053458161",
+   "format": 1
+  },
+  {
+   "name": "playbooks/vars/sample-variables-sap-swpm-advanced-mode-s4hana-onehost-install.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1ded4706d0fb06ff6434d10ed03466ab4d2624a9818b7fb7fcbe20f8c997e211",
+   "format": 1
+  },
+  {
+   "name": "playbooks/vars/sample-variables-sap-swpm-advanced-templates-mode.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "772f18f6afd641eca9be7790fc1d6789988a0ee43a92ea67b68bd7c08b5b7402",
+   "format": 1
+  },
+  {
+   "name": "playbooks/vars/sample-variables-sap-swpm-default-mode-bw4hana-onehost-install.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d737edbcd31ae4cdefc538e3ae3060cfce0977199bf6f3cc65518f6fb2150398",
+   "format": 1
+  },
+  {
+   "name": "playbooks/vars/sample-variables-sap-swpm-default-mode-s4hana-distributed-ascs-install.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8b200865579e1ef062a9c2399fedf13549f53daede8a22ca3cdfb8be4722bf16",
+   "format": 1
+  },
+  {
+   "name": "playbooks/vars/sample-variables-sap-swpm-default-mode-s4hana-distributed-dbload-install.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3d767a87e930941af3c82d2593278831ca3db4b706136f28b7607b5e08bbb972",
+   "format": 1
+  },
+  {
+   "name": "playbooks/vars/sample-variables-sap-swpm-default-mode-s4hana-distributed-ers-install.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "438a1472af28f8cb353fdfe532a1d45f6d5a34c6117897906dbda7905f0a2506",
+   "format": 1
+  },
+  {
+   "name": "playbooks/vars/sample-variables-sap-swpm-default-mode-s4hana-distributed-pas-install.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c8d84eef796a98ab06918f39ca9d9d1f5e9b2ed18fc08c08da673bbef424c33f",
+   "format": 1
+  },
+  {
+   "name": "playbooks/vars/sample-variables-sap-swpm-default-mode-s4hana-onehost-install.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "95101958a39c97ef7f44ffbfd7764b6c0026aa13cee27cad5e54a932e5b82967",
+   "format": 1
+  },
+  {
+   "name": "playbooks/vars/sample-variables-sap-swpm-default-mode-s4hana-onehost-restore.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "aacd84a65ccaa30999d6c09c026f1b4208862484a9ebd5f083b835126b4f9e8c",
+   "format": 1
+  },
+  {
+   "name": "playbooks/vars/sample-variables-sap-swpm-default-mode-solman-hana-abap-onehost-install.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5d50abd0fc968a8ca2e87a1462aec969d624d064e2c4446cddd01fceaf9aaaba",
+   "format": 1
+  },
+  {
+   "name": "playbooks/vars/sample-variables-sap-swpm-default-mode-solman-hana-java-onehost-install.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "80a10112e738979adae3bc1d2e09c9664bb83ab9ae04347897fddf6d301e8e42",
+   "format": 1
+  },
+  {
+   "name": "playbooks/vars/sample-variables-sap-swpm-default-mode-system-rename.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4c90b68baf04430b2d2c72a94623400409d785d0c08787ff1f93da2aef1da169",
+   "format": 1
+  },
+  {
+   "name": "playbooks/vars/sample-variables-sap-swpm-default-mode-webdisp-standalone-install.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d93db717e7d327f34427d80095b92a17b9f9506c0ce979033973eaccc6401557",
+   "format": 1
+  },
+  {
+   "name": "playbooks/vars/sample-variables-sap-swpm-default-templates-mode.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "373fbf61757d623bb90b3892e8503a30ed087fe3105f9020491fb4c149eb6e18",
+   "format": 1
+  },
+  {
+   "name": "playbooks/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "playbooks/sample-sap-ha-deployment-hana-2-node-cluster.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "08e816619cd70e09e528a0d21cf906bd80651587b68f49ce187befe89ef98cf6",
+   "format": 1
+  },
+  {
+   "name": "playbooks/sample-sap-hana-install.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8152e3b74749042f16db4aa7aaf861f4f8fe81d31fee40e5940c58515080960c",
+   "format": 1
+  },
+  {
+   "name": "playbooks/sample-sap-hana-preconfigure.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e7359e6597d1b4a1efddc2fa0abb3c9bc7f51eecca6823c32182996290c888e1",
+   "format": 1
+  },
+  {
+   "name": "playbooks/sample-sap-storage-prep.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f1ceb2c866c0013844608b78ddbb5a61e9c50e147344c8ecd208f04622142d1a",
+   "format": 1
+  },
+  {
+   "name": "playbooks/sample-sap-swpm-advanced-mode.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4567a592e266a9d7fafe1e74e036099432037b2d329c864b4d8d95e08996382c",
+   "format": 1
+  },
+  {
+   "name": "playbooks/sample-sap-swpm-advanced-templates-mode.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "29854b319e26b9182b5de31a48e43d2fd9d6c91f836f7959d8493d2449a848cb",
+   "format": 1
+  },
+  {
+   "name": "playbooks/sample-sap-swpm-all-modes-interactive.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0615debd8b5a44c3b9aa2388360048b45566fd037ec54ca30d190e5afde407bf",
+   "format": 1
+  },
+  {
+   "name": "playbooks/sample-sap-swpm-default-mode.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d870d76c4c7fb59fe02b1e1aa755da36cab1312d60702ed8036b059fa1e2fe26",
+   "format": 1
+  },
+  {
+   "name": "playbooks/sample-sap-swpm-default-templates-mode.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "31c1508dff180c6d82fa3e4baf1fdbdb00ed0a29b4ca441c4690da5f6cdfae39",
+   "format": 1
+  },
+  {
+   "name": "playbooks/sample-sap-swpm-inifile-reuse-mode.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "57386754c23a99d9069853bd0853b8f13178eb8e0dc396dc9468bb8cc69aa7c3",
+   "format": 1
+  },
+  {
+   "name": "playbooks/sample-storage_sap_s4hana_distributed.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f69ef48f742fe23940ad2199f30c87158424720dec141a71359ea115acb0514a",
+   "format": 1
+  },
+  {
+   "name": "plugins",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/inventory",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/inventory/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_anydb_install_oracle",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_anydb_install_oracle/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_anydb_install_oracle/defaults/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7f66ee0324587d60d9aa492568da71813c7ef6eeccfe4708ec9b639366dc862c",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_anydb_install_oracle/handlers",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_anydb_install_oracle/handlers/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "32c0293878a60e67c09d4e829915327e5d1c89d38cff983700aa1aebe89ce87d",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_anydb_install_oracle/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_anydb_install_oracle/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9d9dfcf417966557ad1008d328264a7a1388d3139ef1cffb035319c3931466f7",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_anydb_install_oracle/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_anydb_install_oracle/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cbf1b6b6c9f7c7931d892432e372e411d72add0086a4661a06528b857743c7e0",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_anydb_install_oracle/tasks/oracledb_install_post_mopatch.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f52d711103d50a437830c6fbcd04fb4bab49a0f82f6d26d1c791c6e8488dd090",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_anydb_install_oracle/tasks/oracledb_install_pre.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "94c1b005918c734afda49b7072e98f981b6aa8f1b313274186bc91a8451d3391",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_anydb_install_oracle/tasks/oracledb_installer_minimal.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "69ee73593b12bffd5f4ca629dd4b1c57a1f839f54782d866184ae7b8c4e33ae1",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_anydb_install_oracle/tasks/oracledb_installer_responsefile.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e9c02af720a0341881203d8022598e39b4095ada37664bb3dd3b51fef55dde7a",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_anydb_install_oracle/templates",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_anydb_install_oracle/templates/oracledb_rsp_assistants_dbca.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e325cdaea040075fb66a1bd5253b910e6af12a1c5562959afc75e67241650d69",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_anydb_install_oracle/templates/oracledb_rsp_assistants_netca.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a62935d9e712231999f6fe4a59223d8dbbbd2b0f33c55f7b495e36367655ac1b",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_anydb_install_oracle/templates/oracledb_rsp_install_dbinstall.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "16c8f8fe47e36cca0c811632467b84b83e929e088ef94ddb7af9f44ef6f73816",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_anydb_install_oracle/templates/oracledb_rsp_inventory_oracleserver_ee.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d28816914d2242085b7c1e1cd746b5e2119bb29e9d8ba3ec9529807b49b1bdf2",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_anydb_install_oracle/.ansible-lint",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cdaa7a5b06f08d45ef69f37c4900af572b2ba278591e6f139c8c0b2d4b67a644",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_anydb_install_oracle/.yamllint.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "472c1f78b944dd89a218a05882b9e6e6f7a0b468680648ea16aec26024d698b9",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_anydb_install_oracle/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "423a281485ad2cfeb0566b52708be429908182614935e89c2a97e08bf4d44ea1",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/defaults/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fe4c81a5ffa05e07b4fc581b433a42dccedd01f71c9f37a2a862660fd51023e7",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/files",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/files/etc",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/files/etc/tmpfiles.d",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/files/etc/tmpfiles.d/sap.conf",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eeea9966f4cdeaa33e18e4554b362d1612620645c85c0da7b18835ebe9ffa99b",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/files/etc/tmpfiles.d/sap_RedHat_9.conf",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3e4ab9bb5efd508802990eab9c1c826bda008540c117800020683cdffd0f37e6",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/files/tmp",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/files/tmp/hostnamectl-fix.pp",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6be9ab8787f4bee9ca14bbbe734c4d1b486e6663a71cf1ef1e3123cc8f1b0a15",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/files/tmp/hostnamectl-fix.te",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7732497c20f49456987c1881efb65193315c88eb861a4e7e2faf86a458aa2908",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/handlers",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/handlers/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6fe611e4142712582d57cde2d7950f16b675d8b0095365794858d23a6c6a4708",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/meta/argument_specs.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "caca638fd42bf7e71702fde9e7563e657260cff6eeb92c54c4ce67b3fcb1439d",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/meta/collection-requirements.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f5a247f932498ccb0d91284b6a4ff7c8970eeb027b4946bb4671e9bf0a62c0d1",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b7e9ac7a1fb10b8d5b7e5607505b145c2021089186da8810402b8287f238f5dc",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/meta/runtime.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "df18179bb2f5447a56ac92261a911649b96821c0b2c08eea62d5cc6b0195203f",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/RedHat",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/RedHat/generic",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/RedHat/generic/assert-dns-name-resolution.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ada30fa008b9c6b447364c07cf354bf37495d0795254de92b55ebb5185dfe186",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/RedHat/generic/assert-etc-hosts.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "485d27ceef223c54c61b60bf5517b51accb39a154b768d4730e319eb1eadf765",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/RedHat/generic/assert-firewall.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5459d4fc7bb58f8654572abd88e585da6e03f74e30659943ab785ef5b7ea6bf1",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/RedHat/generic/assert-hostname.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a3b983555801c3f79f1a893543bd24637ed67108e4e644a1b2bea1079bd68146",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/RedHat/generic/assert-kernel-parameters-loop-block.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "afd0e85b0ef4c7eb86aa6d7321b4b23aae13f26b5b661defae8353283058b6c1",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/RedHat/generic/assert-kernel-parameters.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8f100a94812f1270f594363d77f0a1f4440715e2ec1514c5850984d19da438cd",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/RedHat/generic/assert-limits-conf-file.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8b146f9cae6c4169a831fb1c281dcdc0a64373fb28eef92698551a53232fd94b",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/RedHat/generic/assert-nofile-limits.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "63b27eba0a3e793beddf64902a3d8ba08859bef12e6a0e4bb5c86eb568b82a19",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/RedHat/generic/assert-nproc-limits.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1282172bc95cdc3a5a331e015c8d9e190a7cf24d5b4aef5b6b3388698f06fc39",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/RedHat/generic/assert-selinux.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8e3e02999d470582fe937d0293b2a18da7113f5145f00c7368f102b007c426dd",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/RedHat/generic/assert-systemd-tmpfiles.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9093f34e311717250dfe6f037665b40669f4c4e8cb539414abe4f17fc1888d70",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/RedHat/generic/assert-tmpfs.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "78485f15d65977d0fd08911648bf843002c6cf01972da91a3ac0b5d7488ba71e",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/RedHat/generic/assert-uuidd.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d297eb3d5b69262fe31d0b9048dead4a24fc053d4b94d0084090a3db4f74da49",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/RedHat/generic/check-dns-name-resolution.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "03982dadcd3489528e41107e86297239ccce5ffc2e7e2271ea7e311859d49a39",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/RedHat/generic/configure-etc-hosts.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cec7b36b3af143bcdd4a9410670853f700087e8bd26ef8c500aec1535a80f84a",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/RedHat/generic/configure-firewall.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5f3f5c1101673f46c83d3eb7195f4d675cded2df8e45acfe7b023b899e206cfb",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/RedHat/generic/configure-hostname.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "08789a7b5f77df0afdd450c8627930df9dcccf5658a68adfda6a89e8fdf23dc4",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/RedHat/generic/configure-kernel-parameters.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e40fadb6ef2e4a4d04ab9f1adfd4cf44e3df5d43f73f6192b59e0d0fae913e56",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/RedHat/generic/configure-selinux.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "449dcdd491a862afe79215fa1cdb6a779c6f0a946dea6f899a0b12b55b66322c",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/RedHat/generic/configure-systemd-tmpfiles.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "18dbdf05dd5d01c9b78be1dbb8332d5b7040cda442ba83178e5a65163c7b72e0",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/RedHat/generic/configure-tmpfs.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d41f81f66258139610c9c3aab833b4d0e5432a9af2875bb917b3c67ecae8ebfd",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/RedHat/generic/configure-uuidd.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5fdb09448015687c59229a355b790b1a827d8b75581bece8210c36091e210a67",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/RedHat/generic/increase-nofile-limits.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a6fe89b7cd14b0bf0389d775b570eae304c99ec0829a1235cb96180b178805a3",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/RedHat/generic/increase-nproc-limits.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e2eb8147e79b3d13bb6af199a7e6aea9831dc6a0e2872118b7dd0d0b7a85bfce",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/RedHat/assert-configuration.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8393b9c7a42ab6b51b6ad678ba4f5580b0c5535d933c45563fa2c74ba6481b9d",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/RedHat/assert-installation.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0ca3182b81c17d807db81005a880d0f5de803cd246ccee9f2564203e31819f84",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/RedHat/configuration.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "08f34c99e6dd60dfef96fb23834754dcfd7c030a3c5380246d7b44ba343e31a5",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/RedHat/installation.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "160718014734adfab961c7d46ed5d73449ce41e0d3fd6fa85e69f86d2cec3880",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/SLES",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/SLES/assert-configuration.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8393b9c7a42ab6b51b6ad678ba4f5580b0c5535d933c45563fa2c74ba6481b9d",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/SLES/assert-installation.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "42e8a8ebb5d61f0e1c86a555bab2ec365e0bec86ab6c4f91e2d4dbdd5e206043",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/SLES/configuration.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0f8032286ecad4154961372d3b2cb9e4fe9921ebe89524199be32f8332461eac",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/SLES/installation.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "615ac98f3d1a186a3e322ddff9ee0f0641553a83a8e4e895c63237c4e6f89ab5",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/2002167",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/2002167/02-assert-configuration-changes.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "061d807c47cbe983f1ab211bd6c56fa9e89f9f698a26e4445802d94597d60489",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/2002167/02-configuration-changes.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2c2f1b0283087ee922cab56073b21b808ec542209bcb56c5016f87fb0bf08536",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/2002167/03-assert-setting-the-hostname.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "653d43108798707d706ab3c483ac6b7fe68588773ac32cf8df343bd214a93482",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/2002167/03-setting-the-hostname.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1388726a8ad897c8e8d745427b3bea4b737db5d9f30878edc8083d35300f3611",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/2002167/04-assert-linux-kernel-parameters.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ee2086ad4a060fce360006fd40148f203b59fe7df78e99de94d688322f154a15",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/2002167/04-linux-kernel-parameters.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7e647a7c150b1cfdb30f7375afd7f0f5c19eb68032e7d059ca9c7af91dd380cc",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/2002167/05-assert-process-resource-limits.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c97ec0f8947e01d867a80ee0ed4a465890f45db8b7a3f531af24b7a99783083b",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/2002167/05-process-resource-limits.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2729bd38444f0da9f1b597d587bd57c1e17dbcda424b335f0b62aedfd0e5d7ca",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/2002167/06-additional-notes-for-installing-sap-systems.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5837a5c5b1536403cf39e75d2a489582883a40ec51655c1b4ee2745dfec8ff22",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/2002167/06-assert-additional-notes-for-installing-sap-systems.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4129d0dd16c018c7b7870c7ecb088e6d11f92e513302a8b5f711f96f354556f5",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/2772999",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/2772999/02-assert-selinux.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0bfad30ad66bffc501283768b7f1de8202e8cf49467e38b0c24d110be83b07a9",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/2772999/02-configure-selinux.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "13308426f543c8a17f9051fb84de7765e6c7383a7c247f9b780b8f9461d40d23",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/2772999/03-assert-hostname.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6751d9e6a65baa0d58be4482b2b4bf22561387f2a0813b52d02f941a7e4301b0",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/2772999/03-configure-hostname.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9db8c7a5e03e21652fb252127da40c209e4ce7a72b2804a389226d58a84e1e9a",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/2772999/04-assert-network-time-and-date.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b75e832aa087d5b50f8267ae4c888254dae750c89e5eb426f4a4cad7d55f6766",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/2772999/04-configure-network-time-and-date.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "aabf45cbf6adb8263dd1954b28c804ea46b6e34258733be016acf4416c7d84aa",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/2772999/05-assert-firewall.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f9661f60c69d748fab8a6fdf6f4cf9aa295b91b7f0cf474aa4d6ed8479031748",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/2772999/05-configure-firewall.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b5fd949215b29a75a4548b90e0d93f5ccee4fc24d38960770af7b7dbd56753ee",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/2772999/06-assert-uuidd.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d3398fe3611a6de879b1a83c1953d0d206ac260c41db28584646b2d8bf09ae1d",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/2772999/06-configure-uuidd.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "800cc356b240668681750ee6b9bfa672b4e70aa31bc19f4801ef892f4d4b1207",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/2772999/07-assert-tmpfs.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0f350e4ed91777fa74d95681f5a3dddace41756d7495f569d105597d14801680",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/2772999/07-configure-tmpfs.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7c00e8c5f99359a35f3172cf6e435d5ed16c55f88825fb1abd3d2062a3a0876e",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/2772999/08-assert-linux-kernel-parameters.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ff107ca430dd23f3a085215281e015baf26c2b71832a0f4e4d11af72bf6f852c",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/2772999/08-configure-linux-kernel-parameters.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f87c288ffadaa1e11e6c5a8a9418d8210a4ba8353580b37a05869e1d2ed57573",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/2772999/09-assert-process-resource-limits.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d5391580149a1e2fc2e2dca9aaeb19fca42879978392f0261a8b650463fc6979",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/2772999/09-configure-process-resource-limits.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "333b4762940b170248087e85277ef80f6b8aac4081ea78452582129abe6f1619",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/2772999/10-assert-systemd-tmpfiles.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cf07fa5e8a9dd40c28b5b9ac10396b50fb6d6e526d0645245ffa36e6baa00daf",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/2772999/10-configure-systemd-tmpfiles.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8431fb3c44d71fd1d740812ccf42ee7a1908be1e20d389ea242da9fba162f3b9",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/3108316",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/3108316/02-assert-selinux.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a8911de75fdd68af7deb687a9181d4d5321741f0c858bf48fa209025aeebf648",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/3108316/02-configure-selinux.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "dd9df1122a8367a45e7422a1d7d3a161ed4678f18c24c10b8d688adf38f20e56",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/3108316/03-assert-hostname.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2a79d621547808c1cb1758e641bb184c534e93071abf0617f256a0449f92d4dd",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/3108316/03-configure-hostname.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "113bb607ba7df52a53ed8da208f52ede6abdb8e21b8b39e659e694d6174042b3",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/3108316/04-assert-network-time-and-date.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5fac86371a0a6f48a15a95895f15490e776391bfa17aa64235f3a38aaabd03dd",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/3108316/04-configure-network-time-and-date.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fbbe7922f416956e1372a3528e879e9789db5b472985a8dd4c9042782afed38d",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/3108316/05-assert-firewall.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a62b71e8435eda04de5c9463d7ece1f0eabd4ce26d3d674ce291461507169df7",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/3108316/05-configure-firewall.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fdcdbc34c40b8ee4c701117159d53d282bb87e8805dbdea941365c67374f0a73",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/3108316/06-assert-uuidd.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e0092bd9981320d308b80ee90521fdea857fea24f1f0be0ca0de9e9cbfa20659",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/3108316/06-configure-uuidd.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "78c2eaf56ab10cf703de42f0b97f8ed3ec02369a798c853e9b99919ec766cd46",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/3108316/07-assert-tmpfs.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3f4582ac927ab653bbdcc2ffc6da0a2c6025a87706b5bffac0e2e87c1a97bbf4",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/3108316/07-configure-tmpfs.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c62630b09ffa3c288269ddb0471ebae771b8098379e9bfcdfc77440f0fd37387",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/3108316/08-assert-linux-kernel-parameters.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b9cd712ddf72e06b8a8e8bfccc3cd355f115e6d980e9efb77963005d45748370",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/3108316/08-configure-linux-kernel-parameters.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5bb18cc86a3023de2ea869b2adea5716421235e093569daeac15351ef48da202",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/3108316/09-assert-process-resource-limits.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "50285a2224d2d25cf62ba87eb1ffc34b156732a795187d12b6cfcd7f9df0e368",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/3108316/09-configure-process-resource-limits.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ab75de13b51ca5fe8491603790b8dd405d2c1d2447322e4acadd7eb5c42f64db",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/3108316/10-assert-systemd-tmpfiles.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "61136c3b576bdc9dc6d986768db90e6a3f06d67603344ae9fbe4d53f46d67b4f",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/3108316/10-configure-systemd-tmpfiles.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c7e9d7b5af9d221fe00e957324839e295de39f5b9c2694b7d326205f4d1acdff",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/0941735.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "46e98bafc98047747e20bba47f5104845ab3fd9bef8c8889c127a8446c146173",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/1391070.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "410f44b8bc7e09a1f0ffd2af292e4aec798933213e1f92fc160f7e86f92743c6",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/1771258.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "159925f3c400acfb7be3f198918362bfc71f7f8ff0562dcec0528b4e19eaf559",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/2002167.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c2c390028debd867ae705af3167b7425ee46b1a7e3a9a3677277d47c2e1326cf",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/2772999.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f59910a57b0ac2ebff33111182bd2e8a5e302521fb7d41ecd415cc0872d09b3d",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/3108316.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0365209b3b86fcb47278b9f151fd481e801cd1d707f082008dc423ea89971823",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/assert-0941735.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1d76dbba5857e38baf20ebd37ecabb3899145bd214e33fdcb56bc72f65d1d7b9",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/assert-1391070.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f3a9a45b90105a483d8fedfde33e71c71a2ffaa26b76660aad314c5bbe559eb1",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/assert-1771258.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a3a05379bc37769dea05cb940d69c16d87df94e92dcd8c1cf85b917d2e32956c",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/assert-2002167.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0a83429e9effcbd4002a22c4fab75da8a653249a930b262e5540861fbab3b2f3",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/assert-2772999.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3efb3ba86d3b868abecba290426ee05edeb16bd3b99209df766e42252ad1994b",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/sapnote/assert-3108316.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2e6b775fcd94ff065c5c6e314f1ea12a0daf56927377a262b60449bc5bb9a016",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2f5f3429d4ef1381743d1fa54b3c36ca97e5e143389e11e3e46f362baa70098b",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tests",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tests/.pylintrc",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ea692ab19464395095cf9c761aa65d20175f5f3862d4255172337746196f05f7",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tests/beautify-assert-output.sh",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5837217b260d32162eedb46ca962ced7b09885cb1e2d65b3bf182256a5a8694e",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tests/run-sap_general_preconfigure-tests.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "301eaebbfb0795dcbdef8a08adb4d9316a5733f1f5b42e12ba6266b752fe842e",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tests/sap_general_preconfigure-default-settings.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c8b1e94920cef11b38ce99dcc32abc817de8b696cec4f76962e0e12b97a23823",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tools",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/tools/beautify-assert-output.sh",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5837217b260d32162eedb46ca962ced7b09885cb1e2d65b3bf182256a5a8694e",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/vars/RedHat_7.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4214ad4ddf41a113ada84006aff2b5eab535310d9a39bda87d1dde006d72a97d",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/vars/RedHat_8.0.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "87295838612d050e98e5e19a32a7977918fc73937459cfddcbe3a44bba9503c3",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/vars/RedHat_8.1.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a6f177b1d0b9b4f5a72c7f8977278f710da8ae1f5dfad0145189e6a71a2ff519",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/vars/RedHat_8.2.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eaccd4051e5f844ac6ba83869671dbd40018d75518f73e462bc513868d815973",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/vars/RedHat_8.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "58d9f71d2aa95dc687d2fae9d1cae8f297b5d60f3cbe5849be204087576292df",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/vars/RedHat_9.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d449ced759c97fb731457b220d9dab14f69eb6217a785dbe67995131fd44aae7",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/vars/SLES_15.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ce025c3a701b3aa1657a308d7fed7ce76e8fcd9bc719b7b08d5bde8a99840001",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/vars/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e71eae382a4e9515eb3c32f1e80067082e98e7c72e377b5b5b11039a5adb8bd3",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/.ansible-lint",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cdaa7a5b06f08d45ef69f37c4900af572b2ba278591e6f139c8c0b2d4b67a644",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/.yamllint.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "472c1f78b944dd89a218a05882b9e6e6f7a0b468680648ea16aec26024d698b9",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_general_preconfigure/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "932d46c29c7d8b3f9c88de4c5c41a334d334e7aa2c87faf1171230cfbe096d9f",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_install_hana_hsr",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_install_hana_hsr/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_install_hana_hsr/defaults/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "692c27af25b270b73c3d533f70a5003b658dd008b50bf8d702c6a130e2daad75",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_install_hana_hsr/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_install_hana_hsr/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "930ef500021e5377aa2c15dc4037210165f7ece0d6f11ad0d4d732c978b6a7df",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_install_hana_hsr/meta/runtime.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "df18179bb2f5447a56ac92261a911649b96821c0b2c08eea62d5cc6b0195203f",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_install_hana_hsr/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_install_hana_hsr/tasks/configure_hsr.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "37903d82fa0a9e6f040a314dedff5cea049022a8abd9d3fcd115aeda2b53122c",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_install_hana_hsr/tasks/hdbuserstore.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "49ff15068cf1c36cb1a22094ed2aae41df60efc5d5625ada2ae10a554bf58e80",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_install_hana_hsr/tasks/log_mode.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8c0128f054732ced6b67791a9e700f128fc2825c9f4676c22b9ae35abc444683",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_install_hana_hsr/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0a65665a4369bf3105e7fd3d981a03d6804718bcd99f7ce2ed1eed07f30502b5",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_install_hana_hsr/tasks/pki_files.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1e44e23bba9833a5bdcb5217537dac7ece01f39d986b2bb26d0ab67595c8b4d2",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_install_hana_hsr/tasks/run_backup.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3233ea7734167b4408f7f4615ad06b6b875398f44ba4630401b88d109950e45a",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_install_hana_hsr/tasks/update_etchosts.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "144098f67357672bcbcd7523a470ca40d805fdebff50b4cd3528c0c442950c87",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_install_hana_hsr/.ansible-lint",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cdaa7a5b06f08d45ef69f37c4900af572b2ba278591e6f139c8c0b2d4b67a644",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_install_hana_hsr/.yamllint.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "472c1f78b944dd89a218a05882b9e6e6f7a0b468680648ea16aec26024d698b9",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_install_hana_hsr/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e5af695ef29f7c55e9f9281a7f6375daa996d0edd80294489d01b4ae2f37ac2d",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/defaults/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f96ffeb2b9294442f68511b5eccf57e749e939d4533354463ed8e4ca880d40f7",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/meta/argument_specs.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "00489527120d9100bad1440df3c535f579cd669e5ca347d0b21636c7e477f2e8",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "34e1424b81fc4b678c6745a9727f40f17fbd99a84d43f3622b489224f363f308",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/tasks/platform",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/tasks/platform/ascertain_platform_type.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "80560d7511c4a47c83aed0bd03342b16735f59b3dae1f57300e2ff8f56184be4",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/tasks/platform/construct_vars_vip_resources_cloud_aws_ec2_vs.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3b4047992bc57abdff7b4d5dc04401a557b8461875844b218d2d2ff47c9f7c19",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/tasks/platform/construct_vars_vip_resources_cloud_gcp_ce_vm.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "166cd8d59fcb28e678ccf88c7262fd385f376a75d080f3165de58c8456ea9811",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/tasks/platform/construct_vars_vip_resources_cloud_ibmcloud_powervs.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "28ba255dea40efcbf55718928bdc9597b2a00406a58baee29eda67db70bbb4e0",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/tasks/platform/construct_vars_vip_resources_cloud_msazure_vm.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "115fc58135ede3eb7037d01232588c609b77fd25039f01543d654bd1064f815b",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/tasks/platform/construct_vars_vip_resources_hyp_ibmpower_vm.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "28ba255dea40efcbf55718928bdc9597b2a00406a58baee29eda67db70bbb4e0",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/tasks/platform/include_vars_platform.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b87ee70374e24efd43ccdcfb5a9b2befc3e7997bbc2e3d9339f1fbc164bc3a09",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/tasks/platform/preconfigure_cloud_aws_ec2_vs.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "88a0d7e2b517cbc2c6f39c72115413af9b14427ac2191056397e4892ebffe932",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/tasks/platform/preconfigure_cloud_gcp_ce_vm.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2e76161d69a8782c52aaa8df1ab1615bae4f648aeaccc390c44058ba4815c2a3",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/tasks/platform/preconfigure_cloud_ibmcloud_powervs.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2aed7abe962c249dd149125f4c2660e48af46a8e13ce0db18e6b8e2c80c18812",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/tasks/platform/preconfigure_cloud_ibmcloud_vs.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2aed7abe962c249dd149125f4c2660e48af46a8e13ce0db18e6b8e2c80c18812",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/tasks/platform/preconfigure_cloud_msazure_vm.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2aed7abe962c249dd149125f4c2660e48af46a8e13ce0db18e6b8e2c80c18812",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/tasks/platform/register_sysinfo_cloud_ibmcloud_powervs.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5898b05d59afa22ff6cd9fcf02c73ee3a379b32226e0ffbb5b8b8efefe089262",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/tasks/platform/register_sysinfo_cloud_ibmcloud_vs.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ae7c8a78570cee7311a612ef268d1ddf178e31ac2a78e53c4eae67858a07f83b",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/tasks/ascertain_ha_cluster_in_inventory.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fb7a16c7a005379719575872ad38bbdf5a29a42ab15a38f9a663ec23247ca966",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/tasks/ascertain_sap_landscape.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a10af48685c825ead7d867715adec3603e339974c6a04ef526ce449a991b7adf",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/tasks/configure_srhook.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6a25e0872cf9805b1890ec6b7f6b5cfbefe0662ab5e88cddbe68bd5d8dd6df7b",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/tasks/construct_vars_common.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b809ff6f673adac9f119b4621eae2d8f7936907ab6c26bef761c420cc31b041a",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/tasks/construct_vars_hana_common.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bc9b769115c84f155a0bcdc2f295368b843cf258cf56eb084e55f9b9d4f4ddba",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/tasks/construct_vars_hana_scaleout.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "78306bd0a62ed6e0a569b973939261e27255ab6b3d57f3c674c4b25b7dd0ece4",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/tasks/construct_vars_hana_scaleup.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "019fef705a0ff4993fcd8b0aceafa125f0d0f0680e0a778acc56931a45d94d12",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/tasks/construct_vars_netweaver_abap_ascs_ers.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9326610d27f260f8a8240df898f1caefc884640b0b1375825850bf3caa979249",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/tasks/construct_vars_netweaver_abap_pas_aas.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1dbdf5f038095d955e696236dc50fa569f8b93eedc72c2ec97ed7017b0f8e6d0",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/tasks/construct_vars_netweaver_common.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "679be0d3ac6cad4b3f605b3d8ba469d0e6cd46f75660cd2f86bc4a878c4e2fdb",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/tasks/construct_vars_netweaver_java_scs_ers.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8952074e3fad9765840737a41642d492708f95bf19bead9006ec94a039614bb8",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/tasks/construct_vars_stonith.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "95b5c7a1b62ba62871591f208472049f1c32f9b9f8829aba8735e1dd48dca009",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/tasks/construct_vars_vip_constraints_hana.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e4c6ca26ec57b99d2e2b7d042836f08b21a51b74c7cfc677ea77c0955f11ffe6",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/tasks/construct_vars_vip_constraints_netweaver.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d2c8105efaeffa1c46bc8baca87858ba0168962ced48ba9107ca0dbf44355c6d",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/tasks/construct_vars_vip_resources_default.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1ca62174a2a967d6af869672e8ff45c90e9ae64072a97804b8e528a9b04a4810",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/tasks/include_construct_vip_resources.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "486ed1fdb4178a21ed1201f916a22fdc0717ba1aa5b5c731db6592b83b34b8b3",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/tasks/include_vars_common.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "886d64c31353f3a872e89ada6f724f27ad20b3fdf9e7868c1585c73d0aae6946",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/tasks/include_vars_hana.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "74c592155f690d29bc4f3400f9b8980a1ced20981e02aa5cec86b0eee9d6f937",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/tasks/include_vars_netweaver.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2b571b545ce7c9be07ce39c460fe413d40f51a8d976055b1552ee2580bae52bf",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5936cfeb98fb18c1b2dac5c5d8b1014cf4e1dc69f3b1c626ed66aafbec107e29",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/tasks/validate_input_parameters.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "80805b092b832fd82660b1062528a19ab9791204daabb6ebac0aceae13c71258",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/templates",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/templates/cluster_create_config.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c5d2f9a99ff0107eb68ea18e7b4e221786968ee1fdcc35aeb7a1e229ac0ea3ca",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/templates/sudofile_20-saphana.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "822da1f7d1ed759fa20449055a21b0faf2d9c0dbf561d17da3f6fcf21decc6e5",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/vars/hana_scaleout_common.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "54883cead9936751275953697d9ab66cad2a4870846cde60ca952a1972eb6b19",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/vars/hana_scaleup_common.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1641b51dfbea8f8edc88e9b25e2b8ce7283779c4d22211357f68330039ba7bfe",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/vars/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fd0732dd4358bf5dd9677e8454490d94343b8ae4f1eb6bb0f54bd8dbacc3713a",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/vars/nwas_abap_ascs_ers.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f3d582244dfffe4fe847facfe4da472043a4cbcf9f656e8c28969b2c54ff0458",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/vars/nwas_common.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0b092061d5acd9cd9adf95dec44c32710185d0d4b3624b20e31a285dbb3cebd0",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/vars/platform_cloud_aws_ec2_vs.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "aa30a78621e6bff7b2de6098627a6a770fd329fe431a3c8df64ce6d262b1d423",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/vars/platform_cloud_gcp_ce_vm.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c0360907f9018fc38eb1226fab382a140783318a4f03a34b87c7f7e616f90223",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/vars/platform_cloud_ibmcloud_powervs.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d659d6e026d8277490f7d0bdeec773f2f5eff3bbe62f17263b548f17d4ffb3f6",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/vars/platform_cloud_ibmcloud_vs.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2c9024e54bc5c02e07bc3e9b74e6d47760893dcfa3f214376b826c6a0a5a8a70",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/vars/platform_cloud_msazure_vm.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c5d1ba87e6d6c3ae63c6a594d5439af2e25f2f62ed6d569405f6abb1268d1e62",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/vars/platform_hyp_ibmpower_vm.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2e768646b287253df7a20d11e8927f4982e857180bb7e8301eb5eda80655c1ec",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/vars/redhat.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8bdb5a0399915f5cd74e4d02415798e256308768acec042c5414eb9d68019bdf",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/.ansible-lint",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cdaa7a5b06f08d45ef69f37c4900af572b2ba278591e6f139c8c0b2d4b67a644",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/.yamllint.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "472c1f78b944dd89a218a05882b9e6e6f7a0b468680648ea16aec26024d698b9",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_ha_pacemaker_cluster/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ed4060bfc0bdbe4c69af911fed79eef64b736678f3c94d188e25f5b97e12cda6",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/defaults/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5ba16d50dfac85c04c8b4f49e1f57949f20dee9a310f176042f1d84262b1858f",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/files",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/files/tmp",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/files/tmp/tail-f-hdblcm-install-trc.sh",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "46677e6e8f55f9e2ab2f7021444a0e6b15d963e93051da52cea2ba81ccc8f4ac",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/meta/argument_specs.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "84673e5c588b2534449f0c3862291a40aa0f21a32594945fc868c981ac37a61e",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/meta/collection-requirements.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f5a247f932498ccb0d91284b6a4ff7c8970eeb027b4946bb4671e9bf0a62c0d1",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "388f74940a772e7df79c36b3208e8a80d57cdd88630337fc786ef5a50d74b932",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/meta/runtime.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "df18179bb2f5447a56ac92261a911649b96821c0b2c08eea62d5cc6b0195203f",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/tasks/post_install",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/tasks/post_install/firewall.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9dfdcc49226ab18b25bf488061f8edf79de796f77e54d5bc39313378a19d0317",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/tasks/post_install/hdbuserstore.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "77bcc7824b38e77161f8c39f8344b1b908fab5347c727c68130d95d296ca834b",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/tasks/post_install/license.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ce1b0815cc939d867b8f2505a5ac42e871d1b51d19b1421eb2508c649b86abd0",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/tasks/post_install/log_mode.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "14079a680cb3d84c17433f5a1c12548e296daff1a542c46d902807456e09193c",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/tasks/post_install/recreate_tenant_database.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f7fd0ac3be3b52abb6df94a8ae388c3981fa27634bec1271b973aba4fe165208",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/tasks/post_install/update_etchosts.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "67cd4f99c8b7a89eb9583cacd6fe8de1003a368d663d8bfa74bb11feb7ddf47c",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/tasks/post_install/update_firewall.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "12e3d29029f0263afbecffe536d37ee03dc7d0abb6ec3bdb870c26395de359a4",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/tasks/pre_install",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/tasks/pre_install/extract_sarfile.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5da3e6b14e472353118880d90eebb7f0e0a3d1842adb9f00f161e0ae8c0449e3",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/tasks/pre_install/hdblcm_configfile.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8d7e3743be4f3db3184448bf514449fe58a74381d765fad7a5b70d9ddba8447c",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/tasks/pre_install/hdblcm_prepare.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6ea63f66e3f6ca5d8c6f06b417c999026f8b41f81e5912300e16823de44d9ef6",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/tasks/pre_install/prepare_sapcar.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9ddc34ce804769d3ff40f0aec01f53a033b042a7289f8d066f2decd8a0171f2b",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/tasks/pre_install/prepare_sarfiles.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8142a7d6580dff341549aa9becfa5204cc2a8b93f67e0f58f751fe4867391a3d",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/tasks/pre_install/verify_checksum.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0a8ef0e3621b3e13e6e2b924ffc43b05c42e04d30c1076e83aa36429685192b9",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/tasks/assert-addhosts-loop-block.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "235397ce52f72817806283ba2bf4b9cd618bd399e8e4823f2dcc28d3cd1b2f80",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/tasks/hana_addhosts.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "638b66a06fd3c7c60a9bd95f05008c7762e467726b4026bef12f96fe092b25f1",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/tasks/hana_exists.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1967e1e95355a2319de61063b31b8e5c9ea02390931cfa58916df19b0550f4e1",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/tasks/hana_install.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "519e18f73cc948fb9d7cb2fcea97fe5fed5c6784d7e3665e1c24822b5015f81e",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "67529ae09a2051cfe042390e4a2158748f22bc58b110984dc120a43409c578c4",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/tasks/post_install.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c73c23fc6b12a3366e4eda35b32a50798e89debdb0e7b19b079933527ed93365",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/tasks/pre_install-loop-block.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0bcdd7cede13d3bbec5642d186b46eca35c1b9dfb202061e9fff8c76a221a03f",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/tasks/pre_install.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "33a9b57442df2e21bdbb36b932b25a1df8d7341ff9d1f9de83401136fde63a82",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/templates",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/templates/sap-nw-input.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0645683a60c29b430dc6a7be687e25e4e2b163777dc0e90251186ee0d5442aeb",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/tests",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/tests/install",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/tests/install/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "748b783a5952872e38a67b79e9195e744cbb928e094a8f4821044b7fd81ba596",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/tests/install/hana-uninstall.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0c4ea1db753e1c3593a54e7e91525c25abd4b11b29cf445bd1d7c27b4f51dc62",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/tests/install/install-vars.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3692879cb05d194a42316fc2b6d07cd9dba03ad1926dfe83a67495608264cca8",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/tests/install/prepare-install-test-01.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5461765ca491dd34eec9decab3fa16513a952aa38897d904e09c8067604b6f31",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/tests/install/prepare-install-test-02.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "793f19b0438fa4169ec57486abca324376bcb8ec59a968b41fc535466e587373",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/tests/install/prepare-install-test-03.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "793f19b0438fa4169ec57486abca324376bcb8ec59a968b41fc535466e587373",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/tests/install/prepare-install-tests-ppc64le.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b43ed7d0aef66f0f08332a69c1e2e7fab91c74edd3b724a445777dd8b643c918",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/tests/install/prepare-install-tests-x86_64.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "85e202befdff64758a9e86fcae851ad23d8a1414cccfe7f85d793794d539b4d7",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/tests/install/remove-all-firewall-ports.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "55ce7168a1ee376135a95327946b4f269a3e7a62bebc380d1e08616938c80973",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/tests/install/run-install-test-01.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "97f1fa7be37f4c6c46caa8152c3a58c545effcd29e732fbc0891660e0ac46be0",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/tests/install/run-install-test-02.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "97f1fa7be37f4c6c46caa8152c3a58c545effcd29e732fbc0891660e0ac46be0",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/tests/install/run-install-test-03.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "712932955c6f1d9cb42398c0b92950b21210e4a76a996f28f4ef5a4e31fe928b",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/tests/install/run-sap_hana_install-install-tests.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f31eb4a30cebc90eac8cbea97f84514b7f3f4617684ec9d0ba3b1d08730d215c",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/tests/sapcar",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/tests/sapcar/prepare-sapcar-tests.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "db3c5217f53ccb4e73296107206a52ebf72e671f0df83ad0f33dfa8402f08840",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/tests/sapcar/prepare-test-01.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d3b455a1c3ec1cebcd9e489ffd6348a4789e8eca8bec60d7568c843cd60dd07d",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/tests/sapcar/prepare-test-02.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a0d39a7ced46f7ce993e7be243dbc2eb77a160c6856b38526177c34ccf714f89",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/tests/sapcar/prepare-test-03.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "086170cd6121904dbc0fff5c18009601b3b50ebdd3c1fb3deb149817f84d0974",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/tests/sapcar/prepare-test-04.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f29b9a8a8e3fdf78db1e36a8e519a5562f85924b26a53fa9e29f455f85b8568c",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/tests/sapcar/prepare-test-05.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c184ff3197940e796167ac681c702195ea75241a88882d6f68aed4520c27bf01",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/tests/sapcar/run-sap_hana_install-sapcar-tests.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2a88139df2836aa61002de84b07d2fdfea6d0e77cd0c3408f7e8567d833d060e",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/tests/sapcar/run-sapcar-test.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cae6a5b1c967320d692e1099d291242477ebaf0624c0b927b4b71897fb590295",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/tests/sapcar/sapcar-vars.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "45246318b9a1b6aceccb1b2b087e77d1472436db2857880b6e428399b59c123d",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/tests/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fadbd984d5b565ebb5c0862fad2fadeaa6a5f69fd85c18be8df239a4681d651c",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/vars/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2e52f2a609935be38c399ca6f651e3055f18f91fa0abf802428257791567a6f4",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/.ansible-lint",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cdaa7a5b06f08d45ef69f37c4900af572b2ba278591e6f139c8c0b2d4b67a644",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/.yamllint.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "472c1f78b944dd89a218a05882b9e6e6f7a0b468680648ea16aec26024d698b9",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_install/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d22b98e79f7dac15245fd504f91882b6f9c97241d787e1040f06ccd1abe8bb7c",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/defaults/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "edd1c985b48a671488f76f90397b1c399aebaca48c8f17f74b03d0fb2148bde5",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/files",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/files/etc",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/files/etc/tuned",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/files/etc/tuned/sap-hana-ppc64le",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/files/etc/tuned/sap-hana-ppc64le/tuned.conf",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8797c0caf0f17cc1cf624ace1ca695b3da172ccbbbfeef54839f6c487551bf0c",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/handlers",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/handlers/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "06b7b48153998923469f898c38657b32c97235b3123ca7ddc49f6da37c12728c",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/meta/argument_specs.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c4f139e86ef2177bf4487a8418235d3511d268b06709483229fcd32ec6e6a35b",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/meta/collection-requirements.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f5a247f932498ccb0d91284b6a4ff7c8970eeb027b4946bb4671e9bf0a62c0d1",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "16112e529fd168e6186a40414fddf49731d0e2442b433ba440a4819ff7506477",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/meta/runtime.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "df18179bb2f5447a56ac92261a911649b96821c0b2c08eea62d5cc6b0195203f",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/RedHat",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/RedHat/generic",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/RedHat/generic/assert-2055470-loop-block.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1890c0f51231b927c3d67abfe6d265b6930eb218af275f5ad02b6338597d18d2",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/RedHat/generic/assert-2382421-loop-block.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "68c31b7fbd52f722f7f504e5f1ea2891c6dba7b54d561ac45f262900f4f206c2",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/RedHat/generic/assert-2777782-01-loop-block.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4998a4963aec973a6b40e52dc0cea094b9f63a2bf64760b8d98843db7d8ac66c",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/RedHat/generic/assert-3024346-loop-block.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d252173082a892cabceacc165013133f3d4df267fa8e2bcb93abdbf9cdd92d0a",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/RedHat/generic/assert-abrt-ccpp.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "686e6046e90fac124a410dbd0d447cb3b9d7f487504bfe809b309ddd97d28da5",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/RedHat/generic/assert-abrtd.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6d9cc3a0b58d51b43497334f86f1b08914c5c095e047a52975f6b549ff99bdc5",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/RedHat/generic/assert-auto-numa-balancing.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5f81ae3db028133d40dd901f8ce0ff080823c8301a87e687ee82a57417234886",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/RedHat/generic/assert-c-states-for-lower-latency.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "90de0ee32100608127f51f601318d4ef07f4eddaf6cbdc4caea422c03c374b78",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/RedHat/generic/assert-coredumps.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9d60320dbdd489e0fd0ab27406e7d3d70935b5c12b5a8cc5fa26900e5850d7fc",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/RedHat/generic/assert-cpu-governor-for-performance.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6bcf8466b3c59914dbcd1fbec40176c618e6455c2fcc846c5b885d4cf51c4dd8",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/RedHat/generic/assert-epb.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e39e08aee4cd95b220c83fb0b6733ff0e9250b1643da30c1f825e2e9aff95b3c",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/RedHat/generic/assert-firewalld.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b7c201055ccca10b4aa05996cc089d2dc7c5a5a7b941fce0bc60c72ee72c1a9f",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/RedHat/generic/assert-kdump.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e24ad31155b7490c51afcabf495b6a4cc8300ca986a8151f57ce53ab919a0efd",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/RedHat/generic/assert-ksm.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a87090422fc7fcbd40e0955d58f208adb0456791c3fe2b830919def28ad4ce23",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/RedHat/generic/assert-selinux.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f1778d7a6745bda9311607cf6982ca9e6df4b70be5314ff872a90bf5dcbae6f9",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/RedHat/generic/assert-services.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "98f791cc6ec287d12f7725d28feee5f1efe10a50db0f1aa165b2f94230dc0f58",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/RedHat/generic/assert-thp.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "77a122c8d5a9019cd03e8c7c62dd1a70b81704b6402bc6280ef376b6675f87a1",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/RedHat/generic/assert-tsx.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "068c3174d92779738fb06462ef4b2fa30f5ea972881d8469f6b3ee388ea1d10c",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/RedHat/generic/assert-tuned.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "62097b6f1b363dc024e93b12f1fc80a165d30ea3da4389abd53dcef4a77b151e",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/RedHat/generic/configure-c-states-for-lower-latency.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4a9cc96c5b322c1002e39aa7b714d148cc4c8b508fa8d6d3d4cc9b1d2885ec8e",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/RedHat/generic/configure-cpu-governor-for-performance.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "19579da4f379db3976734ae35a84ff5d0f23f18fa6460c54e632868436cfc677",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/RedHat/generic/configure-epb.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "66b781cd0b7995fcb5d51fb388b6489ebe53907867db7b1673f5778eda42a177",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/RedHat/generic/configure-selinux.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ceb7d48bdd982f44770c3a9c57d1023a283bcd243ea2d5917209caf76d385b05",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/RedHat/generic/configure-tuned.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "157efda8fe473981d4616d775a9f996ba9cbf7c452129e27c907a66e8a65468a",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/RedHat/generic/disable-abrt-ccpp.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ea64204563273e82188a0c830af05036543a58c4f2056b1d82ebcbd995972b6d",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/RedHat/generic/disable-abrtd.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b640024258b845d977299915e284f301ff5daaaa0c0af07f0d14fd797116565c",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/RedHat/generic/disable-coredumps.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "280626b4c88b049af1e17cadec7980d52af3b5fa3da03928a9c2867a03eff37a",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/RedHat/generic/disable-firewalld.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7429e050573e5691f1bb22b8acf6a4d5ea6ea8b09eea5627955a9d9f5bafb167",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/RedHat/generic/disable-kdump.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b251183df5e7707b7e1b0ecc2b33c1da4a1d01c95517a41f6e72a1715cd838b1",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/RedHat/generic/disable-ksm.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f7a42cd7f4142b02af3145795aa02fdba1b540341d454cd9fee35b7e1b288ad8",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/RedHat/generic/disable-services.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6452d7061faadeea6d083ec7064466b07912d3b3c6dcd66f6537f5f10ef6f82e",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/RedHat/generic/disable-thp.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8951d62515f13ff86b048c015a0f74559ebe66e9394f6d8d6e1125cec09dbd9f",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/RedHat/generic/enable-tsx.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0efb3faa1696da43075982e5925b2df1abd0762fbd05dccba219f0ebae111c50",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/RedHat/generic/turn-off-auto-numa-balancing.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "81100938af2a276213bd2bd00841d3f0206c34edbfa139fe40244f7460cab812",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/RedHat/assert-configuration.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4837a642563fb6224ce32145214947da8096ac7eb5e1951246e753c17b8e7b20",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/RedHat/assert-installation.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5b131623663f1d3b2ad6669536d3b9e29605fc69ceeb851eec720f0698df4465",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/RedHat/configuration.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f8f392f6e29a400b0268c3ce5e00cc3c3524d9252ac8f66d6fe730222b835ae3",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/RedHat/installation.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "743096796066cf4bc9098eb6836cee8e00ae3ad3b8913007ee7db772d2485eb0",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/SLES",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/SLES/assert-configuration.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "58801a6265d001edc2d4fd4cad9073d0a90228847226f475b49d60e80ac4e78a",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/SLES/assert-installation.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6c8ae9e17e58041cbd9d1a83f1fac4ff4765d60bd7ea0f68d4d849aacc49e2dd",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/SLES/configuration.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bfc2b4376e40110ca7d3f917d53dd4842db0a31f93dbb1138757928e69419f85",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/SLES/installation.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f779b64d555d1c1d042076f75b6922c0f96d3c84fc6f6e167681e9aab192ef54",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/1275776",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/1275776/configuration.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "50820d6e7729dcc59c9facb0f54cc9fac63ba004ce5f45325b3dcde918db0f5f",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/1275776/installation.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d727a0eb69c387ee9b03023c7d71c0ad215e38f9802ca55dcdbd47b096eae5c2",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/1944799",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/1944799/configuration.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f52d711103d50a437830c6fbcd04fb4bab49a0f82f6d26d1c791c6e8488dd090",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/1944799/installation.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "aef1e6669c4f0a13af799456861ac7d5014640253776ec3a4708c2bd7ec30dc2",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/2292690",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/2292690/01-assert-tuned.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "636b5a192373b9e29facb5fae2f9f5e715cfb489ecd1e0d88346b07ef77653e0",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/2292690/01-configure-tuned.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "96931cae23f1ffbba2b08537d0dff1d51b81f1d68918f1eddf33380821edfdaa",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/2292690/02-assert-auto-numa-balancing.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c6beff90adfaa1ecd6acc7e9497fe91f69c7ac4cddba90b1ad82227a97be9c6b",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/2292690/02-turn-off-auto-numa-balancing.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f6d4e08e36f0900244158d04ce3052c87d8abb4cc7c22b20585ffd92180dcb4b",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/2292690/03-assert-thp.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d869f782e90877da5942c31b1db153e396c0f68f24e33debb813e9c79a2daf8f",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/2292690/03-disable-thp.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "88a5c88897097d29eed32c8448a7692f796da7c252c680ed72a987d98f7950d3",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/2292690/04-assert-c-states-for-lower-latency.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4c92f044d1b960cce9fa0bc581200f67eb754cf433500d78d0ab5139c165ab0e",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/2292690/04-configure-c-states-for-lower-latency.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0a7a935891fd23b74dd788010deecdbf97cb174d245e3e306e6b61e1ac39590c",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/2292690/05-assert-cpu-governor.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c5d31a5ba07feef7029089ede0b00e60cc46d7c683cc30342cd3f571aea9af44",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/2292690/05-configure-cpu-governor.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6eabcf92abab8414d60b0004daee4bc23c5c2f074b7a99b428eacda10cd0322a",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/2292690/06-assert-epb.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "789dd3340a05ccda9741793bc326308c9062444de59dd11063470b071d087760",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/2292690/06-configure-epb.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d6ab6f67bacf9741d5fdbda8093124d62633dd5d035f8c032a6266fdf4ce092e",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/2292690/07-assert-ksm.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "79a414d8d88d8df67cbfa15446777f01055fec6c190a7968c478f53b826f4b5f",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/2292690/07-disable-ksm.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "91668a8993344eed206c8519a916ef219ff5ce99ca31d5b68bc3eaadaabcd614",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/2292690/09-assert-etc-sudoers.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8abd04a97014e595ed8e5b52dd2bee3b28be5fa3da574d83629f43b99af5d5a0",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/2292690/09-check-etc-sudoers.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "98aad7e3cdb87ebc19bed8104ac50ef482c92493095d1b3f8217115b065fecf2",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/2292690/10-assert-ibm-energyscale.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ed73c139bb9ae045f598bb07557bbc864fe6ed39edc7f9d5f1c5fc38c66d087c",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/2292690/10-ibm-energyscale.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6a1c9aa6ba68c270dcfdb39336e01f234971a70921f33abf0297651e637b7c38",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/2578899",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/2578899/configuration.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3b3697283c0a8b8d3ca27e546be3d277968c6e135ebc731b3f12b60e39e5fac3",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/2578899/installation.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "76be4d5b950369e83996db050437d92948f2e159c6f73711bb29877d0fbe3193",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/2684254",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/2684254/configuration.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6a1642474a1cc3a47a03dd9a3ca332ff70472f47ae848083ffa9362d8630f19c",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/2684254/installation.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "246bbc376e506540d9038e431e9c731bc9ed172e210d9c6e2cf134afcf921922",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/2777782",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/2777782/01-assert-selinux.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bcbb22a1fed64c76bc943585e8a1f3b3c6e819dd0f91542ffdc7915b105deb6d",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/2777782/01-configure-selinux.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cb85515cec4859c24486f5b2387c560c216423f7003d1c9d27e71d523dccd531",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/2777782/02-assert-tuned.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8d8800ee99730528869aa6d2f78e1ae628a3e99dd4e352d35c0c66832ac10276",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/2777782/02-configure-tuned.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "206fce4da0cf224a5176593e95943fc4588b50c2c520e386d3aa9f3fab9cd545",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/2777782/03-assert-abrt-coredumps-kdump.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "63c821f6af89efa5e3ba502c0686667971f47a4b2cee5cfda7550258b53416f2",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/2777782/03-disable-abrt-coredumps-kdump.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ff9ec6175da188a83dda8aa4b9e0f2ed0da3642771a75d571970c3ecabdab1ff",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/2777782/04-assert-auto-numa-balancing.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8e354381c0f5109194d0ff1cae6d68f3f665fa4da8996dddf5ab55bdb23c0273",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/2777782/04-turn-off-auto-numa-balancing.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f3c0ac076cf704e66a965e09f381fc81075bcfb54b806cd3ee1b68c62648e41a",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/2777782/05-assert-thp.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3a33aacce1a21ed9ad23241c88e65652b65556c512341043b9d689d80fb0ea1d",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/2777782/05-disable-thp.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bda4d7644a0580c7e8ff350210a4832d41eb8c25ea88c4922429c61272e1c5af",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/2777782/06-assert-c-states-for-lower-latency.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f0d94db6a68f63a0aca20a4bbb188f6cf652c45050690b4f2b1815bc8a8e18d9",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/2777782/06-configure-c-states-for-lower-latency.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "450e3d1af379a0085a9a0d4bde7db6d1b0dd92d68db049eb6bdd8baf249c05db",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/2777782/07-assert-cpu-governor.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "103b35e7f6638f95763e58c7008836ff621bde2c4df815c671453bd8ad800aac",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/2777782/07-configure-cpu-governor.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "27f0afe696e77c514eed48515c1af47f00eb9df0b8b661176b65e2b7f90f10ee",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/2777782/08-assert-epb.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "03032cf5aa820dbe5b1144633d895aae1bdc287795f829909d8d62de7369bb15",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/2777782/08-configure-epb.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9d6965ff0a98aabe945adfd92971d2e7a57d0e50312c99996b7b2b758373d13e",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/2777782/09-assert-ksm.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5ad966abc516263d62ae2f21ef049173bf9a6590671ed37898fc5d2112a00fa6",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/2777782/09-disable-ksm.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "da00fed3133d047a9d2656c9152e097094b00263e564344d2ddf6e3caa95c80b",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/2777782/10-assert-pidmax.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "11db98173ef560fb0d3b348470001c7900b6f697708ae6b42278688d2009353a",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/2777782/10-increase-pidmax.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "875f6c6d1bd0510f80f919ec37851d3f4fa2112a55ba3da1ac7ec334a4f1a04d",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/2777782/11-assert-tsx.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0c0c5ec916277c814820deff0163a05109d3f84beab43cd8ed6be52b6a87d2ea",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/2777782/11-enable-tsx.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "04032a75fbbd35b358ee73f9d3fbe869a931cc8925a49bc26490b8fa7da195fa",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/3108302",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/3108302/01-assert-selinux.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e21250f7dce44c4d4ef1202e62ad854818b5be5c22701ff5847dd080ac4b83cc",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/3108302/01-configure-selinux.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0a79c06642bce7b427e23ea01b349d367dd57e4f5af15618c6c0a6a8e8afec83",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/3108302/02-assert-tuned.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c11c5d3400969fecfb6dd277607843e337da17acc231fe3ad57d08fe47d2ca95",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/3108302/02-configure-tuned.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ec76aa465eb82ed743e852fd0644764b9b55741e52ea5c16ae9e6ce8c268b104",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/3108302/03-assert-abrt-coredumps-kdump.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "99ea854cfb0d4c07b8fc0559b5f0f88fcbba0dab003f178ac149c23320a06c32",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/3108302/03-disable-abrt-coredumps-kdump.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4b231c5da02f363abaac1695834aa8a38a52823c0ebb66450b7569edcae16567",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/3108302/04-assert-auto-numa-balancing.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e710e1db7e58a289ca9830999cb5846c69eef8293a94fe9fe4250157488087ff",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/3108302/04-turn-off-auto-numa-balancing.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6f5380ab0fe380d64bcd612f31a6af8a858ad1a96746610e34c739d59774492c",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/3108302/05-assert-thp.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0ec4dac4aeef79fdaafc4f97f3d0288764235431fdf9031e455d2a130d5d6983",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/3108302/05-disable-thp.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "90b55d8090a827f9ab6581609bc4b8902fc8d86d4ec6010914e535c89f8cc4e2",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/3108302/06-assert-c-states-for-lower-latency.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f9da84ba4a10ace3a57e58443254de3319ffd4ef82a7614f8fa666f2d78d30d1",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/3108302/06-configure-c-states-for-lower-latency.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "543c68dfdaf260e05ac2d1438270517c7ee1f026801d8d2fec3a0a6851699622",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/3108302/07-assert-cpu-governor.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bc63b7b1232c96e71c274e61fe76d2ce4bbc3e418ae0d726a2fa22b5b1dbad90",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/3108302/07-configure-cpu-governor.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ee550a4db1589a3e6c1a7ec0296247e1d28e83e4ebb5b04e15ff43c14f071be6",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/3108302/08-assert-epb.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "54f182fa1fcc2bafdfe3fa6e7153cf69c9c439d3bfa8e9234dd9b5c96a43ee08",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/3108302/08-configure-epb.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ba06f28b14044ee9db51833118443baf8a04f224231a54081474564cdc0cffd3",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/3108302/09-assert-ksm.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "97a648c982b74bfdbc2a128236b96fdece5c5a1fdcb5fec4fe98c2f12f23a33f",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/3108302/09-disable-ksm.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "447bef806a56a559ea5e93a1343dc0232b1e4b92de5beae6c831c6b245e59242",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/3108302/10-assert-pidmax.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "78c4cfc010d445cea7a41bb8ed341c7de689d3c57a3c5dd53ef948cb0127036b",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/3108302/10-increase-pidmax.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a468a5ba5d2daa9381f9098b0dd9a9da515a06ae788542fbd3ee5a93b1afc5e8",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/3108302/11-assert-tsx.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5d5f1ff9ef87a44250b3fee2ccd99f0b2a79e14fe80ec2ccd190ef489094d992",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/3108302/11-enable-tsx.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "665db5ec082ee1869f275b8939c86f1a34813158c3fda3a8220f950cbef519c1",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/2009879.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3da2d268a360b8a15ef254ceb7171527f9f4730381c9ccad4cdec2330081832b",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/2009879_7.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8cda16b68cd7930eb7eb0647a8409ff0cfd43a79c0a22416f96be08eee330abc",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/2055470.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cb2398fde3c80988d74a133f5f1eef82aad20f10ce2480991957d852c257b7b6",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/2292690.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9a196485be2213eae38fc0ffad7778f6a65997173c84c34122810ba193f67370",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/2382421.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6681af4be663eb862daaa0233da13c1b0e6cb502eb01efc55571ff2461406413",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/2777782.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1ab838335143ee8384c1ba61aadfddbf054e84cb9a8e61d6ce6d7ce668011d05",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/3024346.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ffd9af0d52c3f1bc8da6e188846a55abcbe30784d334a9a5d3b0516f1b78b346",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/3108302.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fddcd8f04b682500d208bf0cc060853de0fdc0628e8be4a61bbdbf5dfa626a6a",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/assert-2009879.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1f70896b8ab3e4fc1fdca9fe9fff24ccaf5385990387557122978411e7186675",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/assert-2009879_7.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d44a7c16467be6965b43354bb252979901cbf713a8e00f4debe0c0f1a55bbf25",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/assert-2055470.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c496cf8192d0838a1bdc47d44f2736ff6775445a2b9570bf1c29da311ce12967",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/assert-2292690.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "093f3df6b3cedb59fbe3fb8762ceb3c998d2361f5e03093eebccd177a0674b67",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/assert-2382421.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b4b82b2bd01b5b32110287574089b52d0cc24946a032a51244de6c0a6b46d145",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/assert-2777782.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "463f130552e1d1ad609e9c3aead8a9095e3391de36f4cdeed6238e8df2d74b14",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/assert-3024346.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "396438b79dd5efeeeb9eb0159c9355026f439021f2d6ae6638978e9c1e57f68f",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/sapnote/assert-3108302.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3b0bf9993c5bc3fd08608ebac51684ece56728911751d9b446542105e2124b2f",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "10eea745ccdf589a06a59df73999bf4b725a7b0b6c6a93f328615ba2d7a4a77a",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tests",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tests/.pylintrc",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ea692ab19464395095cf9c761aa65d20175f5f3862d4255172337746196f05f7",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tests/beautify-assert-output.sh",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5837217b260d32162eedb46ca962ced7b09885cb1e2d65b3bf182256a5a8694e",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tests/run-sap_hana_preconfigure-tests.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1cb1dcffc761ce4c257c40cc9c023a2b05a553fcde8811ca0a0dcb2c629b76f2",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tests/sap_hana_preconfigure-default-settings.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "446175b3cadeea208c9387ce2e3fff423191f5f2abc7f244e515ee9a091e8871",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tools",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/tools/beautify-assert-output.sh",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5837217b260d32162eedb46ca962ced7b09885cb1e2d65b3bf182256a5a8694e",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/vars/RedHat_7.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1079f85148a4f12281f0d512a52ac85cc875ff43f6bd351ee23ee632f617af54",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/vars/RedHat_8.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cc70fa9fc0e291b0a3e0cfb4a91db281feb98fb5a9c2f6f12e87f6c2c70916df",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/vars/RedHat_9.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f525f93eb4603b5b46a0eea4445709aea98f9540d20c599179384fbe53b7ee47",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/vars/SLES_15.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a3a343d2e0701349edf66d835596c879946abb81599c7fa8a60259b178149bc8",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/vars/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2f5133359ecf86b23bb0b5a42096f50d9b38d06b1c42594c3d950876c4f624e3",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/.ansible-lint",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cdaa7a5b06f08d45ef69f37c4900af572b2ba278591e6f139c8c0b2d4b67a644",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/.yamllint.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "472c1f78b944dd89a218a05882b9e6e6f7a0b468680648ea16aec26024d698b9",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hana_preconfigure/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d9455eb72639fc1fd5cf8225223fe6d4291ba9cc7b38bdbec55baf0487856d95",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hostagent",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hostagent/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hostagent/defaults/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "993331c7bae13ab817a695fe4650a12d2de0f03a3eb5dcee720faeda30dcd302",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hostagent/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hostagent/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6d461218173feaad10466573ba7a9594a86facb1ce316d4be4089aeedbd230ee",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hostagent/meta/runtime.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "df18179bb2f5447a56ac92261a911649b96821c0b2c08eea62d5cc6b0195203f",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hostagent/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hostagent/tasks/common_post.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "70f8728c6c43acddf97f5062540273c6e4d9d89b0603ce7d08d3be406a0c0060",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hostagent/tasks/common_pre.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "405aa562ade0e3ea1eec5ff7008fa07b1d8ddc30e541c934566b8b3f1406071b",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hostagent/tasks/config_ssl.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "81c1574d45a796fea2d6fe7d75e58bcf020d41c3256c899ad9bc72cb5f8fcc7e",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hostagent/tasks/deploy_bundle.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "152383272c1c1af044edb7ffd95ca4e49d39519183ea1d8fcc7cd5d801f83471",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hostagent/tasks/deploy_rpm.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "445d0da8f5309fa25ed5298d41d140cae50fdfbd00780f27f039de5d64a38a5d",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hostagent/tasks/deploy_sar.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "91106d09bd130b3a9cc3995a24ef366893b41cb4b25cb9c2068d645f39dfa619",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hostagent/tasks/deploy_sar_remote.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ece2c1b3b8f3e3af465eb0b49350cf03fbac168e8c5666b2703e2b1df745586f",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hostagent/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "dd3545c3d00e4ed7839f63892a04b364c2f139cebc8a78ea20a06dd349ef03d1",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hostagent/.ansible-lint",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cdaa7a5b06f08d45ef69f37c4900af572b2ba278591e6f139c8c0b2d4b67a644",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hostagent/.yamllint.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "472c1f78b944dd89a218a05882b9e6e6f7a0b468680648ea16aec26024d698b9",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hostagent/CONTRIBUTING.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "185c7066dd72eac55ec0b716b891097ae9c40834ce701cf379342aabb93983b9",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hostagent/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ffa861d3389f4242dc221237eef8ecfcd899a113b0be3a4c4f3e50e367e2b202",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hypervisor_node_preconfigure",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hypervisor_node_preconfigure/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hypervisor_node_preconfigure/defaults/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bb41bc74ce4bb8c044a86a9c77906f9a72abbdd0fd258d45e4487337b6a9a23a",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hypervisor_node_preconfigure/files",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hypervisor_node_preconfigure/files/platform",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hypervisor_node_preconfigure/files/platform/ibmpower_phyp",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hypervisor_node_preconfigure/files/platform/ibmpower_phyp/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hypervisor_node_preconfigure/files/platform/redhat_ocp_virt",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hypervisor_node_preconfigure/files/platform/redhat_ocp_virt/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hypervisor_node_preconfigure/files/platform/redhat_rhel_kvm",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hypervisor_node_preconfigure/files/platform/redhat_rhel_kvm/50_hana",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "429f9e20392fddbbe57c93c034f88e7080126481a7bd9cef071324c62b85c2dd",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hypervisor_node_preconfigure/files/platform/redhat_rhel_kvm/50_iothread_pinning",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e16e5f10b0899df7df43216e4335e5a23c552af19d8e3e099016227bc0a88245",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hypervisor_node_preconfigure/files/platform/vmware_vsphere",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hypervisor_node_preconfigure/files/platform/vmware_vsphere/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hypervisor_node_preconfigure/handlers",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hypervisor_node_preconfigure/handlers/platform",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hypervisor_node_preconfigure/handlers/platform/ibmpower_phyp",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hypervisor_node_preconfigure/handlers/platform/ibmpower_phyp/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hypervisor_node_preconfigure/handlers/platform/redhat_ocp_virt",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hypervisor_node_preconfigure/handlers/platform/redhat_ocp_virt/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hypervisor_node_preconfigure/handlers/platform/redhat_rhel_kvm",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hypervisor_node_preconfigure/handlers/platform/redhat_rhel_kvm/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "61fd36a8cd17ad4614a2fccef60353dd2ffd3e0cdf9ee257c82439c989ca148d",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hypervisor_node_preconfigure/handlers/platform/vmware_vsphere",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hypervisor_node_preconfigure/handlers/platform/vmware_vsphere/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hypervisor_node_preconfigure/handlers/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7de5ecbff11768f7bda4669b95be524a7f8f2a599b586d77ff187cf5ec14cf9d",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hypervisor_node_preconfigure/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hypervisor_node_preconfigure/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a398828650fefb662003ef2be1ded52669e5a95242eeac3ff326755fd0a2bd9b",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hypervisor_node_preconfigure/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hypervisor_node_preconfigure/tasks/platform",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hypervisor_node_preconfigure/tasks/platform/ibmpower_phyp",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hypervisor_node_preconfigure/tasks/platform/ibmpower_phyp/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hypervisor_node_preconfigure/tasks/platform/redhat_ocp_virt",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hypervisor_node_preconfigure/tasks/platform/redhat_ocp_virt/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hypervisor_node_preconfigure/tasks/platform/redhat_rhel_kvm",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hypervisor_node_preconfigure/tasks/platform/redhat_rhel_kvm/allocate-hugepages-at-runtime.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cc949aaf1e2b2a4246e9278c94bb5130da676a93bee102dbac15dc4fc6b58672",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hypervisor_node_preconfigure/tasks/platform/redhat_rhel_kvm/assert-configuration.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "edff363a5919322613f50266da8b3b0b6ec6d9bcfdc10d88f6ec93178851a648",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hypervisor_node_preconfigure/tasks/platform/redhat_rhel_kvm/assert-installation.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d19f350a7dbd6b8ea59797d4c9f2a29a30876839af7a53adc3d2057b9db348cc",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hypervisor_node_preconfigure/tasks/platform/redhat_rhel_kvm/assert-rhv-hooks.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a3915ab8c9d449ff40c6738f707a10af59e331297d4506857755e76627e38b22",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hypervisor_node_preconfigure/tasks/platform/redhat_rhel_kvm/assert-set-tuned-profile.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "46733cff95521648fb5be0cf26e7c06ca14988b39c6b4411df15153c19d27cc1",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hypervisor_node_preconfigure/tasks/platform/redhat_rhel_kvm/configuration.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f9dbe25bd11e322e517c21e7311e1d7bf287a787902ef0cbec6b780b0e7a06ea",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hypervisor_node_preconfigure/tasks/platform/redhat_rhel_kvm/installation.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9be2a9a495d330e06bda6b9c8e09964b0f9167b1e9d6ab17c4cfb8b198859d5f",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hypervisor_node_preconfigure/tasks/platform/redhat_rhel_kvm/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4dfd44e83c0a14a4412ddefb6a82b6a9f90ce7199a70f56980674ce1b2828bc4",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hypervisor_node_preconfigure/tasks/platform/redhat_rhel_kvm/rhv-hooks.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7ee94c969d7c2f4b2325b867ab0c4c320bf62e891b6d6218b5e6f4b760deb6c7",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hypervisor_node_preconfigure/tasks/platform/redhat_rhel_kvm/set-tuned-profile.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "092c5bcc8f15c8727912397de2e22bbe3e495e3c3524a862ae55d767d0ae5d9f",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hypervisor_node_preconfigure/tasks/platform/vmware_vsphere",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hypervisor_node_preconfigure/tasks/platform/vmware_vsphere/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hypervisor_node_preconfigure/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cf45cc36b43d46514f37be3176d834c0b0d30269290c333c95460fb29a97bc9b",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hypervisor_node_preconfigure/vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hypervisor_node_preconfigure/vars/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f52d711103d50a437830c6fbcd04fb4bab49a0f82f6d26d1c791c6e8488dd090",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hypervisor_node_preconfigure/vars/platform_defaults_redhat_rhel_kvm.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "11837fb263e9f66dc36b73b5120eca3761cc6cf0fc450f51dd9f931db23aaf14",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hypervisor_node_preconfigure/.ansible-lint",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cdaa7a5b06f08d45ef69f37c4900af572b2ba278591e6f139c8c0b2d4b67a644",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hypervisor_node_preconfigure/.yamllint.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "472c1f78b944dd89a218a05882b9e6e6f7a0b468680648ea16aec26024d698b9",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_hypervisor_node_preconfigure/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "431963ba074dbef0a5662c939687356b8fe2838a2c9dbe1ada8d474a72eb2f34",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_install_media_detect",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_install_media_detect/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_install_media_detect/defaults/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b31bd6c90009181e9fc7132de3cfe07124846d6bf16500f34189996dbdff160a",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_install_media_detect/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_install_media_detect/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ee39939fb85683db97908da1894e2d46ba7c5d30b111e50c9af619c321166a54",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_install_media_detect/meta/runtime.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "df18179bb2f5447a56ac92261a911649b96821c0b2c08eea62d5cc6b0195203f",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_install_media_detect/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_install_media_detect/tasks/cleanup",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_install_media_detect/tasks/cleanup/disable-epel-repo.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "663671ffdeb3af9af9511cd2a05131152b9399ff31afb81fb33416bc671dc8f6",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_install_media_detect/tasks/extract",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_install_media_detect/tasks/extract/sapcar_loop_handler_saphana.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d95b6b650a9d041ca194c50559a5d9503e1d54276859218cc2bdc1165ceee066",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_install_media_detect/tasks/prepare",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_install_media_detect/tasks/prepare/check_directories.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2866a1f3e7175a6341e0410bb5c94a81c1934bdbff3ffda30f25721b38862601",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_install_media_detect/tasks/prepare/create_file_list.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2fcd298573061b3bcaa66298bcf6b47385012c509a92b26c67ce06410a43528b",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_install_media_detect/tasks/prepare/enable_rar_handling.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "119cbe23f4618f068e16712cdab20f17d97ee4f32ec209d78f2a91909abbafdc",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_install_media_detect/tasks/rename",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_install_media_detect/tasks/rename/add_exe_extension_loop_block.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7a8411dba0885b14f7f1fdb7bd74215aed8641f2ee3439307e5a785e72a18066",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_install_media_detect/tasks/rename/add_file_extension.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f88c869975d7b0602c2ce18c32ff94db80558fe0c2677fab5db130deb0744c8f",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_install_media_detect/tasks/rename/add_rar_extension_loop_block.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2cd0b3b0570bf2f7eef6991adb8505000fdd0e9554823e603c45ad19df3c6dc3",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_install_media_detect/tasks/rename/add_zip_extension_loop_block.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "626bb34cbefa08813ec5ac7e141c63c982740b3fe457dc1fa9376f89dda10d37",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_install_media_detect/tasks/detect_backup_saphana.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0d4c24d61dcbf3901f3c077c9fad868ec8e5f0a3bd54bbb688126f27613a7786",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_install_media_detect/tasks/detect_export_sapbw4hana.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "54fd077e190c1439e3c212f3bb8d3543ff33c8ce347589d5bc9cb830efc7239f",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_install_media_detect/tasks/detect_export_sapecc.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6bf3d1f595f627a36fe62c9fe0a43f38c53d259e97f6e8d5f0d69e5f7ec6f03e",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_install_media_detect/tasks/detect_export_sapecc_ides.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a21196fdc3355f70dbaede4bd576dbe67c08e99687e671191e750014cda3fe84",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_install_media_detect/tasks/detect_export_sapnwas_abap.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f7afbd51965ddc8bd21fe7dd709520675cf06a44de9889daa8c5a1b7cf9ff8ff",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_install_media_detect/tasks/detect_export_sapnwas_java.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b69a90214730e1f59e0e496f541f621b83c167b2b418dd62e12d274e592cad20",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_install_media_detect/tasks/detect_export_saps4hana.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c1d9a89934f7bd6329d5d39d704341d1d1fc392a58185bc8e19ca8959e7b4f59",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_install_media_detect/tasks/detect_export_sapsolman_abap.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1a49dca56b1d26155ad66f71d8b31f2a40cdfa6ca9cd8ccb32002ac7cdde19a4",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_install_media_detect/tasks/detect_sapanydb_ibmdb2.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "35ef6cb2a484813c1c6feefe3dd9dc9c8a97f9e3dff001f06615a39e237c3dc8",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_install_media_detect/tasks/detect_sapanydb_oracledb.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6f0fa70693d57e2bc4929d0ceaf333e1131ef179b8f38de85dc409534d52dc76",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_install_media_detect/tasks/detect_sapanydb_sapase.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "98ea53e75425390091c674d0bec2df535593719baabcf94e78d0f64e91f5afba",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_install_media_detect/tasks/detect_sapanydb_sapmaxdb.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f3f358e69c026c0fd5b90bc5ecd07808614f25679dd365967d096a0156483713",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_install_media_detect/tasks/detect_sapcar.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7f71218719cb21964847834928d62cc7a2d18a3339cfd797d3bbe387c86e4965",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_install_media_detect/tasks/detect_saphana.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "342b7dd08b493d762c315e4917f7b98fbb76b5300e772f5f591b031fb79e2310",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_install_media_detect/tasks/detect_saphostagent.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6c1f3f41137c0e43b73923b95d1b953134c582ec1eebd106008c75a4b90c3522",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_install_media_detect/tasks/detect_sapigs.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c9ce2fe2034afcbfbc897f086918188c3d76f8c62dcfc6b79ab6a87b2f5f0872",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_install_media_detect/tasks/detect_sapkernel.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ae6aee43d842bf6984e68e96ce25f28166dcecf6d3a7708b6ed677b9199aa89d",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_install_media_detect/tasks/detect_sapswpm.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4a8c536c3f74daf4ac05833c90f972b2440995f65cbc8b327aa5a2f8290f50f6",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_install_media_detect/tasks/detect_sapwebdisp.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bff3477c801058469b6a097eebc46f6e223f219a236e9d0877575c85e924ff5e",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_install_media_detect/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c9bbaabd66dee85ae4eb9682d37a54cf09f7c07629128f3df69393453b7dc099",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_install_media_detect/tasks/set_global_vars.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "36ef5eaf2cf98f46f76efa5e427979eb18df01729247ef3f0d5bdab0cb551c0f",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_install_media_detect/.ansible-lint",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cdaa7a5b06f08d45ef69f37c4900af572b2ba278591e6f139c8c0b2d4b67a644",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_install_media_detect/.yamllint.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "472c1f78b944dd89a218a05882b9e6e6f7a0b468680648ea16aec26024d698b9",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_install_media_detect/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a5cc49e5a3bab43247eba45258d50ef00cf0f2bef000b9a6cc48653bb9e7a4bf",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_netweaver_preconfigure",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_netweaver_preconfigure/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_netweaver_preconfigure/defaults/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b4e55a264170160befc244346c38850f1e0accc712d5a158e21867f9a41d7f6c",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_netweaver_preconfigure/handlers",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_netweaver_preconfigure/handlers/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bf027c2a69f4dc58de187fbdf70d01486c7ec776643d7a986559833b39d24641",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_netweaver_preconfigure/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_netweaver_preconfigure/meta/argument_specs.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "340a45df32e586546efa390fcac92a3ae646d0e5e6602a1aad1aa302dc1f92a7",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_netweaver_preconfigure/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7d8b4554e89f9ab8b36abdd68f98cfde4f7a4f213979739648fcad25f9f6e256",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_netweaver_preconfigure/meta/runtime.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "df18179bb2f5447a56ac92261a911649b96821c0b2c08eea62d5cc6b0195203f",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_netweaver_preconfigure/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_netweaver_preconfigure/tasks/RedHat",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_netweaver_preconfigure/tasks/RedHat/assert-configuration.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "81ed76898cf74e68215b108e3e9a77b64fb62e1e191a93fcc24a4fb046a2c425",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_netweaver_preconfigure/tasks/RedHat/assert-installation.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "75b0616db3dd9b5bd771821f0ce2896056708d72208f19342e813ac78b59c157",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_netweaver_preconfigure/tasks/RedHat/configuration.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7e087c78d7b6279c0989886f464db57e294f4ccc53b80b86616b51d72b2b005e",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_netweaver_preconfigure/tasks/RedHat/installation.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3a1d85a1045a379658bbf0e25e51944a69054e1e9dc31383e09d16d69aec0972",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_netweaver_preconfigure/tasks/SLES",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_netweaver_preconfigure/tasks/SLES/assert-configuration.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ec6b174496624c6cd6fef34a7c1c2517a66de423a6e5d911aac5564e5f502ee8",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_netweaver_preconfigure/tasks/SLES/assert-installation.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "81a34fb3d02651404c8857de5b34b65ed2fe613847939ed19d36066c24b83f58",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_netweaver_preconfigure/tasks/SLES/configuration.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "306a68bf250abceb502acc8f07ec397b1b5d96b358e168e3be230d8a570563d7",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_netweaver_preconfigure/tasks/SLES/installation.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "81dc7f26f36f4636bf06542fcb28579a89bbaf0ce37a74776b6f9eafee58e235",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_netweaver_preconfigure/tasks/sapnote",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_netweaver_preconfigure/tasks/sapnote/1275776",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_netweaver_preconfigure/tasks/sapnote/1275776/configuration.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "92f9ef9f00e294ea8c4fd690bccd1984dba02365c77c6c2984a5a2312a2e692c",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_netweaver_preconfigure/tasks/sapnote/1275776/installation.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9efd0fc53392d76c74958c185d530e7b1c1837d2bd9cafe304f4cb1d92dda673",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_netweaver_preconfigure/tasks/sapnote/2526952.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6fc98922c4a2c4d57d9b929bd913dca4a7300aaa837c3020f1c3c116519a394a",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_netweaver_preconfigure/tasks/sapnote/3119751.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "72f0f2bebace216b7b69861df4d480ccb86464ff29021bad932bc6b5c8b39a54",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_netweaver_preconfigure/tasks/sapnote/assert-2526952.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c2edf07d97c5bc609601967546aeb32dd2d1eefdb2f99a5378f3227d742ef174",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_netweaver_preconfigure/tasks/sapnote/assert-3119751.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d11f7b6ad75978a054373601d2a9e037c1cf23ad63cc294f28077c457d99ad3a",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_netweaver_preconfigure/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6fdb9e45dd1bfae4bccf825d4d7c29560256f030ea61dba7e646a15e1b136467",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_netweaver_preconfigure/tests",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_netweaver_preconfigure/tests/.pylintrc",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ea692ab19464395095cf9c761aa65d20175f5f3862d4255172337746196f05f7",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_netweaver_preconfigure/tests/beautify-assert-output.sh",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5837217b260d32162eedb46ca962ced7b09885cb1e2d65b3bf182256a5a8694e",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_netweaver_preconfigure/tests/run-sap_netweaver_preconfigure-tests.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3cf6557de99b066578a790814ff2d13f38db1420b7c3d3911c231dd4078faadb",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_netweaver_preconfigure/tests/sap_netweaver_preconfigure-default-settings.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "73460103511847a5b0158e0badc1adb427991d2da8940a303e996d552fbbd469",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_netweaver_preconfigure/tools",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_netweaver_preconfigure/tools/beautify-assert-output.sh",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5837217b260d32162eedb46ca962ced7b09885cb1e2d65b3bf182256a5a8694e",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_netweaver_preconfigure/vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_netweaver_preconfigure/vars/RedHat_7.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "022aa80e29e2ded385f7c615582418ca514ee90e310b204d95648750b3c7094b",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_netweaver_preconfigure/vars/RedHat_8.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "dcd6bd0defbfde9968ed0e8268060c8b4146f25faa71a0e75abe7e47f3182eb3",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_netweaver_preconfigure/vars/RedHat_9.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3a831cd158307fdc3732c4e0dfea0166504bd491d378a5412b50b66b06984f9b",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_netweaver_preconfigure/vars/SLES_15.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c7cddb0527d098a9f6ba546d7b23eb25f45008ace8b40d877d9c96f8740c63fb",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_netweaver_preconfigure/vars/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "14cc781aa872acf43fdba2467d2732ba0e649560d094a878c47b5ce1fe7f2e65",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_netweaver_preconfigure/.ansible-lint",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cdaa7a5b06f08d45ef69f37c4900af572b2ba278591e6f139c8c0b2d4b67a644",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_netweaver_preconfigure/.yamllint.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "472c1f78b944dd89a218a05882b9e6e6f7a0b468680648ea16aec26024d698b9",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_netweaver_preconfigure/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "92513580d826e2105c79c77e3838f191a9005386b15d88c1cf4b60a5629a44c1",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_storage_setup",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_storage_setup/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_storage_setup/defaults/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "548ec33466f0486fd83b9e205760e21a53afb8fa59c19616ddaa64792f5ec2e5",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_storage_setup/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_storage_setup/meta/argument_specs.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "07fe5c0c73398acc8a4f836d0550ae44ebd8f521b68e1f6c44727b63fc07391f",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_storage_setup/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ee17a8f716689e29192c24d690b6fd9ac1d401bbb82a800beaa3cc61aad86833",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_storage_setup/meta/runtime.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "df18179bb2f5447a56ac92261a911649b96821c0b2c08eea62d5cc6b0195203f",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_storage_setup/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_storage_setup/tasks/generic_tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_storage_setup/tasks/generic_tasks/configure_local_filesystems.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3f1bd9c40fe146b7cb5d05e8651273d323a8a045482e10b289dc9a0e8289ef0d",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_storage_setup/tasks/generic_tasks/configure_nfs_filesystems.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "88b5456e8e7e38f30515e3f5c012af97eb5984face2cab8afcd6a0a924e268af",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_storage_setup/tasks/generic_tasks/configure_swap.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1361c1fabbcebd1032cd4e9e9e6e99bedd4f50202536a3206be35c92ef6b8ac0",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_storage_setup/tasks/generic_tasks/remove_storage.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "78c9067ba959768f678ab7c196840105f04239e674878bb7afcfb87470e5a49e",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_storage_setup/tasks/platform_tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_storage_setup/tasks/platform_tasks/aws_main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3eacc3d9fe7336a065b254598de3bd56eeac4a1b5d61d7de4c0011679d77e701",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_storage_setup/tasks/platform_tasks/az_main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "48d514e3963da82e222e60e49e00269a1772bee4515d1951ff7d944ef834ae4a",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_storage_setup/tasks/platform_tasks/prepare_storage_az.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "93ba515462b5d6440e8919efe441e5fee10559ec9b4a749d4e7b4c8f9f97f925",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_storage_setup/tasks/platform_tasks/remove_storage_az.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5953fc73ded842c951e70e8963eef2a68a75df089189d25086d689aefd4611fe",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_storage_setup/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "086b60b5fe6c40d427365fb1342d55af6c99a17ae6de32a40699832f3a4d0147",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_storage_setup/vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_storage_setup/vars/RedHat.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "830e9d391174b188fdf5e9a71b171c0eb42f2e58ecf04632dc1466feb87fe31d",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_storage_setup/vars/Suse.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2ca1d4ea8c963cbd046a23f3dbc1b83855c1d0b212678e9735f82cdd9bb3488f",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_storage_setup/.ansible-lint",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cdaa7a5b06f08d45ef69f37c4900af572b2ba278591e6f139c8c0b2d4b67a644",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_storage_setup/.yamllint.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "472c1f78b944dd89a218a05882b9e6e6f7a0b468680648ea16aec26024d698b9",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_storage_setup/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e95c97d25dc56128fb169cee04935c363d1a766733da6a6e58518e6d9e031446",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_swpm",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_swpm/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_swpm/defaults/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6201d5e336a6178707f3a283831dd46bce5f43d56ad54a7bb8374ed83026fbf9",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_swpm/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_swpm/meta/collection-requirements.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5b6334d41adbadb370270c0a078a6b5cd41b8f35cc6435b09829f82043a5002a",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_swpm/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d5eb09acba4e8e3ae21953c852ca4726f15b9d7f884df212bf46347f74aec687",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_swpm/meta/runtime.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "df18179bb2f5447a56ac92261a911649b96821c0b2c08eea62d5cc6b0195203f",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_swpm/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_swpm/tasks/post_install",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_swpm/tasks/post_install/firewall.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7619ce40a9475dd2a1262b6077ec375de834528c8c3a9b290cd250c586cac39d",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_swpm/tasks/post_install/update_firewall.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "828bec71e93c78e29c1f1508d1d1919838c5f285fc62b7b08e186f458c5ee983",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_swpm/tasks/pre_install",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_swpm/tasks/pre_install/install_type",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_swpm/tasks/pre_install/install_type/general_install.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "882fcb0993b8ee06a0e9e6ff8ad65b7fe6bf0266ae9e7400a6f67ca6b17621f8",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_swpm/tasks/pre_install/install_type/ha_install.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8182670f3af6a2bf350b3d5ea6f7f11f2428c8cc3b54fe6c8f01cd1fd3b68c01",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_swpm/tasks/pre_install/install_type/ha_maint_plan_stack_install.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1fd8c8f30131c1c7d5f3e6b5e5c774f6342c5d736b25a9d986986b61d6d480a5",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_swpm/tasks/pre_install/install_type/maint_plan_stack_install.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2675f8425a2b99ea22aff41f54f692929c8f6b4861266a7a4e6bc4ff402bcc84",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_swpm/tasks/pre_install/install_type/restore_install.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bbab959d5563ca3a4e0d768545c89877703e922fd8924add67a34ef213fec9be",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_swpm/tasks/pre_install/create_os_user.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "26bc4ea26fa0a7fbda044bfb51a487c97f6be34145010a7557a82b6e16982ace",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_swpm/tasks/pre_install/firewall.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5bc533ed93b4f054d2f4403326124b6bd2ef243afec80c696ab2d6464a0c9dd6",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_swpm/tasks/pre_install/install_type.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4463f4762b8da1643b9093411c8fadcf1b0ad7398070561dcf59a709f46a8c68",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_swpm/tasks/pre_install/password_facts.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "87b049c480455f6f27dc652196151154de93ec2e3529891563428d3c4b615443",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_swpm/tasks/pre_install/update_etchosts.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a36fb1a2e203f9b823d0ea93135405c588a26bc54cc95c636a6d9a74847cbd63",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_swpm/tasks/pre_install/update_firewall.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "828bec71e93c78e29c1f1508d1d1919838c5f285fc62b7b08e186f458c5ee983",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_swpm/tasks/swpm",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_swpm/tasks/swpm/detect_variables.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "123d6c565d66df8f24faa4b656b04cfd5dec660db293409a487ea1a03c9404b2",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_swpm/tasks/swpm/prepare_software.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c9e7e0a3301954352e18c8a9dc2a5bd1a645b7579a90c87718d0d7accb96a2cf",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_swpm/tasks/swpm/swpm_inifile_generate_advanced.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5ec095da1d8761f3624a65fb74acc3a678b5ab7bcc4f64d757fecccf7cce0d2d",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_swpm/tasks/swpm/swpm_inifile_generate_advanced_templates.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1b7aa4e8821d03e7e147812c13b7f4fedc823a70d33514b0f310af8b60c3f84d",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_swpm/tasks/swpm/swpm_inifile_generate_default.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "be2010f82a99225b3bdba348365ead6a4bcb01e8584570f2b16b4a7a5e950f9b",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_swpm/tasks/swpm/swpm_inifile_generate_default_templates.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d3fc21d64d2c2c3d6f223e047b597b1848f18feef2fa69903b5790e9fb519990",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_swpm/tasks/swpm/swpm_inifile_generate_inifile_reuse.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1ff6c15c941ccfbfb5e147c10a98a1c4720caa05eebd7f9ee6eaf03cae95d669",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_swpm/tasks/swpm/swpm_pre_install.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c34eff411adfb9cfef3c16dcf3f8eac06037629b15fd1594d04551128c8f26ac",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_swpm/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "96fb9d7d826e1f54795ce1db7f6681e1a453ce2c0e65c9f1c303eea968f0b323",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_swpm/tasks/post_install.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9c4f289de442c87b532ab812e267f14e62c5c8455b620bc0e4cafb43f1eefc46",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_swpm/tasks/pre_install.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eba8ba75dea9cd7eb134c762bdda175e225a7616a8df307a4b96f8286f71c000",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_swpm/tasks/swpm.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8e6881216a5b0997857ba13402836737a836cac07a4a98171a148a5aa5cd563e",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_swpm/templates",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_swpm/templates/configfile.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "acd628c67aa8602b77fdecd03b2308935a6bdc0816b51d21e8131cc8a9a4f3f8",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_swpm/.ansible-lint",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cdaa7a5b06f08d45ef69f37c4900af572b2ba278591e6f139c8c0b2d4b67a644",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_swpm/.yamllint.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "472c1f78b944dd89a218a05882b9e6e6f7a0b468680648ea16aec26024d698b9",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_swpm/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "92911dc6affe5253551b71f4b503dbba04653734eaf4d003d8d50fcb8e49eb0b",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_swpm/requirements.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c21704059069b661602183a76facc9b89d8ce762347d70a2814c1115309d2706",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/defaults/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b653469220b1a6d51633eb3be1d23e3c47c7c5632f1a2128d5ccf0093330eb91",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/files",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/files/platform",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/files/platform/cloud_aliyun_ecs_vm",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/files/platform/cloud_aliyun_ecs_vm/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/files/platform/cloud_aws_ec2_vs",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/files/platform/cloud_aws_ec2_vs/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/files/platform/cloud_gcp_ce_vm",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/files/platform/cloud_gcp_ce_vm/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/files/platform/cloud_ibmcloud_powervs",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/files/platform/cloud_ibmcloud_powervs/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/files/platform/cloud_ibmcloud_vs",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/files/platform/cloud_ibmcloud_vs/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/files/platform/cloud_msazure_vm",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/files/platform/cloud_msazure_vm/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/files/platform/ibmpower_lpar",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/files/platform/ibmpower_lpar/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/files/platform/redhat_ocp_virt_vm",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/files/platform/redhat_ocp_virt_vm/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/files/platform/redhat_rhel_kvm_vm",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/files/platform/redhat_rhel_kvm_vm/tuned",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/files/platform/redhat_rhel_kvm_vm/tuned/sap-hana-kvm-guest",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/files/platform/redhat_rhel_kvm_vm/tuned/sap-hana-kvm-guest/haltpoll.sh",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6bf9df0f97b282873b479733c936cd479f9f7f17b52a3f224c35189a466b0a18",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/files/platform/redhat_rhel_kvm_vm/tuned/sap-hana-kvm-guest/tuned.conf",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "47e69f4cb1ca0c449c73638e6734daa19d864760e34f3d9d1ab58d4dce81eec5",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/files/platform/redhat_rhel_kvm_vm/tuned/sap-hana",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/files/platform/redhat_rhel_kvm_vm/tuned/sap-hana/tuned.conf",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c53e0588677342a9628ae05ca8d1c10acdb59e478c376790ba1667950af22f83",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/files/platform/vmware_vsphere_vm",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/files/platform/vmware_vsphere_vm/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/handlers",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/handlers/platform",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/handlers/platform/cloud_aliyun_ecs_vm",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/handlers/platform/cloud_aliyun_ecs_vm/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/handlers/platform/cloud_aws_ec2_vs",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/handlers/platform/cloud_aws_ec2_vs/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/handlers/platform/cloud_gcp_ce_vm",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/handlers/platform/cloud_gcp_ce_vm/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/handlers/platform/cloud_ibmcloud_powervs",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/handlers/platform/cloud_ibmcloud_powervs/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/handlers/platform/cloud_ibmcloud_vs",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/handlers/platform/cloud_ibmcloud_vs/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/handlers/platform/cloud_msazure_vm",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/handlers/platform/cloud_msazure_vm/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/handlers/platform/ibmpower_lpar",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/handlers/platform/ibmpower_lpar/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/handlers/platform/redhat_ocp_virt_vm",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/handlers/platform/redhat_ocp_virt_vm/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/handlers/platform/redhat_rhel_kvm_vm",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/handlers/platform/redhat_rhel_kvm_vm/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "50bad7405803aec228ab9d7bcdee64d48cc7ff89ddf07f241dd01762ef04a821",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/handlers/platform/vmware_vsphere_vm",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/handlers/platform/vmware_vsphere_vm/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/handlers/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2e41c2cd234719142a873d1f9dd9c5eb9793f66867a89784d6388ad10b466793",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "49e91fec586bff5f4b312c50b4499e1d00862a447798a216af2e310ff4251e29",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/tasks/detect_platform",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/tasks/detect_platform/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a8c7745c60b907a4c223b4123160293a7553f6f4f167769602cc6286e673cc01",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/tasks/platform",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/tasks/platform/cloud_aliyun_ecs_vm",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/tasks/platform/cloud_aliyun_ecs_vm/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/tasks/platform/cloud_aws_ec2_vs",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/tasks/platform/cloud_aws_ec2_vs/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/tasks/platform/cloud_gcp_ce_vm",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/tasks/platform/cloud_gcp_ce_vm/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/tasks/platform/cloud_ibmcloud_powervs",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/tasks/platform/cloud_ibmcloud_powervs/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/tasks/platform/cloud_ibmcloud_vs",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/tasks/platform/cloud_ibmcloud_vs/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/tasks/platform/cloud_msazure_vm",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/tasks/platform/cloud_msazure_vm/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/tasks/platform/hyp_ibmpower_lpar",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/tasks/platform/hyp_ibmpower_lpar/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/tasks/platform/hyp_redhat_ocp_virt_vm",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/tasks/platform/hyp_redhat_ocp_virt_vm/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/tasks/platform/hyp_redhat_rhel_kvm_vm",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/tasks/platform/hyp_redhat_rhel_kvm_vm/assert-set-tuned-profile.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1d0f30478820c4a6a5cade31160445c729bc06a5f65e11a1acd6683799d17ed9",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/tasks/platform/hyp_redhat_rhel_kvm_vm/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6d253c6d02da1ba5f249e08055ddf305c167c64b7d5aa5b0eedeb85ff1b286e2",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/tasks/platform/hyp_redhat_rhel_kvm_vm/set-tuned-profile.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "37af15afbca3911cb44ec71798666ad9be21137927c2bed71bede2587acaca57",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/tasks/platform/hyp_vmware_vsphere_vm",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/tasks/platform/hyp_vmware_vsphere_vm/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "af656c0d296a0351baf8cc84f334109e0cdf14ad044302ccdc1429c96c09ef8a",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/vars/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f52d711103d50a437830c6fbcd04fb4bab49a0f82f6d26d1c791c6e8488dd090",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/vars/platform_defaults_redhat_rhel_kvm.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f3141c7c13561d51befe0555ab2784330f6a46998c354ba0121a0c4b7754d084",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/.ansible-lint",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cdaa7a5b06f08d45ef69f37c4900af572b2ba278591e6f139c8c0b2d4b67a644",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/.yamllint.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "472c1f78b944dd89a218a05882b9e6e6f7a0b468680648ea16aec26024d698b9",
+   "format": 1
+  },
+  {
+   "name": "roles/sap_vm_preconfigure/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "122490d1bf8a2735bb81978e1de2480bea72efcbdae7498b7038094ad8956e6d",
+   "format": 1
+  },
+  {
+   "name": "roles/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "tools",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tools/swpm2_parameters_inifile_generate.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5effd47f8bb88d23f3f8f5d1546107e10fc5a481fae0fde0ae06061f6a52b8b9",
+   "format": 1
+  },
+  {
+   "name": ".ansible-lint",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eaa9711ed43117bc5139323969f9a948efeee6a5bf8e529c03242437c1e98802",
+   "format": 1
+  },
+  {
+   "name": ".gitattributes",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1ea12023c3ad75ff78082f2a79ab16fba0f89e3c76ba33bbc11e7407f1070c2d",
+   "format": 1
+  },
+  {
+   "name": ".gitignore",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a2b9ae8d531b863ebeaee47c0663cac5c1dddba91b9ee0cdab04f07403614930",
+   "format": 1
+  },
+  {
+   "name": ".pre-commit-config.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8545aeee222289e0b52b74e4d7e3eb644721094e8a935210e28c85d74d51c52e",
+   "format": 1
+  },
+  {
+   "name": ".pylintrc",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ea692ab19464395095cf9c761aa65d20175f5f3862d4255172337746196f05f7",
+   "format": 1
+  },
+  {
+   "name": ".yamllint.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "472c1f78b944dd89a218a05882b9e6e6f7a0b468680648ea16aec26024d698b9",
+   "format": 1
+  },
+  {
+   "name": "CHANGELOG.rst",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "89064b154a5b15d4f5bb3777b7f15ab349881948e92bf6b85f615afb5e86ca76",
+   "format": 1
+  },
+  {
+   "name": "LICENSE",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+   "format": 1
+  },
+  {
+   "name": "README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c6d90069d18ae1418a87378f0d077c89ba6471cb3ca06c8c8f48201e22e1114d",
+   "format": 1
+  },
+  {
+   "name": "requirements-dev.txt",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3c12cf6245f6ac1ece894d0e7e883472bcb54d6d9385af186297e7283c064ed6",
+   "format": 1
+  },
+  {
+   "name": "requirements.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4e84749b5818fc52a972fef70b70df171ed2d5806c7f647379f35610020a20d9",
+   "format": 1
+  }
+ ],
+ "format": 1
+}

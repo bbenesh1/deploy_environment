@@ -1,0 +1,229 @@
+---
+- name: "Establish aws connections"
+  hosts: localhost
+  connection: localhost
+  gather_facts: false
+  become: false  
+  vars:
+      vpc_net_cidr: "192.168.1.0/24"
+      vpc_subnet_cidr: "192.168.1.0/25"
+      aws_rhel_image_id: "ami-0931978297f275f71"  
+      local_key_file: "id_rsa.pub"
+      state: present
+      aws_login_credentials:
+        region: us-east-2
+        access_key: "{{ ec2_access_key }}"
+        aws_secret_access_key: "{{ ec2_secret_key }}"
+
+  tasks: 
+
+    - name: Create VPC net
+      amazon.aws.ec2_vpc_net:
+        name: "my-vpc-01"
+        cidr_block: "{{ vpc_net_cidr }}"
+        region: "{{ region }}"
+        access_key: "{{ ec2_access_key }}"
+        aws_secret_access_key: "{{ ec2_secret_key }}"
+      register: vpc_net
+    
+    - name: Get VPC net id
+      ansible.builtin.set_fact:
+        aws_vpc_net_id: "{{ vpc_net.vpc.id }}"
+    
+    - name: Create VPC subnet
+      amazon.aws.ec2_vpc_subnet:
+        state: present 
+        vpc_id: "{{ aws_vpc_net_id }}"
+        cidr: "{{ vpc_subnet_cidr }}"
+        region: "{{ region }}"
+        access_key: "{{ ec2_access_key }}"
+        aws_secret_access_key: "{{ ec2_secret_key }}"
+        tags:
+          Name: Internal
+      register: vpc_subnet
+
+    - name: Get the VPC Subnet Id
+      ansible.builtin.set_fact:
+        aws_vpc_subnet_id: "{{ vpc_subnet.subnet.id }}"     
+
+    - name: Set the VPC Internet Gateway
+      amazon.aws.ec2_vpc_igw:
+        vpc_id: "{{ aws_vpc_net_id }}"
+        state: present
+        region: "{{ region }}"
+        access_key: "{{ ec2_access_key }}"
+        aws_secret_access_key: "{{ ec2_secret_key }}"
+      register: vpc_gateway
+    
+    - name: Set the vpc gateway
+      ansible.builtin.set_fact:
+        aws_vpc_gateway_id: "{{ vpc_gateway.gateway_id }}"
+
+
+    - name: "Set the Public access"
+      amazon.aws.ec2_vpc_route_table:
+        vpc_id: "{{ vpc_net.vpc.id }}"
+        region: "{{ region }}"
+        access_key: "{{ ec2_access_key }}"
+        aws_secret_access_key: "{{ ec2_secret_key }}"    
+        tags:
+          Name: Public
+        subnets:
+          - "{{ aws_vpc_subnet_id }}"
+        routes:
+          - dest: 0.0.0.0/0
+            gateway_id: "{{ aws_vpc_gateway_id }}"
+          - dest: ::/0
+            gateway_id: "{{ aws_vpc_gateway_id }}"
+
+    - name: Set the local ssh key 
+      ansible.builtin.set_fact:
+        aws_local_key: "{{ lookup('file', '~/.ssh/id_rsa.pub') }}" 
+   
+    - name: create key pair using provided key_material
+      amazon.aws.ec2_key:
+        name: "{{ local_key_file }}"
+        key_material: "{{ aws_local_key }}"
+        region: "{{ region }}"
+        access_key: "{{ ec2_access_key }}"
+        aws_secret_access_key: "{{ ec2_secret_key }}"     
+
+    - name: Get the security group info
+      amazon.aws.ec2_security_group_info:
+        filters:
+          group-name: default
+        region: "{{ region }}"
+        access_key: "{{ ec2_access_key }}"
+        aws_secret_access_key: "{{ ec2_secret_key }}"    
+      register: aws_security_group
+
+    - name: Set the inbound rule.
+      amazon.aws.ec2_security_group:
+        name: default
+        description: enable 22
+        rules:
+          - proto: tcp
+            ports:
+            - 22
+            cidr_ip: 0.0.0.0/0
+            rule_desc: allow all on port 22
+          - proto: tcp
+            ports:
+            - 443
+            cidr_ip: 0.0.0.0/0
+            rule_desc: allow all on port 443
+          - proto: tcp
+            ports:
+            - 0-65535
+            cidr_ip: 192.168.1.0/25
+            rule_desc: allow all tcp traffic
+          - proto: udp
+            ports:
+            - 0-65535
+            cidr_ip: 192.168.1.0/25
+            rule_desc: allow all tcp traffic
+        region: "{{ region }}"
+        access_key: "{{ ec2_access_key }}"
+        aws_secret_access_key: "{{ ec2_secret_key }}"            
+
+    - name: Create a IPA Instance
+      amazon.aws.ec2_instance:
+        name: "internal-ipa"
+        instance_type: t2.medium
+        security_group: default
+        vpc_subnet_id: "{{ aws_vpc_subnet_id }}"
+        state: present
+        key_name: "id_rsa.pub" 
+        region: "{{ region }}"
+        access_key: "{{ ec2_access_key }}"
+        aws_secret_access_key: "{{ ec2_secret_key }}"
+        image_id: "{{ aws_rhel_image_id }}"
+        network: 
+          assign_public_ip: true 
+  
+    - name: Create a NFS Instance One
+      amazon.aws.ec2_instance:
+        name: "nfs-cluster-one"
+        instance_type: t2.medium
+        security_group: default
+        vpc_subnet_id: "{{ aws_vpc_subnet_id }}"
+        state: present
+        key_name: "id_rsa.pub" 
+        region: "{{ region }}"
+        access_key: "{{ ec2_access_key }}"
+        aws_secret_access_key: "{{ ec2_secret_key }}"
+        image_id: "{{ aws_rhel_image_id }}"
+        network: 
+          assign_public_ip: true
+
+    - name: Create a NFS Instance Two
+      amazon.aws.ec2_instance:
+        name: "nfs-cluster-two"
+        instance_type: t2.medium
+        security_group: default
+        vpc_subnet_id: "{{ aws_vpc_subnet_id }}"
+        state: present
+        key_name: "id_rsa.pub" 
+        region: "{{ region }}"
+        access_key: "{{ ec2_access_key }}"
+        aws_secret_access_key: "{{ ec2_secret_key }}"
+        image_id: "{{ aws_rhel_image_id }}"
+        network: 
+          assign_public_ip: true
+    
+    - name: Create a ISCSI Instance
+      amazon.aws.ec2_instance:
+        name: "internal-iscsi"
+        instance_type: t2.medium
+        security_group: default
+        vpc_subnet_id: "{{ aws_vpc_subnet_id }}"
+        state: present
+        key_name: "id_rsa.pub" 
+        region: "{{ region }}"
+        access_key: "{{ ec2_access_key }}"
+        aws_secret_access_key: "{{ ec2_secret_key }}"
+        image_id: "{{ aws_rhel_image_id }}"
+        network: 
+          assign_public_ip: true 
+      register: AAP_instance
+
+    - name: Gather the ISCSI instance_id
+      ansible.builtin.set_fact:
+        aws_aap_instance_id: "{{ AAP_instance.instances.0.instance_id }}"
+
+    - block:
+        - name: Create a Volume 
+          amazon.aws.ec2_vol:
+            instance: "{{ aws_aap_instance_id }}"
+            volume_size: 60
+            volume_type: standard
+            device_name: sdb
+            region: "{{ region }}"
+            access_key: "{{ ec2_access_key }}"
+            aws_secret_access_key: "{{ ec2_secret_key }}"
+      
+      rescue:
+
+        - name: Wait for Instance to be ready
+          ansible.builtin.pause:
+            minutes: 5
+        
+        - name: Create a Volume 
+          amazon.aws.ec2_vol:
+            instance: "{{ aws_aap_instance_id }}"
+            volume_size: 60
+            volume_type: standard
+            device_name: sdb
+            region: "{{ region }}"
+            access_key: "{{ ec2_access_key }}"
+            aws_secret_access_key: "{{ ec2_secret_key }}"      
+
+
+
+
+
+    
+
+
+    
+

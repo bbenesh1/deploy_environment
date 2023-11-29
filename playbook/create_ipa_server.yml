@@ -1,0 +1,98 @@
+---
+- name: Create an IPA Server
+  hosts: ipa
+  tasks:
+
+    - name: Create an IPA Server | Redhat Subscription Register
+      community.general.redhat_subscription:
+        state: present
+        username: "{{ subscription_username }}"
+        password: "{{ subscription_password }}"
+        consumer_id:  "{{ ipa_subscription_id }}"   
+
+    - name: Create an IPA Server | Enable manage_repos in rhsm
+      ansible.builtin.command:
+        cmd: "subscription-manager config --rhsm.manage_repos=1"
+    
+    - name: Create an IPA Server | Enable repositories
+      community.general.rhsm_repository:
+        name: "{{ item }}"
+        state: enabled
+      loop: "{{ ipa_subscription_repos }}"
+
+    - name: Create an IPA Server | Install required packages
+      ansible.builtin.yum:
+        name: "{{ ipa_server_packages }}"
+        state: present
+    
+    - name: Create an IPA Server | Set hostname
+      ansible.builtin.hostname:
+        name: "{{ ipa_hostname }}"
+    
+    - name: Create an IPA Server | Enable desired services
+      ansible.builtin.service:
+        service: firewalld
+        state: started
+        enabled: true
+    
+    - name: Create an IPA Server | Enable firewalld rules
+      ansible.posix.firewalld: 
+        service: "{{ item }}"
+        permanent: true
+        immediate: true 
+        state: enabled
+      loop: "{{ ipa_firewall_services }}"
+          
+    - name: Create an IPA Server | Cat ipa.csr if it exists
+      ansible.builtin.command: "cat /root/ipa.csr"
+      register: ipa_csr_result
+
+    - name: Create an IPA Server | debug
+      ansible.builtin.debug:
+        msg: "{{ ipa_csr_result }}"
+    
+    - name: Create an IPA Server | Cat ipa.csr if it exists
+      ansible.builtin.command: "python3 -m pip install pexpect"
+
+    - name: Create an IPA Server | Install ipa server
+      ansible.builtin.expect:  
+        command: > 
+         ipa-server-install -n bbenesh.org -r BBENESH.ORG --reverse-zone 1.168.192.in-addr.arpa 
+         --setup-kra --setup-dns --mkhomedir --external-ca -p "{{ ipa_admin_ds_password }}" -a "{{ ipa_admin_ds_password }}" --no-forwarders 
+         --hostname=$(hostname) --netbios-name=BBENESH
+        responses:
+            test: "no"
+            Continue to configure the system with these values?: 'yes'
+      when: ipa_csr_result.rc != 0
+    
+    - name: Create an IPA Server | Copy Certs across
+      ansible.builtin.copy:
+        src: "~/ansible/files/{{ item }}"
+        dest: "/tmp/"
+      loop: 
+        - ipa.crt
+        - rootCACert.pem
+      when: ipa_csr_result.rc == 0    
+
+    - name: Create an IPA Server | Test if IPA is up
+      ansible.builtin.uri:
+        url: "https://{{ ipa_hostname }}" 
+      register: ipa_web_result
+      ignore_errors: true
+      when: ipa_csr_result.rc == 0 
+
+    - name: Create an IPA Server | Test  
+      debug:
+        msg: "{{ ipa_web_result.status }}"
+   
+    - name: Create an IPA Server | Install ipa server
+      ansible.builtin.expect:  
+        command: > 
+         ipa-server-install --external-cert-file /tmp/ipa.crt --external-cert-file /tmp/rootCACert.pem
+        responses:
+          Question:
+            - "student123"
+            - "no"
+      when: ipa_csr_result.rc == 0 and ipa_web_result.status != 200
+
+

@@ -1,0 +1,106 @@
+---
+- name: Gather IPA facts 
+  hosts: ipa
+  tasks: []
+
+- name: Create an NFS CLuster Server
+  hosts: nfscluster
+  tasks:
+    
+    - name: Create an NFS Cluster Server | Redhat Subscription Register
+      community.general.redhat_subscription:
+        state: present
+        username: "{{ subscription_username }}"
+        password: "{{ subscription_password }}"
+        consumer_id: "{% if inventory_hostname in groups['nfsone'] %}{{ nfs_subscription.nfs_one_id }}{% else %}{{ nfs_subscription.nfs_two_id }}{% endif %}"   
+
+    - name: Create an NFS Cluster Server | Enable manage_repos in rhsm
+      ansible.builtin.command:
+        cmd: "subscription-manager config --rhsm.manage_repos=1"
+    
+    - name: Create an NFS Cluster Server | Enable repositories
+      community.general.rhsm_repository:
+        name: "{{ item }}"
+        state: enabled
+      loop: "{{ nfs_subscription_repos }}"
+
+    - name: Create an NFS Cluster Server | Install required packages
+      ansible.builtin.yum:
+        name: "{{ nfs_server_packages }}"
+        state: present
+    
+    - name: Create an NFS Cluster Server | Set Name Server
+      community.general.nmcli:
+        conn_name: "{{ ansible_default_ipv4.interface }}"
+        type: ethernet
+        dns4: "{{ hostvars[groups['ipa'].0].ansible_default_ipv4.address }}"
+        state: present
+    
+    - name: Create an NFS Cluster Server | Reload the Interface to apply host
+      ansible.builtin.command: "nmcli con up {{ ansible_default_ipv4.interface }}"
+
+    - name: Create an NFS Cluster Server | Set hostname
+      ansible.builtin.hostname:
+        name: "{% if inventory_hostname in groups['nfsone'] %}{{ nfs_hostname.nfs_one }}{% else %}{{ nfs_hostname.nfs_two }}{% endif %}"
+    
+    - name: Create an NFS Cluster Server | Enable desired services
+      ansible.builtin.service:
+        service: "{{ item }}"
+        state: started
+        enabled: true
+      loop: "{{ nfs_services }}"
+    
+    - name: Create an NFS Cluster Server | Enable firewalld rules
+      ansible.posix.firewalld: 
+        service: "{{ item }}"
+        permanent: true
+        state: enabled
+      loop: "{{ nfs_firewall_services }}"
+              
+    - name: Create an NFS Cluster Server | Install pexpect
+      ansible.builtin.command: "python3 -m pip install pexpect"
+    
+    - name: Create an NFS Cluster Server | confirm if host is ipa joined
+      ansible.builtin.command: cat /etc/ipa/default.conf
+      ignore_errors: true
+      register: ipa_default_test
+   
+    - name: Create an NFS Cluster Server | Connect the host to IPA
+      ansible.builtin.expect:  
+        command: ipa-client-install --ip-address {{ ansible_default_ipv4.address }} --domain bbenesh.org --ntp-server 192.168.1.6"
+        responses:
+          Continue to configure the system with these values?: 'yes'
+          User authorized to enroll computers: 'admin'
+          Password for admin@BBENESH.ORG: "{{ ipa_admin_ds_password }}"
+      when: ipa_default_test.failed == true
+
+    - name: Add the iscsi initiator name
+      copy:
+        dest: /etc/iscsi/initiatorname.iscsi
+        content: "InitiatorName=\
+                  iqn.2023-11.org.bbenesh:{{ ansible_hostname }}\n"
+        mode: '644'
+        owner: root
+        group: root
+      notify: restart iscsid
+    
+    - meta: flush_handlers  
+
+    - name: the iSCSI target is discovered and available  
+      open_iscsi:
+        portal: 192.168.1.60
+        port: '3260'
+        target: iqn.2023-11.org.bbenesh:iscsi
+        discover: yes
+        login: yes  
+
+
+  handlers:
+
+      - name: restart iscsid
+        ansible.builtin.service:
+          service: iscsid
+          state: restarted
+
+
+

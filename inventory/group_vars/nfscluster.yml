@@ -1,0 +1,36 @@
+---
+nfs_subscription:
+  nfs_one_id: a7030589-589e-4731-8b3f-0f206a4fd3fa
+  nfs_two_id: d9914a85-cc1f-4207-bd07-c781d182b15d
+
+nfs_subscription_repos:
+  - rhel-9-for-x86_64-appstream-rpms
+  - rhel-9-for-x86_64-baseos-rpms
+  - rhel-9-for-x86_64-highavailability-rpms
+
+nfs_server_packages:
+  - iscsi-initiator-utils
+  - firewalld 
+  - python3-pip
+  - ipa-client
+  - nfs-utils
+
+nfs_hana_packages:
+  - pcs
+
+nfs_services: 
+  - firewalld
+  - iscsid
+
+nfs_firewall_services:
+  - nfs
+  - mountd
+  - rpc-bind
+
+nfs_hostname: 
+  nfs_one: nfsone.bbenesh.org
+  nfs_two: nfstwo.bbenesh.org
+
+nfs_hana_cluster_names:
+ - nfsone.bbenesh.org
+ - nfstwo.bbenesh.org

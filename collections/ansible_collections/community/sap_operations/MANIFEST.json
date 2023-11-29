@@ -1,0 +1,32 @@
+{
+ "collection_info": {
+  "namespace": "community",
+  "name": "sap_operations",
+  "version": "0.9.0",
+  "authors": [
+   "IBM Lab for SAP Solutions",
+   "IBM Cloud for SAP",
+   "IBM Consulting for SAP"
+  ],
+  "readme": "README.md",
+  "tags": [],
+  "description": "Collection of Ansible Modules and Ansible Roles for SAP system operations",
+  "license": [
+   "Apache-2.0"
+  ],
+  "license_file": null,
+  "dependencies": {},
+  "repository": "http://example.com/repository",
+  "documentation": "http://docs.example.com",
+  "homepage": "http://example.com",
+  "issues": "http://example.com/issue/tracker"
+ },
+ "file_manifest_file": {
+  "name": "FILES.json",
+  "ftype": "file",
+  "chksum_type": "sha256",
+  "chksum_sha256": "61d5424f36e95a38c0f449668832acc6416a2c3be4a5499b6e57e8c398314a81",
+  "format": 1
+ },
+ "format": 1
+}

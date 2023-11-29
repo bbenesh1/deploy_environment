@@ -1,0 +1,40 @@
+{
+ "collection_info": {
+  "namespace": "community",
+  "name": "sap_install",
+  "version": "1.3.1",
+  "authors": [
+   "Bernd Finger <bfinger(at)redhat.com>",
+   "Sean Freeman <sean.freeman(at)uk.ibm.com>",
+   "Rainer Leber <rainer.leber(at)sva.de>",
+   "Markus Koch <mkoch(at)redhat.com>",
+   "Markus Moster <mmoster(at)redhat.com>",
+   "Janine Fuchs <jfuchs(at)redhat.com>",
+   "Steven Stringer <steven.stringer(at)suse.com>"
+  ],
+  "readme": "README.md",
+  "tags": [
+   "database",
+   "application",
+   "sap"
+  ],
+  "description": "Collection of Ansible Roles for SAP software installation in various deployment configurations",
+  "license": [
+   "Apache-2.0"
+  ],
+  "license_file": null,
+  "dependencies": {},
+  "repository": "https://github.com/sap-linuxlab/community.sap_install",
+  "documentation": "https://github.com/sap-linuxlab/sap-linuxlab.github.io/blob/master/README.md",
+  "homepage": "https://sap-linuxlab.github.io",
+  "issues": "https://github.com/sap-linuxlab/community.sap_install/issues"
+ },
+ "file_manifest_file": {
+  "name": "FILES.json",
+  "ftype": "file",
+  "chksum_type": "sha256",
+  "chksum_sha256": "b97b6ade866187c61c1f5c01c599d379430f5dee2fdd2cb465250cd95558fc90",
+  "format": 1
+ },
+ "format": 1
+}

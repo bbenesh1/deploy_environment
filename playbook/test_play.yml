@@ -1,0 +1,8 @@
+---
+- name: Test 
+  hosts: localhost
+  tasks:
+     
+      - name: "Deploy Pacemaker Cluster | Stat results"
+        ansible.builtin.debug:
+          msg: "pcs host auth {{ hana_nodes | join(' ')  }}"

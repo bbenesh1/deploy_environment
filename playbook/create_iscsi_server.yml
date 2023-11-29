@@ -1,0 +1,76 @@
+---
+- name: Create an ISCSI Server
+  hosts: iscsi
+  tasks:
+
+    - name: Create an ISCSI Server | Redhat Subscription Register
+      community.general.redhat_subscription:
+        state: present
+        username: "{{ subscription_username }}"
+        password: "{{ subscription_password }}"
+        consumer_id:  "{{ iscsi_subscription_id }}"   
+
+    - name: Create an ISCSI Server | Enable manage_repos in rhsm
+      ansible.builtin.command:
+        cmd: "subscription-manager config --rhsm.manage_repos=1"
+    
+    - name: Create an ISCSI Server | Enable repositories
+      community.general.rhsm_repository:
+        name: "{{ item }}"
+        state: enabled
+      loop: "{{ iscsi_subscription_repos }}"
+
+    - name: Create an ISCSI Server | Install required packages
+      ansible.builtin.yum:
+        name: "{{ iscsi_server_packages }}"
+        state: present
+    
+    - name: Create an ISCSI Server | Set hostname
+      ansible.builtin.hostname:
+        name: "{{ iscsi_hostname }}"
+
+    - name: Create an ISCSI Server | Set Name Server
+      community.general.nmcli:
+        conn_name: "{{ ansible_default_ipv4.interface }}"
+        type: ethernet
+        dns4: "{{ hostvars[groups['ipa'].0].ansible_default_ipv4.address }}"
+        state: present
+    
+    - name: Create an ISCSI Server | Reload the Interface to apply host
+      ansible.builtin.command: "nmcli con up {{ ansible_default_ipv4.interface }}"
+    
+    - name: Create an ISCSI Server | Enable desired services
+      ansible.builtin.service:
+        service: "{{ item }}"
+        state: started
+        enabled: true
+      loop: "{{ iscsi_services }}"
+    
+    - name: Create an ISCSI Server | Enable firewalld rules
+      ansible.posix.firewalld: 
+        service: "{{ item }}"
+        permanent: true
+        state: enabled
+      loop: "{{ iscsi_firewall_services }}"
+              
+    - name: Create an ISCSI Server | Install pexpect
+      ansible.builtin.command: "python3 -m pip install pexpect"
+    
+    - name: Create an ISCSI Server | confirm if host is ipa joined
+      ansible.builtin.command: cat /etc/ipa/default.conf
+      ignore_errors: true
+      register: ipa_default_test
+   
+    - name: Create an ISCSI Server | Connect the host to IPA
+      ansible.builtin.expect:  
+        command: ipa-client-install --ip-address {{ ansible_default_ipv4.address }} --domain bbenesh.org --ntp-server 192.168.1.6"
+        responses:
+          Continue to configure the system with these values?: 'yes'
+          User authorized to enroll computers: 'admin'
+          Password for admin@BBENESH.ORG: "{{ ipa_admin_ds_password }}"
+      when: ipa_default_test.failed == true
+
+
+            
+
+

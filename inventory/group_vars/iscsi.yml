@@ -1,0 +1,20 @@
+---
+iscsi_subscription_id: 82db01cf-0873-4e7a-98b0-b0281e8a2220
+iscsi_subscription_repos:
+  - rhel-9-for-x86_64-appstream-rpms
+  - rhel-9-for-x86_64-baseos-rpms
+
+iscsi_server_packages:
+  - targetcli
+  - firewalld 
+  - python3-pip
+  - ipa-client
+
+iscsi_services: 
+  - target
+  - firewalld
+
+iscsi_firewall_services:
+  - iscsi-target
+
+iscsi_hostname: iscsi.bbenesh.org

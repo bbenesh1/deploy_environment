@@ -1,0 +1,29 @@
+---
+# required SAP Notes for SLES 15
+
+__sap_netweaver_preconfigure_sapnotes:
+  - "1275776"
+
+__sap_netweaver_preconfigure_packages:
+  - libstdc++6
+  - libatomic1
+  - libgcc_s1
+  - libltdl7
+  - insserv-compat
+  - cpupower
+  - hicolor-icon-theme
+  - libcpupower0
+  - libsensors4
+  - patterns-base-basesystem
+  - patterns-server-enterprise-sap_server
+  - patterns-yast-yast2_basis
+  - procmail
+  - sysstat
+  - system-user-uuidd
+  - uuidd
+  - yast2-auth-client
+  - yast2-auth-server
+  - yast2-theme
+  - yast2-vpn
+  - tcsh
+  - acl

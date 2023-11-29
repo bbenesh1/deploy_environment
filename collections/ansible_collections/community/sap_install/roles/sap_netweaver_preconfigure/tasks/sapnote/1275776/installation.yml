@@ -1,0 +1,5 @@
+---
+
+- name: 1275776 - Installation saptune
+  ansible.builtin.package:
+    name: "saptune"

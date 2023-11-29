@@ -1,0 +1,17 @@
+---
+- name: Initial install of Python altinstall for PyRFC
+  ansible.builtin.include_tasks: python_pyrfc_init.yml
+  when: pyrfc_first_run | bool
+
+- name: Discover Python altinstall for PyRFC
+  ansible.builtin.include_tasks: python_pyrfc_discover.yml
+  when: not pyrfc_first_run | bool
+
+# RFC call using variables set by the Ansible Playbook when calling this Ansible Role
+- name: Execute Ansible Module to call PyRFC using the virtualenv Python3
+  community.sap_operations.sap_pyrfc:
+    function: "{{ target_function }}"
+    parameters: "{{ target_parameters }}"
+    connection: "{{ target_connection }}"
+  vars:
+    ansible_python_interpreter: ~/env/pyrfc_env/bin/python3

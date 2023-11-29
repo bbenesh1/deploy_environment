@@ -1,0 +1,16 @@
+---
+collections:
+  - name: community.sap_libs
+    version: 1.4.1
+  - name: community.sap_install
+    version: 1.3.1
+  - name: community.sap_operations
+    version: 0.9.0
+  - name: community.sap_launchpad
+    version: 1.0.1
+  - name: files/redhat-rhel_system_roles-1.22.0.tar.gz
+    type: file
+  - name: community.general
+    version: 7.4.0
+  - name: ansible.posix
+    version: 1.5.4

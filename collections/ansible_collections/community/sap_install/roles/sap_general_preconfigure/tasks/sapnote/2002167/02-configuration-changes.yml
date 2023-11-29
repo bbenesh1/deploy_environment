@@ -1,0 +1,15 @@
+---
+
+- name: Configure 2002167-2a
+  ansible.builtin.debug:
+    msg: "SAP note 2002167 Step 2a: Configure the Firewall"
+
+- name: Import tasks from '../../RedHat/generic/configure-firewall.yml'
+  ansible.builtin.import_tasks: ../../RedHat/generic/configure-firewall.yml
+
+- name: Configure 2002167-2b
+  ansible.builtin.debug:
+    msg: "SAP note 2002167 Step 2b: Configure SELinux"
+
+- name: Import tasks from '../../RedHat/generic/configure-selinux.yml'
+  ansible.builtin.import_tasks: ../../RedHat/generic/configure-selinux.yml

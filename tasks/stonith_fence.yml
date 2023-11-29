@@ -1,0 +1,18 @@
+---
+      - name: "Deploy Pacemaker Cluster | Check if Stonith fence exists"
+        command:
+           cmd: "pcs stonith config {{ item['fence_name'] }}"
+        register: stonith_configs
+        ignore_errors: true
+        changed_when: false
+
+      - name: "Deploy Pacemaker Cluster | Create Stonith fence"
+        command:
+           cmd: "pcs stonith create {{ item.fence_name }} {{ item.fence_type }} pcmk_host_list={{ item.fence_node }} ip={{ item.fence_ip }} username={{ item.fence_username }} password={{ item.fence_password }} power_timeout={{ item.timeout }} {{ item.additional_options }}"
+        when: stonith_configs.rc != 0
+
+      - name: "Deploy Pacemaker Cluster | Update Stonith fence"
+        command:
+           cmd: "pcs stonith update {{ item.fence_name }} {{ item.fence_type }} pcmk_host_list={{ item.fence_node }} ip={{ item.fence_ip }} username={{ item.fence_username }} password={{ item.fence_password }} power_timeout={{ item.timeout }} {{ item.additional_options }}"
+        when: stonith_configs.rc == 0
+

@@ -1,0 +1,7 @@
+---
+- name: SAP Firewall - Service firewalld state - start & enable
+  ansible.builtin.systemd:
+    name: firewalld
+    state: started
+    enabled: true
+    masked: false

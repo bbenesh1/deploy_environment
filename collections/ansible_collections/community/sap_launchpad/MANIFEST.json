@@ -1,0 +1,32 @@
+{
+ "collection_info": {
+  "namespace": "community",
+  "name": "sap_launchpad",
+  "version": "1.0.1",
+  "authors": [
+   "IBM Lab for SAP Solutions",
+   "IBM Cloud for SAP",
+   "IBM Consulting for SAP"
+  ],
+  "readme": "README.md",
+  "tags": [],
+  "description": "Collection of Ansible Modules for SAP Launchpad APIs",
+  "license": [
+   "Apache-2.0"
+  ],
+  "license_file": null,
+  "dependencies": {},
+  "repository": "https://github.com/sap-linuxlab/community.sap_launchpad",
+  "documentation": "https://github.com/sap-linuxlab/community.sap_launchpad/blob/main/README.md",
+  "homepage": "https://sap-linuxlab.github.io",
+  "issues": "https://github.com/sap-linuxlab/community.sap_launchpad/issues"
+ },
+ "file_manifest_file": {
+  "name": "FILES.json",
+  "ftype": "file",
+  "chksum_type": "sha256",
+  "chksum_sha256": "090b19abd4f8c3ea54c1a96e52abfb99ffd55ec9efb7ce62908adb3edd07fb1a",
+  "format": 1
+ },
+ "format": 1
+}
