@@ -13,7 +13,7 @@
 
   - name: Load Static Inventories
     set_fact:
-      static_inv_ids: "{{ lookup('ansible.controller.controller_api', 'inventories', query_params={ 'has_inventory_sources': false, 'kind': '' }, return_all=true, oauth_token='ceDO7OYYBAvQehYV5q8faOUZgpII6A') | map(attribute='id') }}"
+      static_inv_ids: "{{ lookup('ansible.controller.controller_api', 'inventories', query_params={ 'has_inventory_sources': false, 'kind': '' }, return_all=true, oauth_token='ceDO7OYYBAvQehYV5q8faOUZgpII6A', verify_ssl=False) | map(attribute='id') }}"
     
   # - name: Debug
   #   debug:
