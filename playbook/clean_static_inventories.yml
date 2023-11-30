@@ -66,7 +66,7 @@
 
   - name: Generate HTML report
     set_fact:
-      html_output: "{{ lookup('template', 'templates/report_static_inventories.html.j2') }}"
+      html_output: "{{ lookup('template', '../templates/report_static_inventories.html.j2') }}"
 
   
   - name: Debug
