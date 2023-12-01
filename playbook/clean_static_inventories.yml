@@ -49,7 +49,7 @@
         organization: "{{ inv_info.organization }}"
         calc_run: "{{ last_job_run_for_calculate }}"
         to_be_deleted: >-
-           {% if (months_diff | int) > {{ audit_in_months }} %}Yes
+           {% if (months_diff | int) > audit_in_months %}Yes
            {% else %}No
            {% endif %}        
     loop: "{{ static_inv_ids }}"
