@@ -35,8 +35,8 @@
         {% else %}0Z
         {% endif %}
       last_job_run_for_calculate: >-
-        {% if last_job_runs == '0Z' %}"{{ inv_info.created }}"
-        {% else %}"{{ last_job_runs }}"
+        {% if last_job_runs == '' %}{{ inv_info.created }}
+        {% else %}{{ last_job_runs }}
         {% endif %}
       last_job_run_convert: "{{ (last_job_run_for_calculate | split('T') | first ) }}"   
       months_diff_calc: "{{ (ansible_date_time.date | to_datetime(format='%Y-%m-%d') - last_job_run_convert | to_datetime(format='%Y-%m-%d')) }}"
