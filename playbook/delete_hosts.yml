@@ -17,9 +17,10 @@
         host_metrics: "{{ lookup('ansible.controller.controller_api', 'host_metrics/{{ item }}', return_all=true) }}"
         last_automation: "{{ host_metrics.last_automation }}"
         last_automation_split: "{{ last_automation | split('T') | first }}"
+        last_automation_calc: "{{ (ansible_date_time.date | to_datetime(format='%Y-%m-%d') - last_automation_split | to_datetime(format='%Y-%m-%d')) }}"
         make_key_value:
           hostname: "{{ host_metrics.hostname }}"
-          last_automation_date: "{{ last_automation_split }}" 
+          last_automation_date: "{{ last_automation_calc }}" 
           hostname_id: "{{ host_metrics.id }}"
       loop: "{{ host_metrics_ids }}"
     
