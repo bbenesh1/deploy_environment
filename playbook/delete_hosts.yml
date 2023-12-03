@@ -20,6 +20,7 @@
         make_key_value:
           hostname: "{{ host_metrics.hostname }}"
           last_automation_date: "{{ last_automation_split }}" 
+          hostname_id: "{{ host_metrics.id }}"
       loop: "{{ host_metrics_ids }}"
     
     - name: Debug
