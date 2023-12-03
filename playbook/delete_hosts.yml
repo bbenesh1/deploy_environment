@@ -18,9 +18,10 @@
         last_automation: "{{ host_metrics.last_automation }}"
         last_automation_split: "{{ last_automation | split('T') | first }}"
         last_automation_calc: "{{ (ansible_date_time.date | to_datetime(format='%Y-%m-%d') - last_automation_split | to_datetime(format='%Y-%m-%d')) }}"
+        months_diff: "{{ last_automation_calc | split(' ') | first | int / 30 }}"
         make_key_value:
           hostname: "{{ host_metrics.hostname }}"
-          last_automation_date: "{{ last_automation_calc }}" 
+          last_automation_date: "{{ months_diff }}" 
           hostname_id: "{{ host_metrics.id }}"
       loop: "{{ host_metrics_ids }}"
     
