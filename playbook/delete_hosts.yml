@@ -1,0 +1,15 @@
+---
+- name: Delete Host entries
+  hosts: ip-192-168-1-72.eu-west-1.compute.internal
+  remote_user: ec2-user
+  collections:
+    - ansible.controller 
+  tasks:
+
+    - name: Gather and manipulate Host Metrics
+      ansible.builtin.set_fact:
+        host_metrics: "{{ lookup('ansible.controller.controller_api', 'host_metrics', return_all=true) | map(attribute='id') }}"
+
+    - name: look at status
+      ansible.builtin.debug:
+        msg: "{{ host_metrics }}"
