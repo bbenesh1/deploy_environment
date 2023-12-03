@@ -9,7 +9,8 @@
     - name: Gather and manipulate Host Metrics
       ansible.builtin.set_fact:
         host_metrics: "{{ lookup('ansible.controller.controller_api', 'host_metrics', return_all=true) }}"
+        host_metrics_ids: "{{ lookup('ansible.controller.controller_api', 'host_metrics', return_all=true) | map(attribute='id') }}"
 
-    - name: look at status 
+    - name: look at status
       ansible.builtin.debug:
         msg: "{{ host_metrics }}"
