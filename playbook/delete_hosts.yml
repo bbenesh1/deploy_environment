@@ -23,8 +23,9 @@
           hostname: "{{ host_metrics.hostname }}"
           last_automation_date: "{{ months_diff }}" 
           hostname_id: "{{ host_metrics.id }}"
-          to_be_deleted: >-
-           {% if (months_diff | int) > audit_in_months %}Yes{% else %}No{% endif %}  
+          to_be_deleted: "Yes"
+          # to_be_deleted: >-
+          #  {% if (months_diff | int) > audit_in_months %}Yes{% else %}No{% endif %}  
       loop: "{{ host_metrics_ids }}"
     
     - name: Debug
