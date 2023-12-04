@@ -30,3 +30,17 @@
     - name: Debug
       ansible.builtin.debug:
         msg: "{{ host_list }}"
+
+    - name: Test deletion capability
+      ansible.builtin.uri:
+        url: "https://{{ ansible_hostname }}/api/v2/host_metrics/{{ item }}/"
+        method: POST
+        body_format: json
+        body: |
+          {{ "deleted": true }}
+        headers:
+          Content-Type: application/json
+      loop:
+        - 14
+
+
