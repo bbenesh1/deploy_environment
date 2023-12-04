@@ -36,8 +36,9 @@
         url: "https://{{ ansible_hostname }}/api/v2/host_metrics/{{ item }}/"
         method: POST
         body_format: json
-        body: |
-          {{ "deleted": true }}
+        body: 
+          deleted: "true" 
+        return_content: yes
         headers:
           Content-Type: application/json
       loop:
