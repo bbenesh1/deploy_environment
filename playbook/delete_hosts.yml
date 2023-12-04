@@ -39,7 +39,7 @@
         validate_certs: false
         headers:
           Content-Type: application/json
-          X-API-KEY: "{{ lookup('env', 'CONTROLLER_OAUTH_TOKEN') }}"
+          Authorization: "Bearer {{ lookup('env', 'CONTROLLER_OAUTH_TOKEN') }}"
       loop:
         - 14
 
