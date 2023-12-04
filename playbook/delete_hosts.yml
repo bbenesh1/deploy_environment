@@ -36,7 +36,7 @@
       ansible.builtin.debug:
         msg: "{{ item }}"
       loop: "{{ host_metrics_ids }}"
-      when: host_list[item].to_be_deleted | trim == "No"
+      when: host_list[item].to_be_deleted | trim == "Yes"
 
 
     - fail:
