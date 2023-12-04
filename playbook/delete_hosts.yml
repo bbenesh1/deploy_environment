@@ -38,7 +38,6 @@
         return_content: yes
         validate_certs: false
         headers:
-          Content-Type: application/json
           Authorization: "Bearer {{ lookup('env', 'CONTROLLER_OAUTH_TOKEN') }}"
       loop:
         - 14
