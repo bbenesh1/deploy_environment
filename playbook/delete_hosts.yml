@@ -39,6 +39,7 @@
         body: 
           deleted: "true" 
         return_content: yes
+        validate_certs: false
         headers:
           Content-Type: application/json
       loop:
