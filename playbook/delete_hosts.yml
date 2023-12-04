@@ -23,9 +23,8 @@
           hostname: "{{ host_metrics.hostname }}"
           last_automation_date: "{{ months_diff }}" 
           hostname_id: "{{ host_metrics.id }}"
-          to_be_deleted: "Yes"
-          # to_be_deleted: >-
-          #  {% if (months_diff | int) > audit_in_months %}Yes{% else %}No{% endif %}  
+          to_be_deleted: >-
+           {% if (months_diff | int) > audit_in_months %}Yes{% else %}No{% endif %}  
       loop: "{{ host_metrics_ids }}"
     
     - name: Debug
@@ -38,9 +37,6 @@
         msg: "{{ item }}"
       loop: "{{ host_metrics_ids }}"
       when: host_list[item].to_be_deleted | trim == "Yes"
-
-
-    - fail:
     
     - name: Test deletion capability
       ansible.builtin.uri:
@@ -51,7 +47,7 @@
         status_code: 204
         headers:
           Authorization: "Bearer {{ lookup('env', 'CONTROLLER_OAUTH_TOKEN') }}"
-      loop:
-        - 14
+      loop: "{{ host_metrics_ids }}"
+      when: host_list[item].to_be_deleted | trim == "Yes"
 
 
