@@ -31,6 +31,15 @@
       ansible.builtin.debug:
         msg: "{{ host_list }}"
 
+    - name: Debug 2
+      ansible.builtin.debug:
+        msg: "{{ item }}"
+      loop: "{{ host_list }}"
+      when: item | map(attribute='to_be_deleted') == "Yes"
+
+
+    - fail:
+    
     - name: Test deletion capability
       ansible.builtin.uri:
         url: "https://{{ ansible_hostname }}/api/v2/host_metrics/{{ item }}/"
