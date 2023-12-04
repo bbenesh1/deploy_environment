@@ -34,10 +34,7 @@
     - name: Test deletion capability
       ansible.builtin.uri:
         url: "https://{{ ansible_hostname }}/api/v2/host_metrics/{{ item }}/"
-        method: POST
-        body_format: json
-        body: 
-          deleted: "true" 
+        method: DELETE
         return_content: yes
         validate_certs: false
         headers:
