@@ -34,9 +34,9 @@
 
     - name: Debug 2
       ansible.builtin.debug:
-        msg: "{{ item }}"
+        msg: "{{ (host_list[item] | map(attribute='to_be_deleted') | trim) }}"
       loop: "{{ host_metrics_ids }}"
-      when: (host_list[item] | map(attribute='to_be_deleted') | trim) == "No"
+ #     when: (host_list[item] | map(attribute='to_be_deleted') | trim) == "No"
 
 
     - fail:
