@@ -42,6 +42,7 @@
         validate_certs: false
         headers:
           Content-Type: application/json
+          x-ms-client-auth-token: "{{ lookup('env', 'CONTROLLER_OAUTH_TOKEN') }}"
       loop:
         - 14
 
