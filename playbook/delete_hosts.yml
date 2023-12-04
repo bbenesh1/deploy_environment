@@ -42,7 +42,6 @@
       ansible.builtin.uri:
         url: "https://{{ ansible_hostname }}/api/v2/host_metrics/{{ item }}/"
         method: DELETE
-        return_content: yes
         validate_certs: false
         status_code: 204
         headers:
