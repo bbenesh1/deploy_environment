@@ -37,6 +37,7 @@
         method: DELETE
         return_content: yes
         validate_certs: false
+        status_code: 204
         headers:
           Authorization: "Bearer {{ lookup('env', 'CONTROLLER_OAUTH_TOKEN') }}"
       loop:
