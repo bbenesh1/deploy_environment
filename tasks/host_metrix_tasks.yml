@@ -1,0 +1,35 @@
+---
+    - name: Host List
+      ansible.builtin.set_fact:
+        host_list: "{{ host_list | default([]) | combine({item: make_key_value}) }}"
+      vars:
+        host_metrics: "{{ lookup('ansible.controller.controller_api', 'host_metrics/{{ item }}', return_all=true) }}"
+        last_automation: "{{ host_metrics.last_automation }}"
+        last_automation_split: "{{ last_automation | split('T') | first }}"
+        last_automation_calc: "{{ (ansible_date_time.date | to_datetime(format='%Y-%m-%d') - last_automation_split | to_datetime(format='%Y-%m-%d')) }}"
+        months_diff: "{{ last_automation_calc | split(' ') | first | int / 30 }}"
+        make_key_value:
+          hostname: "{{ host_metrics.hostname }}"
+          last_automation_date: "{{ months_diff }}" 
+          hostname_id: "{{ host_metrics.id }}"
+          to_be_deleted: >-
+           {% if (months_diff | int) > audit_in_months %}Yes{% else %}No{% endif %}
+    
+    - name: Debug
+      ansible.builtin.debug:
+        msg: "{{ host_list[item] }}"
+
+    - name: Debug 2
+      ansible.builtin.debug:
+        msg: "{{ item }}"
+      when: host_list[item].to_be_deleted | trim == "Yes"
+    
+    - name: Test deletion capability
+      ansible.builtin.uri:
+        url: "https://{{ ansible_hostname }}/api/v2/host_metrics/{{ item }}/"
+        method: DELETE
+        validate_certs: false
+        status_code: 204
+        headers:
+          Authorization: "Bearer {{ lookup('env', 'CONTROLLER_OAUTH_TOKEN') }}"
+      when: host_list[item].to_be_deleted | trim == "Yes"
