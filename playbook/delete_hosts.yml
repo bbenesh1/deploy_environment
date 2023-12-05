@@ -9,23 +9,31 @@
     - name: Gather and manipulate Host Metrics
       ansible.builtin.set_fact:
         host_metrics_ids: "{{ lookup('ansible.controller.controller_api', 'host_metrics', return_all=true) | map(attribute='id') }}"
-    
-    - name: List count
-      vars:
-        host_list_count: "{{ host_metrics_ids | length }}"
-      debug:
-        msg: "{{ host_list_count }}"
-      
+        
   
     - name: Gather and manipulate Host Metrics
       ansible.builtin.set_fact:
         host_metrics_ids_list1: "{{ host_metrics_ids_list1 | default([]) + [ host_metrics_ids[item|int] ] }}"
       with_sequence: start=0 end=2
 
-    - name: Test new List 
+    - name: Gather and manipulate Host Metrics
+      vars:
+        host_list_count: "{{ host_metrics_ids | length }}"
+      ansible.builtin.set_fact:
+        host_metrics_ids_list2: "{{ host_metrics_ids_list1 | default([]) + [ host_metrics_ids[item|int] ] }}"
+      with_sequence: "start=3 end={{ host_list_count }}"
+
+    - name: Test new List1 
       ansible.builtin.debug:
         msg: "{{ host_metrics_ids_list1 }}"
-    
+
+    - name: Test new List2 
+      ansible.builtin.debug:
+        msg: "{{ host_metrics_ids_list2 }}"
+
+    - name: Test new List 
+      ansible.builtin.debug:
+        msg: "{{ host_metrics_ids_list }}"
 
     - meta: end_play
 
