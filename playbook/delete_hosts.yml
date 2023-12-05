@@ -9,6 +9,18 @@
     - name: Gather and manipulate Host Metrics
       ansible.builtin.set_fact:
         host_metrics_ids: "{{ lookup('ansible.controller.controller_api', 'host_metrics', return_all=true) | map(attribute='id') }}"
+  
+    - name: Gather and manipulate Host Metrics
+      ansible.builtin.set_fact:
+        host_metrics_ids_list1: "{{ host_metrics_ids_list1 | default([]) + host_metrics_ids[item|int] }}"
+      with_sequence: start=0 end=3
+
+    - name: Test new List 
+      ansible.builtin.debug:
+        msg: "{{ host_metrics_ids_list1 }}"
+    
+
+    - meta: end_play
 
     - name: Host List
       ansible.builtin.set_fact:
