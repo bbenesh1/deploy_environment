@@ -9,9 +9,10 @@
     - name: Gather and manipulate Host Metrics
       ansible.builtin.set_fact:
         host_metrics_ids: "{{ lookup('ansible.controller.controller_api', 'host_metrics', return_all=true) | map(attribute='id') }}"
-        host_list_count: "{{ host_metrics_ids | length }}"
     
     - name: List count
+      vars:
+        host_list_count: "{{ host_metrics_ids | length }}"
       debug:
         msg: "{{ host_list_count }}"
       
