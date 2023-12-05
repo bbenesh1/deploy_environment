@@ -14,7 +14,7 @@
     - name: Gather and manipulate Host Metrics
       ansible.builtin.set_fact:
         host_metrics_ids_list1: "{{ host_metrics_ids_list1 | default([]) + [ host_metrics_ids[item|int] ] }}"
-      with_sequence: start=0 end=2
+      with_sequence: start=0 end=1
 
     - name: Gather and manipulate Host Metrics
       vars:
@@ -33,7 +33,7 @@
 
     - name: Test new List 
       ansible.builtin.debug:
-        msg: "{{ host_metrics_ids_list }}"
+        msg: "{{ host_metrics_ids }}"
 
     - meta: end_play
 
