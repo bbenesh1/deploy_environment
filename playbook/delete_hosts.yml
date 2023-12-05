@@ -11,12 +11,12 @@
         host_metrics_ids: "{{ lookup('ansible.controller.controller_api', 'host_metrics', return_all=true) | map(attribute='id') }}"
         
   
-    - name: Gather and manipulate Host Metrics
+    - name: Set the first list
       ansible.builtin.set_fact:
         host_metrics_ids_list1: "{{ host_metrics_ids_list1 | default([]) + [ host_metrics_ids[item|int] ] }}"
       with_sequence: start=0 end=2
 
-    - name: Gather and manipulate Host Metrics
+    - name: Set the second list
       vars:
         host_list_count: "{{ host_metrics_ids | length - 1 }}"
       ansible.builtin.set_fact:
@@ -35,10 +35,15 @@
     #   ansible.builtin.debug:
     #     msg: "{{ host_metrics_ids }}"
 
-    - name: Include tasks for loop
+    - name: Include tasks for list1
       ansible.builtin.include_tasks:
         file: "../tasks/host_metrix_tasks.yml"
       loop: "{{ host_metrics_ids_list1 }}"
+
+    - name: Include tasks for list2
+      ansible.builtin.include_tasks:
+        file: "../tasks/host_metrix_tasks.yml"
+      loop: "{{ host_metrics_ids_list2 }}"
       
 
 
