@@ -14,13 +14,13 @@
     - name: Gather and manipulate Host Metrics
       ansible.builtin.set_fact:
         host_metrics_ids_list1: "{{ host_metrics_ids_list1 | default([]) + [ host_metrics_ids[item|int] ] }}"
-      with_sequence: start=0 end=1
+      with_sequence: start=0 end=2
 
     - name: Gather and manipulate Host Metrics
       vars:
         host_list_count: "{{ host_metrics_ids | length - 1 }}"
       ansible.builtin.set_fact:
-        host_metrics_ids_list2: "{{ host_metrics_ids_list1 | default([]) + [ host_metrics_ids[item|int] ] }}"
+        host_metrics_ids_list2: "{{ host_metrics_ids_list2 | default([]) + [ host_metrics_ids[item|int] ] }}"
       with_sequence: "start=3 end={{ host_list_count }}"
 
     - name: Test new List1 
