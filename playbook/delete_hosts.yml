@@ -23,6 +23,10 @@
         host_metrics_ids_list2: "{{ host_metrics_ids_list2 | default([]) + [ host_metrics_ids[item|int] ] }}"
       with_sequence: "start=3 end={{ host_list_count }}"
 
+    - name: Flush Host Metrics
+      ansible.builtin.set_fact:
+        host_metrics_ids: []
+
     # - name: Test new List1 
     #   ansible.builtin.debug:
     #     msg: "{{ host_metrics_ids_list1 }}"
@@ -40,11 +44,29 @@
         file: "../tasks/host_metrix_tasks.yml"
       loop: "{{ host_metrics_ids_list1 }}"
 
+    - name: Set the first list
+      ansible.builtin.set_fact:
+        host_metrics_ids_list1: []
+
     - name: Include tasks for list2
       ansible.builtin.include_tasks:
         file: "../tasks/host_metrix_tasks.yml"
       loop: "{{ host_metrics_ids_list2 }}"
       
+    - name: Set the second list
+      ansible.builtin.set_fact:
+        host_metrics_ids_list2: []
 
+    - name: Test new List1 
+      ansible.builtin.debug:
+        msg: "{{ host_metrics_ids_list1 }}"
+
+    - name: Test new List2 
+      ansible.builtin.debug:
+        msg: "{{ host_metrics_ids_list2 }}"
+
+    - name: Test new List 
+      ansible.builtin.debug:
+        msg: "{{ host_metrics_ids }}"
 
 

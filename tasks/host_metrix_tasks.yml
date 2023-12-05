@@ -33,3 +33,7 @@
         headers:
           Authorization: "Bearer {{ lookup('env', 'CONTROLLER_OAUTH_TOKEN') }}"
       when: host_list[item].to_be_deleted | trim == "Yes"
+
+    - name: Clear Host List
+      ansible.builtin.set_fact:
+        host_list: []
