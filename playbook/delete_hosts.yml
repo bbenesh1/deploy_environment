@@ -10,18 +10,37 @@
       ansible.builtin.set_fact:
         host_metrics_ids: "{{ lookup('ansible.controller.controller_api', 'host_metrics', return_all=true) | map(attribute='id') }}"
         
-  
     - name: Set the first list
       ansible.builtin.set_fact:
         host_metrics_ids_list1: "{{ host_metrics_ids_list1 | default([]) + [ host_metrics_ids[item|int] ] }}"
-      with_sequence: start=0 end=2
+      with_sequence: start=0 end=1000
 
     - name: Set the second list
+      ansible.builtin.set_fact:
+        host_metrics_ids_list2: "{{ host_metrics_ids_list2 | default([]) + [ host_metrics_ids[item|int] ] }}"
+      with_sequence: start=1001 end=2000
+
+    - name: Set the third list
+      ansible.builtin.set_fact:
+        host_metrics_ids_list3: "{{ host_metrics_ids_list3 | default([]) + [ host_metrics_ids[item|int] ] }}"
+      with_sequence: start=2001 end=3000
+
+    - name: Set the fourth list
+      ansible.builtin.set_fact:
+        host_metrics_ids_list4: "{{ host_metrics_ids_list4 | default([]) + [ host_metrics_ids[item|int] ] }}"
+      with_sequence: start=3001 end=4000
+
+    - name: Set the fifth list
+      ansible.builtin.set_fact:
+        host_metrics_ids_list5: "{{ host_metrics_ids_list5 | default([]) + [ host_metrics_ids[item|int] ] }}"
+      with_sequence: start=4001 end=5000
+
+    - name: Set the last list
       vars:
         host_list_count: "{{ host_metrics_ids | length - 1 }}"
       ansible.builtin.set_fact:
-        host_metrics_ids_list2: "{{ host_metrics_ids_list2 | default([]) + [ host_metrics_ids[item|int] ] }}"
-      with_sequence: "start=3 end={{ host_list_count }}"
+        host_metrics_ids_list_last: "{{ host_metrics_ids_list_last | default([]) + [ host_metrics_ids[item|int] ] }}"
+      with_sequence: "start=5001 end={{ host_list_count }}"
 
     - name: Flush Host Metrics
       ansible.builtin.set_fact:
@@ -57,16 +76,41 @@
       ansible.builtin.set_fact:
         host_metrics_ids_list2: []
 
-    - name: Test new List1 
-      ansible.builtin.debug:
-        msg: "{{ host_metrics_ids_list1 }}"
+    - name: Include tasks for list3
+      ansible.builtin.include_tasks:
+        file: "../tasks/host_metrix_tasks.yml"
+      loop: "{{ host_metrics_ids_list3 }}"
+      
+    - name: Set the third list
+      ansible.builtin.set_fact:
+        host_metrics_ids_list3: []
 
-    - name: Test new List2 
-      ansible.builtin.debug:
-        msg: "{{ host_metrics_ids_list2 }}"
+    - name: Include tasks for list4
+      ansible.builtin.include_tasks:
+        file: "../tasks/host_metrix_tasks.yml"
+      loop: "{{ host_metrics_ids_list4 }}"
+      
+    - name: Set the third list
+      ansible.builtin.set_fact:
+        host_metrics_ids_list4: []
 
-    - name: Test new List 
-      ansible.builtin.debug:
-        msg: "{{ host_metrics_ids }}"
+    - name: Include tasks for list5
+      ansible.builtin.include_tasks:
+        file: "../tasks/host_metrix_tasks.yml"
+      loop: "{{ host_metrics_ids_list5 }}"
+      
+    - name: Set the third list
+      ansible.builtin.set_fact:
+        host_metrics_ids_list5: []
+
+    - name: Include tasks for listlast
+      ansible.builtin.include_tasks:
+        file: "../tasks/host_metrix_tasks.yml"
+      loop: "{{ host_metrics_ids_list_last }}"
+      
+    - name: Set the third list
+      ansible.builtin.set_fact:
+        host_metrics_ids_list_last: []
+
 
 
