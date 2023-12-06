@@ -1,0 +1,10 @@
+---
+- name: Check automation hub
+  hosts: ip-192-168-1-60.eu-west-1.compute.internal
+  tasks:
+
+    - name: Check automation hub | Confirm Web URL is functioning
+      ansible.builtin.uri:
+        url: "https://{{ ansible_hostname }}/v2/"
+        status_code: 200
+        return_content: true
