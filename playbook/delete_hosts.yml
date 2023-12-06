@@ -1,6 +1,6 @@
 ---
 - name: Delete Host entries
-  hosts: ip-192-168-1-72.eu-west-1.compute.internal
+  hosts: ip-192-168-1-64.eu-west-1.compute.internal
   remote_user: ec2-user
   collections:
     - ansible.controller 
