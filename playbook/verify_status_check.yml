@@ -37,7 +37,7 @@
 
     - name: debug
       ansible.builtin.debug:
-        msg: "{{ service_state_initial }}"
+        msg: "{{ service_state_initial.services }}"
     
     - name: Set Facts
       ansible.builtin.set_fact:
