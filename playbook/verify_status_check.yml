@@ -5,7 +5,7 @@
 
     - name: Check automation hub | Confirm Web URL is functioning
       ansible.builtin.uri:
-        url: "https://{{ ansible_hostname }}/v2/"
+        url: "https://{{ ansible_hostname }}/api/galaxy/content/community/"
         status_code: 200
         validate_certs: false
         return_content: true
