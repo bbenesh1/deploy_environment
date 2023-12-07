@@ -40,7 +40,7 @@
        - pulpcore-content.service
        - pulpcore-api.service
        - nginx.service       
-      when: service_state_initial.ansible_facts.services.[item].state != "running"
+      when: service_state_initial.ansible_facts.services[item].state != "running"
 
     - name: Gather Facts about services again
       ansible.builtin.service_facts:
