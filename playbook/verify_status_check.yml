@@ -37,7 +37,7 @@
 
     - name: debug
       ansible.builtin.debug:
-        msg: "{{ service_state_initial.ansible_facts.services[item] }}"
+        msg: "{{ service_state_initial.ansible_facts.services[item].state }}"
       loop:
         - nginx.service     
     
@@ -47,7 +47,7 @@
       vars:
         make_key_value:
           service_name: "{{ item }}"
-          service_state:  "{{ service_state_initial.ansible_facts.services[item][state] }}"
+          service_state:  "{{ service_state_initial.ansible_facts.services[item].state }}"
       loop:
         - nginx.service
     
