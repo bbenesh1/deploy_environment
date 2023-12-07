@@ -43,8 +43,9 @@
       ansible.builtin.set_fact:
         ansible_automation_services: "{{ ansible_automation_services | default([]) | combine({item: make_key_value}) }}"
       vars:
-        service_name: "{{ item }}"
-        service_state:  "{{ service_state_initial[item][state] }}"
+        make_key_value:
+          service_name: "{{ item }}"
+          service_state:  "{{ service_state_initial[item][state] }}"
       loop:
         - nginx.service
     
