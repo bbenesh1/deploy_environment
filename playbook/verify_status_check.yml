@@ -33,7 +33,7 @@
     - name: Gather Facts about services
       ansible.builtin.service_facts:
       register: service_state_initial
-      when: '"refused" in network_connections.stderr_lines.1'
+  #    when: '"refused" in network_connections.stderr_lines.1'
 
     - name: debug
       ansible.builtin.debug:
