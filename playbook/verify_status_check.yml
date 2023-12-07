@@ -45,7 +45,7 @@
       vars:
         make_key_value:
           service_name: "{{ item }}"
-          service_state:  "{{ service_state_initial[item][state] }}"
+          service_state:  "{{ service_state_initial.services[item][state] }}"
       loop:
         - nginx.service
     
