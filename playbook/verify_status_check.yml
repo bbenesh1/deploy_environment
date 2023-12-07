@@ -48,8 +48,13 @@
         make_key_value:
           service_name: "{{ item }}"
           service_state:  "{{ service_state_initial.ansible_facts.services[item].state }}"
+          service_enabled:  "{{ service_state_initial.ansible_facts.services[item].status }}"
+
       loop:
         - nginx.service
+        - pulpcore.service 
+        - pulpcore-content.service
+        - pulpcore-api.service
     
     - name: debug
       debug:
@@ -62,12 +67,12 @@
     #     state: restarted
     #   when: '"refused" in network_connections.stderr_lines.1'
 
-    - name: Gather Facts about services
-      ansible.builtin.service_facts:
-      register: service_state
+    # - name: Gather Facts about services
+    #   ansible.builtin.service_facts:
+    #   register: service_state
 
-    - name: debug
-      ansible.builtin.debug:
-        msg: "{{ service_state }}"
+    # - name: debug
+    #   ansible.builtin.debug:
+    #     msg: "{{ service_state }}"
     
 
