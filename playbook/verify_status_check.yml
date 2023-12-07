@@ -37,7 +37,9 @@
 
     - name: debug
       ansible.builtin.debug:
-        msg: "{{ service_state_initial.ansible_facts.services }}"
+        msg: "{{ service_state_initial.ansible_facts.services[item] }}"
+      loop:
+        - nginx.service     
     
     - name: Set Facts
       ansible.builtin.set_fact:
