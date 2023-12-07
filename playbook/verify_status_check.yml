@@ -30,3 +30,10 @@
     - name: debug
       ansible.builtin.debug:
         msg: "{{ network_connections.stderr_lines.1 }}"
+
+    
+    - name: Check automation hub | Restart nginx
+      ansible.builtin.service:
+        service: nginx
+        state: restarted
+      when: 'refused' in network_connections.stderr_lines.1
