@@ -9,3 +9,8 @@
         status_code: 200
         validate_certs: false
         return_content: true
+      register: automation_hub_results
+    
+    - name: debug
+      debug:
+        msg: "{{ automation_hub_results.rc }}"
