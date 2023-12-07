@@ -21,6 +21,7 @@
       when: automation_hub_results.status != '200'
   
     - name: Check automation hub | Register port connectivity
+
       ansible.builtin.command: "nc -vz {{ ansible_default_ipv4.address }} {{ item }}"
       loop:
         - '443'
@@ -31,4 +32,4 @@
     
     - name: debug
       ansible.builtin.debug:
-        msg: "{{ network_connections }}"
+        msg: "{{ network_connections.results.stderr_lines.2 }}"
