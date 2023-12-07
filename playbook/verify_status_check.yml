@@ -21,7 +21,6 @@
       when: automation_hub_results.status != '200'
   
     - name: Check automation hub | Register port connectivity
-
       ansible.builtin.command: "nc -vz {{ ansible_default_ipv4.address }} 443"
       register: network_connections
       ignore_errors: true
@@ -31,12 +30,34 @@
       ansible.builtin.debug:
         msg: "{{ network_connections.stderr_lines.1 }}"
 
-    
-    - name: Check automation hub | Restart nginx
-      ansible.builtin.service:
-        service: nginx
-        state: restarted
+    - name: Gather Facts about services
+      ansible.builtin.service_facts:
+      register: service_state_initial
       when: '"refused" in network_connections.stderr_lines.1'
+
+    - name: debug
+      ansible.builtin.debug:
+        msg: "{{ service_state_initial }}"
+    
+    - name: Set Facts
+      ansible.builtin.set_fact:
+        ansible_automation_services: "{{ ansible_automation_services | default([]) | combine({item: make_key_value}) }}"
+      vars:
+        service_name: "{{ item }}"
+        service_state:  "{{ service_state_initial[item][state] }}"
+      loop:
+        - nginx.service
+    
+    - name: debug
+      debug:
+        msg: "{{ ansible_automation_services }}"
+
+    
+    # - name: Check automation hub | Restart nginx
+    #   ansible.builtin.service:
+    #     service: nginx
+    #     state: restarted
+    #   when: '"refused" in network_connections.stderr_lines.1'
 
     - name: Gather Facts about services
       ansible.builtin.service_facts:
