@@ -7,4 +7,5 @@
       ansible.builtin.uri:
         url: "https://{{ ansible_hostname }}/v2/"
         status_code: 200
+        validate_certs: false
         return_content: true
