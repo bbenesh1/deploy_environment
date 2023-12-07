@@ -21,8 +21,7 @@
       when: automation_hub_results.status != '200'
   
     - name: Check automation hub | Register port connectivity
-      ansible.builtin.command: |
-        "nc -v {{ ansible_hostname }} {{ item }}"
+      ansible.builtin.command: "nc -v {{ ansible_hostname }} {{ item }}"
       loop:
         - '443'
         - '80'
