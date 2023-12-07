@@ -31,12 +31,16 @@
        - pulpcore-api.service
       when: service_state_initial.ansible_facts.services[item].state != "running"
     
-    - name: Restart nginx service
+    - name: Restart {{ item }} service
       vars: 
       ansible.builtin.service:
-        service: nginx
+        service: "{{ item }}"
         state: restarted
-      when: service_state_initial.ansible_facts.services.[nginx.service].state != "running"
+      loop:
+       - pulpcore-content.service
+       - pulpcore-api.service
+       - nginx.service       
+      when: service_state_initial.ansible_facts.services.[item].state != "running"
 
     - name: Gather Facts about services again
       ansible.builtin.service_facts:
