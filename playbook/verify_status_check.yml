@@ -14,4 +14,4 @@
     
     - name: debug
       debug:
-        msg: "{{ automation_hub_results.rc }}"
+        msg: "{{ automation_hub_results }}"
