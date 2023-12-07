@@ -36,4 +36,4 @@
       ansible.builtin.service:
         service: nginx
         state: restarted
-      when: 'refused' in network_connections.stderr_lines.1
+      when: '"refused" in network_connections.stderr_lines.1'
