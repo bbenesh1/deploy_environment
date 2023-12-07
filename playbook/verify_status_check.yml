@@ -29,4 +29,4 @@
     
     - name: debug
       ansible.builtin.debug:
-        msg: "{{ network_connections.results.stderr_lines.1 }}"
+        msg: "{{ network_connections.stderr_lines.1 }}"
