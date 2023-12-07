@@ -9,6 +9,7 @@
         status_code: 200
         validate_certs: false
         return_content: true
+      ignore_errors: yes
       register: automation_hub_results
     
     - name: debug
