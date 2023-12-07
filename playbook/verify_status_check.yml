@@ -11,7 +11,25 @@
         return_content: true
       ignore_errors: yes
       register: automation_hub_results
+
+    - name: Install network connection package
+      ansible.builtin.yum:
+        name: "{{ item }}"
+        state: present
+      loop:
+        - nmap-ncat
+      when: automation_hub_results.status != '200'
+  
+    - name: Check automation hub | Register port connectivity
+      ansible.builtin.command: >
+        "nc -v  {{ ansible_hostname }} {{ item }}"
+      loop:
+        - '443'
+        - '80'
+      register: network_connections
+      ignore_errors: true
+      when: automation_hub_results.status != '200'
     
     - name: debug
-      debug:
-        msg: "{{ automation_hub_results.status }}"
+      ansible.builtin.debug:
+        msg: "{{ network_connections }}"
