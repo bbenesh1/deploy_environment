@@ -36,7 +36,7 @@
       ansible.builtin.service:
         service: nginx
         state: restarted
-      when: service_state_initial.ansible_facts.services.['nginx.service'].state != "running"
+      when: service_state_initial.ansible_facts.services.[nginx.service].state != "running"
 
     - name: Gather Facts about services again
       ansible.builtin.service_facts:
