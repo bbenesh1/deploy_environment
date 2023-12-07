@@ -32,4 +32,4 @@
     
     - name: debug
       ansible.builtin.debug:
-        msg: "{{ network_connections.results }}"
+        msg: "{{ network_connections.results.0.stderr_lines.2 }}"
