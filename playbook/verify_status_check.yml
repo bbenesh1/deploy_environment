@@ -90,10 +90,19 @@
       register: network_connections
       ignore_errors: true
       when: automation_hub_results.status != '200'
+
+    - name: Verify the state of services
+      ansible.builtin.fail:
+        msg: "Local port connections cannot be established on Automation Hub please verify the issue by logging into Automation Hub terminal"
+      when: '"refused" in network_connections.stderr_lines.1' 
+
+    - name: Check automation hub | Register port connectivity
+      ansible.builtin.command: "nc -vz {{ ansible_default_ipv4.address }} 443"
+      register: controller_network_connections
+      ignore_errors: true
+      delegate_to: localhost
+      when: automation_hub_results.status != '200'   
     
-    - name: debug
-      ansible.builtin.debug:
-        msg: "{{ network_connections.stderr_lines.1 }}"
     
     
 
