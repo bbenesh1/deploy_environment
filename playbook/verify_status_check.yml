@@ -126,7 +126,7 @@
     
     - name: List all collection namespaces by the devops team
       debug:
-        msg: "{{ lookup('infra.ah_configuration.ah_api', 'namespaces', host='https://ip-192-168-1-61.eu-west-1.compute.internal', verify_ssl=false, return_all=true ) }}"  
+        msg: "{{ lookup('infra.ah_configuration.ah_api', 'users', host='https://ip-192-168-1-61.eu-west-1.compute.internal', verify_ssl=false, return_all=true ) | map(attribute='username') | list  }}"  
 
        
    
