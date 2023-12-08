@@ -109,7 +109,7 @@
       when: hostvars['ip-192-168-1-60.eu-west-1.compute.internal'].automation_hub_results.status != '200'
 
     - name: Check automation hub continued | Register port connectivity
-      ansible.builtin.command: "nc -vz {{ ansible_default_ipv4.address }} 443"
+      ansible.builtin.command: "nc -vz {{ hostvars['ip-192-168-1-60.eu-west-1.compute.internal'].ansible_default_ipv4.address }} 443"
       register: controller_network_connections
       ignore_errors: true
       when: hostvars['ip-192-168-1-60.eu-west-1.compute.internal'].automation_hub_results.status != '200'   
