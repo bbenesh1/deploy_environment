@@ -96,17 +96,9 @@
         msg: "Local port connections on 443 cannot be established on Automation Hub please verify the issue by logging into Automation Hub terminal"
       when: '"refused" in network_connections.stderr_lines.1' 
     
-    - name: Set Fact about status for next play
-      ansible.builtin.set_fact:  
-        automation_hub_connection_state: "{{ automation_hub_results.status }}"
-
 - name: Check automation hub continued
   hosts: ip-192-168-1-64.eu-west-1.compute.internal
   tasks:
-
-    - name: debug
-      debug:
-        msg: "{{ hostvars['ip-192-168-1-60.eu-west-1.compute.internal'].automation_hub_results.status  }}"
 
     - name: Check automation hub continued | Install network connection package
       ansible.builtin.yum:
@@ -114,13 +106,13 @@
         state: present
       loop:
         - nmap-ncat
-      when: automation_hub_results.status != '200'
+      when: hostvars['ip-192-168-1-60.eu-west-1.compute.internal'].automation_hub_results.status != '200'
 
     - name: Check automation hub continued | Register port connectivity
       ansible.builtin.command: "nc -vz {{ ansible_default_ipv4.address }} 443"
       register: controller_network_connections
       ignore_errors: true
-      when: automation_hub_results.status != '200'   
+      when: hostvars['ip-192-168-1-60.eu-west-1.compute.internal'].automation_hub_results.status != '200'   
     
     
     
