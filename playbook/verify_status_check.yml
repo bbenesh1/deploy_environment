@@ -3,11 +3,11 @@
   hosts: ip-192-168-1-60.eu-west-1.compute.internal
   tasks:
 
-    - name: Gather Facts about services
+    - name: Check automation hub | Gather Facts about AH services
       ansible.builtin.service_facts:
       register: service_state_initial
 
-    - name: Set Facts about all services
+    - name: Check automation hub | Set Facts about all AH services
       ansible.builtin.set_fact:
         ansible_automation_services: "{{ ansible_automation_services | default([]) | combine({item: make_key_value}) }}"
       vars:
@@ -22,7 +22,7 @@
         - pulpcore-api.service
     
      
-    - name: Restart Pulp Core services 
+    - name: Check automation hub | Restart Pulp Core services 
       ansible.builtin.service:
         service: pulpcore
         state: restarted
@@ -31,7 +31,7 @@
        - pulpcore-api.service
       when: service_state_initial.ansible_facts.services[item].state != "running"
     
-    - name: Restart {{ item }} service
+    - name: Check automation hub | Restart {{ item }} service
       vars: 
       ansible.builtin.service:
         service: "{{ item }}"
@@ -42,11 +42,11 @@
        - nginx.service       
       when: service_state_initial.ansible_facts.services[item].state != "running"
 
-    - name: Gather Facts about services again
+    - name: Check automation hub | Gather Facts about AH services again
       ansible.builtin.service_facts:
       register: service_state_current
 
-    - name: Set Facts about all services currently
+    - name: Check automation hub | Set Facts about all AH services currently
       ansible.builtin.set_fact:
         ansible_automation_services_current: "{{ ansible_automation_services_current | default([]) | combine({item: make_key_value}) }}"
       vars:
@@ -59,7 +59,7 @@
         - pulpcore-content.service
         - pulpcore-api.service
     
-    - name: Verify the state of services
+    - name: Check automation hub | Verify the state of AH services
       ansible.builtin.fail:
         msg: " The {{ item }} is still not working please verify the issue by logging into Automation Hub terminal"
       loop:
@@ -91,7 +91,7 @@
       ignore_errors: true
       when: automation_hub_results.status != '200'
 
-    - name: Verify the state of services
+    - name: Check automation hub | Confirm port connectivity
       ansible.builtin.fail:
         msg: "Local port connections on 443 cannot be established on Automation Hub please verify the issue by logging into Automation Hub terminal"
       when: '"refused" in network_connections.stderr_lines.1' 
@@ -113,6 +113,12 @@
       register: controller_network_connections
       ignore_errors: true
       when: hostvars['ip-192-168-1-60.eu-west-1.compute.internal'].automation_hub_results.status != '200'   
+
+    - name: Check automation hub continued | Confirm port connectivity
+      ansible.builtin.fail:
+        msg: "Ansible Controller port connections on 443 cannot be established on Automation Hub this is likely due to a Firwall, router or Switch issue"
+      when: '"refused" in controller_network_connections.stderr_lines.1' 
+
     
     
     
