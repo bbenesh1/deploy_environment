@@ -117,7 +117,9 @@
     - name: Check automation hub continued | Confirm port connectivity
       ansible.builtin.fail:
         msg: "Ansible Controller port connections on 443 cannot be established on Automation Hub this is likely due to a Firwall, router or Switch issue"
-      when: '"refused" in controller_network_connections.stderr_lines.1' or '"No route" in controller_network_connections.stderr_lines.1'
+      when: 
+       - '"refused" in controller_network_connections.stderr_lines.1 or 
+         "No route" in controller_network_connections.stderr_lines.1'
     
     
     
