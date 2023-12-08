@@ -98,6 +98,8 @@
     
 - name: Check automation hub continued
   hosts: ip-192-168-1-64.eu-west-1.compute.internal
+  collections:
+   - infra.ah_configuration
   tasks:
 
     - name: Check automation hub continued | Install network connection package
@@ -122,7 +124,9 @@
          "No route" in controller_network_connections.stderr_lines.1'
     
     
-    
+    - name: List all collection namespaces by the devops team
+      debug:
+        msg: "{{ lookup('infra.ah_configuration.ah_api', 'namespaces', host='https://ip-192-168-1-60.eu-west-1.compute.internal', verify_ssl=false) }}"  
 
        
    
