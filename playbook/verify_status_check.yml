@@ -1,6 +1,6 @@
 ---
 - name: Check automation hub
-  hosts: ip-192-168-1-60.eu-west-1.compute.internal
+  hosts: ip-192-168-1-61.eu-west-1.compute.internal
   tasks:
 
     - name: Check automation hub | Gather Facts about AH services
@@ -97,7 +97,7 @@
       when: '"refused" in network_connections.stderr_lines.1' 
     
 - name: Check automation hub continued
-  hosts: ip-192-168-1-64.eu-west-1.compute.internal
+  hosts: ip-192-168-1-55.eu-west-1.compute.internal
   collections:
    - infra.ah_configuration
   tasks:
