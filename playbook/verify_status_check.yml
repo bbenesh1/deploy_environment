@@ -106,7 +106,7 @@
 
     - name: debug
       debug:
-        msg: "{{ host_vars['ip-192-168-1-60.eu-west-1.compute.internal'].automation_hub_connection_status }}"
+        msg: "{{ hostvars['ip-192-168-1-60.eu-west-1.compute.internal'].automation_hub_connection_status }}"
 
     - name: Check automation hub continued | Install network connection package
       ansible.builtin.yum:
