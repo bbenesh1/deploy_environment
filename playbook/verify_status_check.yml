@@ -100,8 +100,14 @@
   hosts: ip-192-168-1-55.eu-west-1.compute.internal
   collections:
    - infra.ah_configuration
+  tags:
+    - testing
   tasks:
-
+    
+    - name: tst
+      debug:
+        msg: "{{ hostvars[groups['automationhub'].0].automation_hub_results.status }}"
+        
     - name: Check automation hub continued | Install network connection package
       ansible.builtin.yum:
         name: "{{ item }}"
