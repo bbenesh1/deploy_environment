@@ -1,0 +1,114 @@
+---
+- name: Check execution nodes
+  hosts: execution_nodes
+  tasks:
+
+    - name: Check execution nodes | Gather Facts about Execution services
+      ansible.builtin.service_facts:
+      register: service_state_initial
+
+    - name: Check execution nodes | Set Facts about all Execution services
+      ansible.builtin.set_fact:
+        ansible_automation_services: "{{ ansible_automation_services | default([]) | combine({item: make_key_value}) }}"
+      vars:
+        make_key_value:
+          service_name: "{{ item }}"
+          service_state:  "{{ service_state_initial.ansible_facts.services[item].state }}"
+          service_enabled:  "{{ service_state_initial.ansible_facts.services[item].status }}"
+      loop:
+        - receptor.service   
+     
+    - name: Check execution nodes | Restart Receptor Service 
+      ansible.builtin.service:
+        service: receptor
+        state: restarted
+      loop: 
+       - receptor.service
+      when: service_state_initial.ansible_facts.services[item].state != "running"
+    
+    - name: Check execution nodes | Restart {{ item }} service
+      vars: 
+      ansible.builtin.service:
+        service: "{{ item }}"
+        state: restarted
+      loop:
+       - receptor.service  
+      when: service_state_initial.ansible_facts.services[item].state != "running"
+
+    - name: Check execution nodes | Gather Facts about Execution services again
+      ansible.builtin.service_facts:
+      register: service_state_current
+
+    - name: Check execution nodes | Set Facts about all Execution services currently
+      ansible.builtin.set_fact:
+        ansible_automation_services_current: "{{ ansible_automation_services_current | default([]) | combine({item: make_key_value}) }}"
+      vars:
+        make_key_value:
+          service_name: "{{ item }}"
+          service_state:  "{{ service_state_current.ansible_facts.services[item].state }}"
+          service_enabled:  "{{ service_state_current.ansible_facts.services[item].status }}"
+      loop:
+       - receptor.service  
+    
+    - name: Check execution nodes | Verify the state of Execution service
+      ansible.builtin.fail:
+        msg: " The {{ item }} is still not working please verify the issue by logging into the Execution node terminal"
+      loop:
+       - receptor.service
+      when: service_state_initial.ansible_facts.services[item].state != "running"
+
+    - name: Check execution nodes | Install network connection package
+      ansible.builtin.yum:
+        name: "{{ item }}"
+        state: present
+      loop:
+        - nmap-ncat
+  
+    - name: Check execution nodes | Register port connectivity
+      ansible.builtin.command: "nc -vz {{ ansible_default_ipv4.address }} 27199"
+      register: network_connections
+      ignore_errors: true
+
+    - name: Check execution nodes | Confirm port connectivity
+      ansible.builtin.fail:
+        msg: "Local port connections on 27199 cannot be established on this Execution node please verify the issue by logging into Execution node terminal"
+      when: '"refused" in network_connections.stderr_lines.1' 
+    
+# - name: Check execution nodes continued
+#   hosts: ip-192-168-1-55.eu-west-1.compute.internal
+#   collections:
+#    - infra.ah_configuration
+#   tasks:
+        
+#     - name: Check automation hub continued | Install network connection package
+#       ansible.builtin.yum:
+#         name: "{{ item }}"
+#         state: present
+#       loop:
+#         - nmap-ncat
+#       when: hostvars[groups['automationhub'].0].automation_hub_results.status != '200'
+
+#     - name: Check automation hub continued | Register port connectivity
+#       ansible.builtin.command: "nc -vz {{ hostvars[groups['automationhub'].0].ansible_default_ipv4.address }} 443"
+#       register: controller_network_connections
+#       ignore_errors: true
+#       when: hostvars[groups['automationhub'].0].automation_hub_results.status != '200'   
+
+#     - name: Check automation hub continued | Confirm port connectivity
+#       ansible.builtin.fail:
+#         msg: "Ansible Controller port connections on 443 cannot be established on Automation Hub this is likely due to a Firewall, router or Switch issue"
+#       when: 
+#        - '"refused" in controller_network_connections.stderr_lines.1 or 
+#          "No route" in controller_network_connections.stderr_lines.1'
+    
+    
+#     - name: Check automation hub continued | Check lookup of AH database is successful
+#       debug:
+#         msg: "{{ lookup('infra.ah_configuration.ah_api', 'users', verify_ssl=false, return_all=true ) | map(attribute='username') | list  }}"  
+#       ignore_errors: true
+#       register: controller_lookup_result
+    
+#     - name: Check automation hub continued | Confirm status of database lookup
+#       ansible.builtin.fail:
+#         msg: "Ansible Controller cannot lookup AH via this plugin, recommend checking web acces to Automation Hub"
+#       when: controller_lookup_result.failed != 'false'
