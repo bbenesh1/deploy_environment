@@ -37,7 +37,7 @@
     
     - name: Check execution nodes | Wait for failed receptor
       ansible.builtin.wait_for:
-        timeout: 300
+        timeout: 30
       when: service_state_initial.ansible_facts.services[item].state != "running"
 
     - name: Check execution nodes | Gather Facts about Execution services again
