@@ -127,6 +127,8 @@
     - name: List all collection namespaces by the devops team
       debug:
         msg: "{{ lookup('infra.ah_configuration.ah_api', 'users', verify_ssl=false, return_all=true ) | map(attribute='username') | list  }}"  
-
+      register: controller_lookup_result
     
-
+    - name: Show result
+      ansible.builtin.debug:
+        msg: "{{ controller_lookup_result }}"
