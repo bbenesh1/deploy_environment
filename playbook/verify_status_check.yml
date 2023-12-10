@@ -100,13 +100,7 @@
   hosts: ip-192-168-1-55.eu-west-1.compute.internal
   collections:
    - infra.ah_configuration
-  tags:
-    - testing
   tasks:
-    
-    - name: tst
-      debug:
-        msg: "{{ hostvars[groups['automationhub'].0].automation_hub_results.status }}"
         
     - name: Check automation hub continued | Install network connection package
       ansible.builtin.yum:
@@ -114,17 +108,17 @@
         state: present
       loop:
         - nmap-ncat
-      when: hostvars['ip-192-168-1-61.eu-west-1.compute.internal'].automation_hub_results.status != '200'
+      when: hostvars[groups['automationhub'].0].automation_hub_results.status != '200'
 
     - name: Check automation hub continued | Register port connectivity
-      ansible.builtin.command: "nc -vz {{ hostvars['ip-192-168-1-61.eu-west-1.compute.internal'].ansible_default_ipv4.address }} 443"
+      ansible.builtin.command: "nc -vz {{ hostvars[groups['automationhub'].0].ansible_default_ipv4.address }} 443"
       register: controller_network_connections
       ignore_errors: true
-      when: hostvars['ip-192-168-1-61.eu-west-1.compute.internal'].automation_hub_results.status != '200'   
+      when: hostvars[groups['automationhub'].0].automation_hub_results.status != '200'   
 
     - name: Check automation hub continued | Confirm port connectivity
       ansible.builtin.fail:
-        msg: "Ansible Controller port connections on 443 cannot be established on Automation Hub this is likely due to a Firwall, router or Switch issue"
+        msg: "Ansible Controller port connections on 443 cannot be established on Automation Hub this is likely due to a Firewall, router or Switch issue"
       when: 
        - '"refused" in controller_network_connections.stderr_lines.1 or 
          "No route" in controller_network_connections.stderr_lines.1'
@@ -132,22 +126,7 @@
     
     - name: List all collection namespaces by the devops team
       debug:
-        msg: "{{ lookup('infra.ah_configuration.ah_api', 'users', host='https://ip-192-168-1-61.eu-west-1.compute.internal', username='admin', password='password123' , verify_ssl=false, return_all=true ) | map(attribute='username') | list  }}"  
+        msg: "{{ lookup('infra.ah_configuration.ah_api', 'users', verify_ssl=false, return_all=true ) | map(attribute='username') | list  }}"  
 
-       
-   
-    # - name: Check automation hub | Restart nginx
-    #   ansible.builtin.service:
-    #     service: nginx
-    #     state: restarted
-    #   when: '"refused" in network_connections.stderr_lines.1'
-
-    # - name: Gather Facts about services
-    #   ansible.builtin.service_facts:
-    #   register: service_state
-
-    # - name: debug
-    #   ansible.builtin.debug:
-    #     msg: "{{ service_state }}"
     
 
