@@ -59,11 +59,19 @@
         msg: "Local port connections on 27199 cannot be established on this Execution node please verify the issue by logging into Execution node terminal"
       when: '"refused" in network_connections.stderr_lines.1' 
     
-# - name: Check execution nodes continued
-#   hosts: ip-192-168-1-55.eu-west-1.compute.internal
-#   collections:
-#    - infra.ah_configuration
-#   tasks:
+- name: Check execution nodes continued
+  hosts: ip-192-168-1-55.eu-west-1.compute.internal
+  collections:
+   - infra.ah_configuration
+  tasks:
+
+    - name: Test network connection
+      ansible.builtin.wait_for_connection:
+        host: "{{ item }}"
+        port: 27199
+        state: started
+      loop: "{{ groups['execution_nodes'] }}"
+        
         
 #     - name: Check automation hub continued | Install network connection package
 #       ansible.builtin.yum:
