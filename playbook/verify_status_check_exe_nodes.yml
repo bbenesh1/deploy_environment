@@ -7,16 +7,16 @@
       ansible.builtin.service_facts:
       register: service_state_initial
 
-    - name: Check execution nodes | Set Facts about all Execution services
-      ansible.builtin.set_fact:
-        ansible_automation_services: "{{ ansible_automation_services | default([]) | combine({item: make_key_value}) }}"
-      vars:
-        make_key_value:
-          service_name: "{{ item }}"
-          service_state:  "{{ service_state_initial.ansible_facts.services[item].state }}"
-          service_enabled:  "{{ service_state_initial.ansible_facts.services[item].status }}"
-      loop:
-        - receptor.service   
+    # - name: Check execution nodes | Set Facts about all Execution services
+    #   ansible.builtin.set_fact:
+    #     ansible_automation_services: "{{ ansible_automation_services | default([]) | combine({item: make_key_value}) }}"
+    #   vars:
+    #     make_key_value:
+    #       service_name: "{{ item }}"
+    #       service_state:  "{{ service_state_initial.ansible_facts.services[item].state }}"
+    #       service_enabled:  "{{ service_state_initial.ansible_facts.services[item].status }}"
+    #   loop:
+    #     - receptor.service   
      
     - name: Check execution nodes | Restart Receptor Service 
       ansible.builtin.service:
@@ -46,23 +46,23 @@
       ansible.builtin.service_facts:
       register: service_state_current
 
-    - name: Check execution nodes | Set Facts about all Execution services currently
-      ansible.builtin.set_fact:
-        ansible_automation_services_current: "{{ ansible_automation_services_current | default([]) | combine({item: make_key_value}) }}"
-      vars:
-        make_key_value:
-          service_name: "{{ item }}"
-          service_state:  "{{ service_state_current.ansible_facts.services[item].state }}"
-          service_enabled:  "{{ service_state_current.ansible_facts.services[item].status }}"
-      loop:
-       - receptor.service  
+    # - name: Check execution nodes | Set Facts about all Execution services currently
+    #   ansible.builtin.set_fact:
+    #     ansible_automation_services_current: "{{ ansible_automation_services_current | default([]) | combine({item: make_key_value}) }}"
+    #   vars:
+    #     make_key_value:
+    #       service_name: "{{ item }}"
+    #       service_state:  "{{ service_state_current.ansible_facts.services[item].state }}"
+    #       service_enabled:  "{{ service_state_current.ansible_facts.services[item].status }}"
+    #   loop:
+    #    - receptor.service  
     
     - name: Check execution nodes | Verify the state of Execution service
       ansible.builtin.fail:
         msg: " The {{ item }} is still not working please verify the issue by logging into the Execution node terminal"
       loop:
        - receptor.service
-      when: ansible_automation_services_current.ansible_facts.services[item].state != "running"
+      when: service_state_current.ansible_facts.services[item].state != "running"
 
     - name: Check execution nodes | Install network connection package
       ansible.builtin.yum:
