@@ -79,10 +79,8 @@
         
     - name: Check execution nodes continued | testing
       debug:
-        var: my_idx
+        msg: "{{ controller_connections_for_execution[my_idx] }}"
       loop: "{{ groups['execution_nodes'] }}" 
-      vars:
-        loop_postion: "{{ my_idx }}" 
       loop_control:
         index_var: my_idx
 
