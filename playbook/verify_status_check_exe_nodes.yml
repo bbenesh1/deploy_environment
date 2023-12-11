@@ -58,7 +58,7 @@
     - name: Check execution nodes | Confirm port connectivity
       ansible.builtin.fail:
         msg: "Local port connections on 27199 cannot be established on this Execution node please verify the issue by logging into Execution node terminal"
-      when: local_connections_for_execution.results[ansible_hostname].failed == true
+      when: local_connections_for_execution[ansible_hostname].failed == true
     
 - name: Check execution nodes continued
   hosts: ip-192-168-1-55.eu-west-1.compute.internal
