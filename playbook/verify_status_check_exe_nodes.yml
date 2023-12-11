@@ -76,6 +76,10 @@
       register: controller_connections_for_execution
       ignore_errors: true
       loop: "{{ groups['execution_nodes'] }}"
+
+    - name: Check execution nodes continued | testing
+      debug:
+        msg: "{{ controller_connections_for_execution }}"
         
     - name: Check execution nodes continued | testing
       debug:
