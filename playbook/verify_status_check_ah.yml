@@ -98,26 +98,24 @@
    - infra.ah_configuration
   tasks:
         
-    - name: Check automation hub continued | Install network connection package
-      ansible.builtin.yum:
-        name: "{{ item }}"
-        state: present
-      loop:
-        - nmap-ncat
-      when: hostvars[groups['automationhub'].0].automation_hub_results..failed != 'false'
-
-    - name: Check automation hub continued | Register port connectivity
-      ansible.builtin.command: "nc -vz {{ hostvars[groups['automationhub'].0].ansible_default_ipv4.address }} 443"
-      register: controller_network_connections
+    - name: Check execution nodes continued | Test network connection
+      ansible.builtin.wait_for:
+        host: "{{ item }}"
+        port: 443
+        state: started
+        timeout: 5
+      register: controller_connections_for_execution
       ignore_errors: true
-      when: hostvars[groups['automationhub'].0].automation_hub_results.failed != 'false'   
+      loop: "{{ groups['automationhub'] }}"
+
 
     - name: Check automation hub continued | Confirm port connectivity
       ansible.builtin.fail:
-        msg: "Ansible Controller port connections on 443 cannot be established on Automation Hub this is likely due to a Firewall, router or Switch issue"
-      when: 
-       - '"refused" in controller_network_connections.stderr_lines.1 or 
-         "No route" in controller_network_connections.stderr_lines.1'
+        msg: "Ansible Controller port connections on 443 cannot be established to {{ item }} this is likely due to a Firewall, router or Switch issue"
+      loop: "{{ groups['automationhub'] }}" 
+      loop_control:
+        index_var: my_idx
+      when: controller_connections_for_execution.results[my_idx].failed == true
     
     
     - name: Check automation hub continued | Check lookup of AH database is successful
