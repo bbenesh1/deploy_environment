@@ -79,7 +79,7 @@
         
     - name: Check execution nodes continued | testing
       debug:
-        var: "{{ my_idx }}"     
+        var: my_idx
       loop: "{{ groups['execution_nodes'] }}" 
       vars:
         loop_postion: "{{ my_idx }}" 
