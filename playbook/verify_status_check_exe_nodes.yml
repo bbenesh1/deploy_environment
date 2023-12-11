@@ -68,7 +68,7 @@
   tasks:
 
     - name: Test network connection
-      ansible.builtin.wait_for_connection:
+      ansible.builtin.wait_for:
         host: 192.168.1.56
         port: 27199
  #     loop: "{{ groups['execution_nodes'] }}"
