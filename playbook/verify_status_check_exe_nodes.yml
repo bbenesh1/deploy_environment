@@ -69,7 +69,6 @@
       ansible.builtin.wait_for_connection:
         host: "{{ item }}"
         port: 27199
-        state: started
       loop: "{{ groups['execution_nodes'] }}"
         
         
