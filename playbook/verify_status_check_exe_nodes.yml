@@ -63,11 +63,13 @@
   hosts: ip-192-168-1-55.eu-west-1.compute.internal
   collections:
    - infra.ah_configuration
+  tags: 
+    - testing
   tasks:
 
     - name: Test network connection
       ansible.builtin.wait_for_connection:
-        host: "ip-192-168-1-56.eu-west-1.compute.internal"
+        host: "192.168.1.56"
         port: "27199"
  #     loop: "{{ groups['execution_nodes'] }}"
         
