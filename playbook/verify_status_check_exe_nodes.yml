@@ -69,9 +69,10 @@
 
     - name: Test network connection
       ansible.builtin.wait_for:
-        host: 192.168.1.56
+        host: "{{ item }}"
         port: 27199
- #     loop: "{{ groups['execution_nodes'] }}"
+        state: started
+      loop: "{{ groups['execution_nodes'] }}"
         
         
 #     - name: Check automation hub continued | Install network connection package
