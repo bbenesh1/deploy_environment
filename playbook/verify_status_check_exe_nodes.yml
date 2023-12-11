@@ -73,16 +73,13 @@
         port: 27199
         state: started
         timeout: 5
+      register: controller_connections_for_execution
+      ignore_errors: true
       loop: "{{ groups['execution_nodes'] }}"
         
-        
-#     - name: Check automation hub continued | Install network connection package
-#       ansible.builtin.yum:
-#         name: "{{ item }}"
-#         state: present
-#       loop:
-#         - nmap-ncat
-#       when: hostvars[groups['automationhub'].0].automation_hub_results.status != '200'
+    - name: Check execution nodes continued | testing
+      debug:
+        msg: "{{ controller_connections_for_execution }}"        
 
 #     - name: Check automation hub continued | Register port connectivity
 #       ansible.builtin.command: "nc -vz {{ hostvars[groups['automationhub'].0].ansible_default_ipv4.address }} 443"
