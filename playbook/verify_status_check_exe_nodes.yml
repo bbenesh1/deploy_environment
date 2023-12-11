@@ -79,11 +79,11 @@
 
     - name: Check execution nodes continued | testing
       debug:
-        msg: "{{ controller_connections_for_execution }}"
+        msg: "{{ controller_connections_for_execution.results.0 }}"
         
     - name: Check execution nodes continued | testing
       debug:
-        msg: "{{ controller_connections_for_execution[my_idx] }}"
+        msg: "{{ controller_connections_for_execution.results.[my_idx] }}"
       loop: "{{ groups['execution_nodes'] }}" 
       loop_control:
         index_var: my_idx
