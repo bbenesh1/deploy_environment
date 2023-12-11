@@ -79,7 +79,7 @@
         
     - name: Check execution nodes continued | testing
       debug:
-        msg: "{{ loop_postion['item'] }}"     
+        msg: "{{ loop_postion[item] }}"     
       loop: "{{ groups['execution_nodes'] }}" 
       vars:
         loop_postion: "{{ my_idx }}" 
@@ -99,14 +99,3 @@
 #        - '"refused" in controller_network_connections.stderr_lines.1 or 
 #          "No route" in controller_network_connections.stderr_lines.1'
     
-    
-#     - name: Check automation hub continued | Check lookup of AH database is successful
-#       debug:
-#         msg: "{{ lookup('infra.ah_configuration.ah_api', 'users', verify_ssl=false, return_all=true ) | map(attribute='username') | list  }}"  
-#       ignore_errors: true
-#       register: controller_lookup_result
-    
-#     - name: Check automation hub continued | Confirm status of database lookup
-#       ansible.builtin.fail:
-#         msg: "Ansible Controller cannot lookup AH via this plugin, recommend checking web acces to Automation Hub"
-#       when: controller_lookup_result.failed != 'false'
