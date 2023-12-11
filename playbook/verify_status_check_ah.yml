@@ -110,7 +110,7 @@
       ansible.builtin.command: "nc -vz {{ hostvars[groups['automationhub'].0].ansible_default_ipv4.address }} 443"
       register: controller_network_connections
       ignore_errors: true
-      when: hostvars[groups['automationhub'].0].automation_hub_results..failed != 'false'   
+      when: hostvars[groups['automationhub'].0].automation_hub_results.failed != 'false'   
 
     - name: Check automation hub continued | Confirm port connectivity
       ansible.builtin.fail:
