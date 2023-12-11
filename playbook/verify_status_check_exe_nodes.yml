@@ -94,10 +94,10 @@
 #       ignore_errors: true
 #       when: hostvars[groups['automationhub'].0].automation_hub_results.status != '200'   
 
-#     - name: Check automation hub continued | Confirm port connectivity
-#       ansible.builtin.fail:
-#         msg: "Ansible Controller port connections on 443 cannot be established on Automation Hub this is likely due to a Firewall, router or Switch issue"
-      # loop: "{{ groups['execution_nodes'] }}" 
-      # loop_control:
-      #   index_var: my_idx
-#       when: controller_connections_for_execution.results[my_idx].failed == true
+    - name: Check automation hub continued | Confirm port connectivity
+      ansible.builtin.fail:
+        msg: "Ansible Controller port connections on 443 cannot be established on Automation Hub this is likely due to a Firewall, router or Switch issue"
+      loop: "{{ groups['execution_nodes'] }}" 
+      loop_control:
+        index_var: my_idx
+      when: controller_connections_for_execution.results[my_idx].failed == true
