@@ -77,17 +77,6 @@
       ignore_errors: true
       loop: "{{ groups['execution_nodes'] }}"
 
-    - name: Check execution nodes continued | testing
-      debug:
-        msg: "{{ controller_connections_for_execution.results.0 }}"
-        
-    - name: Check execution nodes continued | testing
-      debug:
-        msg: "{{ controller_connections_for_execution.results[my_idx] }}"
-      loop: "{{ groups['execution_nodes'] }}" 
-      loop_control:
-        index_var: my_idx 
-
     - name: Check automation hub continued | Confirm port connectivity
       ansible.builtin.fail:
         msg: "Ansible Controller port connections on 27199 cannot be established on {{ item }} this is likely due to a Firewall, router or Switch issue"
