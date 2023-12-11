@@ -67,11 +67,12 @@
     - testing
   tasks:
 
-    - name: Test network connection
+    - name: Check execution nodes continued | Test network connection
       ansible.builtin.wait_for:
         host: "{{ item }}"
         port: 27199
         state: started
+        timeout: 5
       loop: "{{ groups['execution_nodes'] }}"
         
         
