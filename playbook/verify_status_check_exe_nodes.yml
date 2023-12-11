@@ -82,7 +82,7 @@
         msg: "{{ controller_connections_for_execution['my_idx'] }}"     
       loop: "{{ groups['execution_nodes'] }}"  
       loop_control:
-        index_vars: my_idx
+        index_var: my_idx
 
 #     - name: Check automation hub continued | Register port connectivity
 #       ansible.builtin.command: "nc -vz {{ hostvars[groups['automationhub'].0].ansible_default_ipv4.address }} 443"
