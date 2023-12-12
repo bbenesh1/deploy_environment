@@ -53,8 +53,6 @@
     
 - name: Check execution nodes continued
   hosts: automationcontroller
-  collections:
-   - infra.ah_configuration
   tasks:
 
     - name: Check execution nodes continued | Test network connection

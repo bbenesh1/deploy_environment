@@ -48,7 +48,7 @@
       when: local_connections_for_database.failed == true
     
 - name: Check Database nodes continued
-  hosts: ip-192-168-1-55.eu-west-1.compute.internal
+  hosts: automationcontroller
   collections:
    - infra.ah_configuration
   tasks:
@@ -72,9 +72,7 @@
       when: controller_connections_for_database.results[my_idx].failed == true
 
 - name: Check Database nodes continued
-  hosts: ip-192-168-1-61.eu-west-1.compute.internal
-  collections:
-   - infra.ah_configuration
+  hosts: automationhub
   tasks:
 
     - name: Check Database nodes continued | Test network connection

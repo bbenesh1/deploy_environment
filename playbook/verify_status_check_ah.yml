@@ -1,8 +1,8 @@
 ---
 - name: Check automation hub
   hosts: automationhub
-  collections:
-   - infra.ah_configuration
+  # collections:
+  #  - infra.ah_configuration
   tasks:
 
     - name: Check automation hub | Gather Facts about AH services
@@ -58,8 +58,8 @@
     
 - name: Check automation hub continued
   hosts: automationcontroller
-  collections:
-   - infra.ah_configuration
+  # collections:
+  #  - infra.ah_configuration
   tasks:
         
     - name: Check automation hub continued | Test network connection
