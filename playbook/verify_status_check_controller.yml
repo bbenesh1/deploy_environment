@@ -9,7 +9,7 @@
         
     - name: Check automation controller nodes | Restart {{ item }} service
       ansible.builtin.service:
-        service: "{{ item | split('.') | first }}"
+        service: "{{ item }}"
         state: restarted
       loop:
        - "receptor.service"
