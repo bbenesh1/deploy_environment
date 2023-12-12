@@ -33,7 +33,7 @@
        - postgresql.service
       when: service_state_current.ansible_facts.services[item].state != "running"
 
-    - name: Check Database nodes continued | Test network connection
+    - name: Check Database nodes | Test network connection
       ansible.builtin.wait_for:
         host: "{{ ansible_hostname }}"
         port: 5432
@@ -41,10 +41,6 @@
         timeout: 5
       register: local_connections_for_database
       ignore_errors: true
-    
-    - name: test more
-      debug:
-        msg: "{{ local_connections_for_database }}"
 
     - name: Check Database nodes | Confirm port connectivity
       ansible.builtin.fail:
@@ -67,7 +63,7 @@
       ignore_errors: true
       loop: "{{ groups['database'] }}"
 
-    - name: Check automation hub continued | Confirm port connectivity
+    - name: Check Database nodes continued  | Confirm port connectivity
       ansible.builtin.fail:
         msg: "Ansible Controller port connections on 5432 cannot be established to {{ item }} this is likely due to a Firewall, router or Switch issue"
       loop: "{{ groups['database'] }}" 
