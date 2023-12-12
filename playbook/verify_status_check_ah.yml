@@ -29,6 +29,15 @@
        - nginx.service       
       when: service_state_initial.ansible_facts.services[item].state != "running"
 
+    - name: Check automation hub | Wait for failed {{ item }} service
+      ansible.builtin.wait_for:
+        timeout: 60
+      loop:
+       - pulpcore-content.service
+       - pulpcore-api.service
+       - nginx.service       
+      when: service_state_initial.ansible_facts.services[item].state != "running"
+
     - name: Check automation hub | Gather Facts about AH services again
       ansible.builtin.service_facts:
       register: service_state_current
