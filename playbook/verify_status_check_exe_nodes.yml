@@ -6,19 +6,10 @@
     - name: Check execution nodes | Gather Facts about Execution services
       ansible.builtin.service_facts:
       register: service_state_initial
-     
-    - name: Check execution nodes | Restart Receptor Service 
-      ansible.builtin.service:
-        service: receptor
-        state: restarted
-      loop: 
-       - receptor.service
-      when: service_state_initial.ansible_facts.services[item].state != "running"
     
     - name: Check execution nodes | Restart {{ item }} service
-      vars: 
       ansible.builtin.service:
-        service: "{{ item }}"
+        service: "{{ item | split | first }}"
         state: restarted
       loop:
        - receptor.service  
