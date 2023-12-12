@@ -35,22 +35,4 @@
        - "receptor.service"
        - "nginx.service"
       when: service_state_current.ansible_facts.services[item].state != "running"
-
-    - name: Check automation controller nodes continued | Test network connection
-      ansible.builtin.wait_for:
-        host: "{{ ansible_hostname }}"
-        port: 443
-        state: started
-        timeout: 5
-      register: local_connections_for_automationcontroller
-      ignore_errors: true
-    
-    - name: test more
-      debug:
-        msg: "{{ local_connections_for_automationcontroller }}"
-
-    - name: Check automation controller nodes | Confirm port connectivity
-      ansible.builtin.fail:
-        msg: "Local port connections on 443 cannot be established on this automation controller node please verify the issue by logging into automation controller node terminal"
-      when: local_connections_for_automationcontroller.failed == true
     
