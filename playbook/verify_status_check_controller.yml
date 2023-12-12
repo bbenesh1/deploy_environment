@@ -6,21 +6,11 @@
     - name: Check automation controller nodes | Gather Facts about automation controller services
       ansible.builtin.service_facts:
       register: service_state_initial
-     
-    - name: Check automation controller nodes | Restart Receptor Service 
-      ansible.builtin.service:
-        service: "{{ item | split('.') | first }}"
-        state: restarted
-      loop: 
-       - receptor.service
-       - automation-controller.service
-       - nginx.service
-      when: service_state_initial.ansible_facts.services[item].state != "running"
-    
+        
     - name: Check automation controller nodes | Restart {{ item }} service
       vars: 
       ansible.builtin.service:
-        service: "{{ item }}"
+        service: "{{ item | split('.') | first }}"
         state: restarted
       loop:
        - receptor.service
@@ -28,7 +18,7 @@
        - nginx.service
       when: service_state_initial.ansible_facts.services[item].state != "running"
     
-    - name: Check automation controller nodes | Wait for failed receptor
+    - name: Check automation controller nodes | Wait for failed Service
       ansible.builtin.wait_for:
         timeout: 60
       loop:
