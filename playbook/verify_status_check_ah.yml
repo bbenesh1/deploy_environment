@@ -42,12 +42,6 @@
         - pulpcore-api.service
       when: service_state_current.ansible_facts.services[item].state != "running"
 
-    - name: Check automation hub | Confirm Web URL is functioning
-      ansible.builtin.set_fact:
-        testing: "{{ lookup('infra.ah_configuration.ah_api', 'users', verify_ssl=false, return_all=true ) | map(attribute='username') | list  }}" 
-      ignore_errors: true 
-      register: automation_hub_results
-
     - name: Check automation hub | Test network connection
       ansible.builtin.wait_for:
         host: "{{ ansible_hostname }}"
@@ -56,7 +50,6 @@
         timeout: 5
       register: local_connections_for_ah
       ignore_errors: true
-      when: automation_hub_results.failed != 'false'
 
     - name: Check automation hub | Confirm port connectivity
       ansible.builtin.fail:
@@ -88,13 +81,13 @@
         index_var: my_idx
       when: controller_connections_for_ah.results[my_idx].failed == true
     
-    - name: Check automation hub continued | Check lookup of AH database is successful
-      ansible.builtin.debug:
-        msg: "{{ lookup('infra.ah_configuration.ah_api', 'users', verify_ssl=false, return_all=true ) | map(attribute='username') | list  }}"  
-      ignore_errors: true
-      register: controller_lookup_result
+    # - name: Check automation hub continued | Check lookup of AH database is successful
+    #   ansible.builtin.debug:
+    #     msg: "{{ lookup('infra.ah_configuration.ah_api', 'users', verify_ssl=false, return_all=true ) | map(attribute='username') | list  }}"  
+    #   ignore_errors: true
+    #   register: controller_lookup_result
          
-    - name: Check automation hub continued | Confirm status of database lookup
-      ansible.builtin.fail:
-        msg: "Ansible Controller cannot lookup AH via this plugin, recommend checking web acces to Automation Hub"
-      when: controller_lookup_result.failed != false
+    # - name: Check automation hub continued | Confirm status of database lookup
+    #   ansible.builtin.fail:
+    #     msg: "Ansible Controller cannot lookup AH via this plugin, recommend checking web acces to Automation Hub"
+    #   when: controller_lookup_result.failed != false
