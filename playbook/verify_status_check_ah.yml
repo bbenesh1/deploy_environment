@@ -90,7 +90,7 @@
       debug:
         msg: "{{ lookup('infra.ah_configuration.ah_api', 'users', verify_ssl=false, return_all=true ) | map(attribute='username') | list  }}"  
       ignore_errors: true
-      register: 
+      register: controller_lookup_result
       
     - name: debug
       debug:
