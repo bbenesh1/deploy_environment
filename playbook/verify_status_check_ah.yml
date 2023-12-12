@@ -90,7 +90,11 @@
       debug:
         msg: "{{ lookup('infra.ah_configuration.ah_api', 'users', verify_ssl=false, return_all=true ) | map(attribute='username') | list  }}"  
       ignore_errors: true
-      register: controller_lookup_result
+      register: 
+      
+    - name: debug
+      debug:
+        msg: "{{ controller_lookup_result }}"
     
     - name: Check automation hub continued | Confirm status of database lookup
       ansible.builtin.fail:
