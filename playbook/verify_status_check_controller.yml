@@ -21,7 +21,6 @@
         timeout: 60
       loop:
        - "receptor.service"
-       - "automation-controller.service"
        - "nginx.service"
       when: service_state_initial.ansible_facts.services[item].state != "running"
 
@@ -34,7 +33,6 @@
         msg: " The {{ item }} is still not working please verify the issue by logging into the automation controller node terminal"
       loop:
        - "receptor.service"
-       - "automation-controller.service"
        - "nginx.service"
       when: service_state_current.ansible_facts.services[item].state != "running"
 
