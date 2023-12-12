@@ -13,18 +13,18 @@
         service: "{{ item | split('.') | first }}"
         state: restarted
       loop:
-       - receptor.service
-       - automation-controller.service
-       - nginx.service
+       - "receptor.service"
+       - "automation-controller.service"
+       - "nginx.service"
       when: service_state_initial.ansible_facts.services[item].state != "running"
     
     - name: Check automation controller nodes | Wait for failed Service
       ansible.builtin.wait_for:
         timeout: 60
       loop:
-       - receptor.service
-       - automation-controller.service
-       - nginx.service
+       - "receptor.service"
+       - "automation-controller.service"
+       - "nginx.service"
       when: service_state_initial.ansible_facts.services[item].state != "running"
 
     - name: Check automation controller nodes | Gather Facts about automation controller services again
@@ -35,9 +35,9 @@
       ansible.builtin.fail:
         msg: " The {{ item }} is still not working please verify the issue by logging into the automation controller node terminal"
       loop:
-       - receptor.service
-       - automation-controller.service
-       - nginx.service
+       - "receptor.service"
+       - "automation-controller.service"
+       - "nginx.service"
       when: service_state_current.ansible_facts.services[item].state != "running"
 
     - name: Check automation controller nodes continued | Test network connection
