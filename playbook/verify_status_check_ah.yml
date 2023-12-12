@@ -43,7 +43,7 @@
       when: service_state_current.ansible_facts.services[item].state != "running"
 
     - name: Check automation hub | Confirm Web URL is functioning
-      debug:
+      ansible.builtin.debug:
         msg: "{{ lookup('infra.ah_configuration.ah_api', 'users', verify_ssl=false, return_all=true ) | map(attribute='username') | list  }}"  
       register: automation_hub_results
 
@@ -88,7 +88,7 @@
       when: controller_connections_for_ah.results[my_idx].failed == true
     
     - name: Check automation hub continued | Check lookup of AH database is successful
-      debug:
+      ansible.builtin.debug:
         msg: "{{ lookup('infra.ah_configuration.ah_api', 'users', verify_ssl=false, return_all=true ) | map(attribute='username') | list  }}"  
       ignore_errors: true
       register: controller_lookup_result
