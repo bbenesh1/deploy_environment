@@ -48,7 +48,7 @@
     - name: Check execution nodes continued | Test network connection
       ansible.builtin.wait_for:
         host: "{{ ansible_hostname }}"
-        port: 27199
+        port: 443
         state: started
         timeout: 5
       register: local_connections_for_ah
