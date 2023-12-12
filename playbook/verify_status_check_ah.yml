@@ -1,6 +1,6 @@
 ---
 - name: Check automation hub
-  hosts: ip-192-168-1-61.eu-west-1.compute.internal
+  hosts: automationhub
   tasks:
 
     - name: Check automation hub | Gather Facts about AH services
@@ -45,7 +45,7 @@
         msg: "{{ lookup('infra.ah_configuration.ah_api', 'users', verify_ssl=false, return_all=true ) | map(attribute='username') | list  }}"  
       register: automation_hub_results
 
-    - name: Check execution nodes continued | Test network connection
+    - name: Check automation hub | Test network connection
       ansible.builtin.wait_for:
         host: "{{ ansible_hostname }}"
         port: 443
@@ -61,12 +61,12 @@
       when: local_connections_for_ah.failed == true
     
 - name: Check automation hub continued
-  hosts: ip-192-168-1-55.eu-west-1.compute.internal
+  hosts: automationcontroller
   collections:
    - infra.ah_configuration
   tasks:
         
-    - name: Check execution nodes continued | Test network connection
+    - name: Check automation hub continued | Test network connection
       ansible.builtin.wait_for:
         host: "{{ item }}"
         port: 443
@@ -85,17 +85,12 @@
         index_var: my_idx
       when: controller_connections_for_ah.results[my_idx].failed == true
     
-    
     - name: Check automation hub continued | Check lookup of AH database is successful
       debug:
         msg: "{{ lookup('infra.ah_configuration.ah_api', 'users', verify_ssl=false, return_all=true ) | map(attribute='username') | list  }}"  
       ignore_errors: true
       register: controller_lookup_result
-      
-    - name: debug
-      debug:
-        msg: "{{ controller_lookup_result }}"
-    
+         
     - name: Check automation hub continued | Confirm status of database lookup
       ansible.builtin.fail:
         msg: "Ansible Controller cannot lookup AH via this plugin, recommend checking web acces to Automation Hub"

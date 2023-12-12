@@ -33,7 +33,7 @@
        - receptor.service
       when: service_state_current.ansible_facts.services[item].state != "running"
 
-    - name: Check execution nodes continued | Test network connection
+    - name: Check execution nodes | Test network connection
       ansible.builtin.wait_for:
         host: "{{ ansible_hostname }}"
         port: 27199
@@ -52,7 +52,7 @@
       when: local_connections_for_execution.failed == true
     
 - name: Check execution nodes continued
-  hosts: ip-192-168-1-55.eu-west-1.compute.internal
+  hosts: automationcontroller
   collections:
    - infra.ah_configuration
   tasks:
