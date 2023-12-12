@@ -44,7 +44,7 @@
 
     - name: Check automation hub | Confirm Web URL is functioning
       ansible.builtin.debug:
-        msg: "{{ lookup('infra.ah_configuration.ah_api', 'users', verify_ssl=false, return_all=true ) | map(attribute='username') | list  }}"  
+        var: "{{ lookup('infra.ah_configuration.ah_api', 'users', verify_ssl=false, return_all=true ) | map(attribute='username') | list  }}"  
       register: automation_hub_results
 
     - name: Check automation hub | Test network connection
