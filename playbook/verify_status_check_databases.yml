@@ -63,7 +63,7 @@
         port: 5432
         state: started
         timeout: 5
-      register: controller_connections_for_Database
+      register: controller_connections_for_database
       ignore_errors: true
       loop: "{{ groups['database'] }}"
 
