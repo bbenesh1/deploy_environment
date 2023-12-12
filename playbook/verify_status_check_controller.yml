@@ -30,9 +30,11 @@
     
     - name: Check automation controller nodes | Wait for failed receptor
       ansible.builtin.wait_for:
-        timeout: 5
+        timeout: 60
       loop:
-       - receptor.service 
+       - receptor.service
+       - automation-controller.service
+       - nginx.service
       when: service_state_initial.ansible_facts.services[item].state != "running"
 
     - name: Check automation controller nodes | Gather Facts about automation controller services again
