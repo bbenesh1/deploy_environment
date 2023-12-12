@@ -99,4 +99,4 @@
     - name: Check automation hub continued | Confirm status of database lookup
       ansible.builtin.fail:
         msg: "Ansible Controller cannot lookup AH via this plugin, recommend checking web acces to Automation Hub"
-      when: controller_lookup_result.failed != 'false'
+      when: controller_lookup_result.failed != false
