@@ -1,6 +1,8 @@
 ---
 - name: Check automation hub
   hosts: automationhub
+  collections:
+   - infra.ah_configuration
   tasks:
 
     - name: Check automation hub | Gather Facts about AH services
