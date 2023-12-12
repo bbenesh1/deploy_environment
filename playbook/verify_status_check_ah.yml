@@ -5,22 +5,7 @@
 
     - name: Check automation hub | Gather Facts about AH services
       ansible.builtin.service_facts:
-      register: service_state_initial
-
-    - name: Check automation hub | Set Facts about all AH services
-      ansible.builtin.set_fact:
-        ansible_automation_services: "{{ ansible_automation_services | default([]) | combine({item: make_key_value}) }}"
-      vars:
-        make_key_value:
-          service_name: "{{ item }}"
-          service_state:  "{{ service_state_initial.ansible_facts.services[item].state }}"
-          service_enabled:  "{{ service_state_initial.ansible_facts.services[item].status }}"
-      loop:
-        - nginx.service
-        - pulpcore.service 
-        - pulpcore-content.service
-        - pulpcore-api.service
-    
+      register: service_state_initial  
      
     - name: Check automation hub | Restart Pulp Core services 
       ansible.builtin.service:
@@ -46,19 +31,6 @@
       ansible.builtin.service_facts:
       register: service_state_current
 
-    - name: Check automation hub | Set Facts about all AH services currently
-      ansible.builtin.set_fact:
-        ansible_automation_services_current: "{{ ansible_automation_services_current | default([]) | combine({item: make_key_value}) }}"
-      vars:
-        make_key_value:
-          service_name: "{{ item }}"
-          service_state:  "{{ service_state_current.ansible_facts.services[item].state }}"
-          service_enabled:  "{{ service_state_current.ansible_facts.services[item].status }}"
-      loop:
-        - nginx.service
-        - pulpcore-content.service
-        - pulpcore-api.service
-    
     - name: Check automation hub | Verify the state of AH services
       ansible.builtin.fail:
         msg: " The {{ item }} is still not working please verify the issue by logging into Automation Hub terminal"
@@ -73,24 +45,20 @@
         msg: "{{ lookup('infra.ah_configuration.ah_api', 'users', verify_ssl=false, return_all=true ) | map(attribute='username') | list  }}"  
       register: automation_hub_results
 
-    - name: Check automation hub | Install network connection package
-      ansible.builtin.yum:
-        name: "{{ item }}"
-        state: present
-      loop:
-        - nmap-ncat
-      when: automation_hub_results.failed != 'false'
-  
-    - name: Check automation hub | Register port connectivity
-      ansible.builtin.command: "nc -vz {{ ansible_default_ipv4.address }} 443"
-      register: network_connections
+    - name: Check execution nodes continued | Test network connection
+      ansible.builtin.wait_for:
+        host: "{{ ansible_hostname }}"
+        port: 27199
+        state: started
+        timeout: 5
+      register: local_connections_for_ah
       ignore_errors: true
       when: automation_hub_results.failed != 'false'
 
     - name: Check automation hub | Confirm port connectivity
       ansible.builtin.fail:
         msg: "Local port connections on 443 cannot be established on Automation Hub please verify the issue by logging into Automation Hub terminal"
-      when: '"refused" in network_connections.stderr_lines.1' 
+      when: local_connections_for_ah.failed == true
     
 - name: Check automation hub continued
   hosts: ip-192-168-1-55.eu-west-1.compute.internal
@@ -104,7 +72,7 @@
         port: 443
         state: started
         timeout: 5
-      register: controller_connections_for_execution
+      register: controller_connections_for_ah
       ignore_errors: true
       loop: "{{ groups['automationhub'] }}"
 
@@ -115,7 +83,7 @@
       loop: "{{ groups['automationhub'] }}" 
       loop_control:
         index_var: my_idx
-      when: controller_connections_for_execution.results[my_idx].failed == true
+      when: controller_connections_for_ah.results[my_idx].failed == true
     
     
     - name: Check automation hub continued | Check lookup of AH database is successful
