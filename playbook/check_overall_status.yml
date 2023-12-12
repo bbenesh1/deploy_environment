@@ -1,0 +1,16 @@
+---
+- name: Check Overall AAP Status
+  hosts: automationcontroller
+  tasks:
+
+    - name: Check Overall AAP Status | Check automation controller nodes
+      ansible.builtin.import_playbook: verify_status_check_controller.yml
+
+    - name: Check Overall AAP Status | Check automation hub
+      ansible.builtin.import_playbook: verify_status_check_ah.yml
+
+    - name: Check Overall AAP Status | Check Database nodes
+      ansible.builtin.import_playbook: verify_status_check_databases.yml
+
+    - name: Check Overall AAP Status | Check execution nodes
+      ansible.builtin.import_playbook: verify_status_check_exe_nodes.yml
